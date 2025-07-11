@@ -1,35 +1,48 @@
 import multiprocessing
-import time
+import traceback
+import os
 
-from BDD_Solutions import run as run_bdd
-from GUnit_Solution import run as run_gunit
-from Intelligent_Regression import run as run_ir
+from BDD_Solutions.app import run as run_bdd
+from GUnit_Solution.app import run as run_gunit
+from Intelligent_Regression.app import run as run_ir
 
-def start_project(run_func, name):
+def safe_run(run_func, name):
+    log_file = f"/tmp/{name.replace(' ', '_').lower()}.log"
     try:
-        print(f"[{name}] Starting...")
-        run_func()
+        with open(log_file, 'a') as f:
+            f.write(f"[{name}] Starting...\n")
+            f.flush()
+            run_func()
     except Exception as e:
-        print(f"[{name}] Failed to start: {e}")
+        with open(log_file, 'a') as f:
+            f.write(f"[{name}] Failed to start: {e}\n")
+            f.write(traceback.format_exc())
+            f.flush()
 
-if __name__ == "__main__":
-    multiprocessing.freeze_support()  # <-- important on Windows
-    print("🚀 Launching all projects...")
+def launch_all():
+    print("🚀 Launching all services...\n", flush=True)
 
-    processes = [
-        multiprocessing.Process(target=start_project, args=(run_bdd, "BDD-Defect")),
-        multiprocessing.Process(target=start_project, args=(run_gunit, "GUnit")),
-        multiprocessing.Process(target=start_project, args=(run_ir, "Intelligent Regression")),
+    tasks = [
+        ("BDD-Defect", run_bdd),
+        ("GUnit", run_gunit),
+        ("Intelligent Regression", run_ir)
     ]
 
-    for p in processes:
+    processes = []
+    for name, func in tasks:
+        p = multiprocessing.Process(target=safe_run, args=(func, name))
         p.start()
+        processes.append(p)
 
     try:
         for p in processes:
             p.join()
     except KeyboardInterrupt:
-        print("\n🛑 Shutting down all projects...")
+        print("\n🛑 Interrupt received, terminating all processes...", flush=True)
         for p in processes:
             p.terminate()
             p.join()
+
+if __name__ == "__main__":
+    multiprocessing.set_start_method("spawn", force=True)  # Required for Linux
+    launch_all()

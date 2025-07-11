@@ -111,5 +111,5 @@ def generate_gunit():
         download_url=download_url
     )
 
-# def run():
-#     app.run(host="0.0.0.0", debug=True, use_reloader=False, port = 5001)
+def run():
+    app.run(host="0.0.0.0", debug=False, use_reloader=False, port = 5001)

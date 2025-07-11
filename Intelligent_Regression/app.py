@@ -413,7 +413,6 @@ def extract_methods_with_keyword(content, keyword):
     return methods
 
 
-# ---------- Run the Flask App ----------
-# def run():
-#     app.run(debug=True, use_reloader=False, port = 5000)
+def run():
+    app.run(host="0.0.0.0", port=5000, debug=False, use_reloader=False)
     
