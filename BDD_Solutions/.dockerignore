@@ -1,0 +1,15 @@
+# Ignore Python cache
+__pycache__/
+
+# Ignore virtual environment
+myenv/
+
+# Ignore database files or folders
+chroma_db/
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Ignore version control files
+.git

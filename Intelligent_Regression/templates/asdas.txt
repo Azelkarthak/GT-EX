@@ -1,0 +1,321 @@
+Combined Content #############: # File: modules/configuration/generated/typekey/NumberOfAccidents.java
+package typekey;
+@javax.annotation.Generated(value = "com.guidewire.pl.metadata.codegen.Codegen", comments = "NumberOfAccidents.tti;NumberOfAccidents.tix;NumberOfAccidents.ttx")
+@java.lang.SuppressWarnings(value = {"deprecation", "unchecked"})
+@gw.internal.gosu.parser.ExtendedType
+public class NumberOfAccidents implements gw.entity.TypeKey {
+  public static final typekey.NumberOfAccidents TC_0 = new typekey.NumberOfAccidents("0");
+  public static final typekey.NumberOfAccidents TC_1 = new typekey.NumberOfAccidents("1");
+  public static final typekey.NumberOfAccidents TC_2 = new typekey.NumberOfAccidents("2");
+  public static final typekey.NumberOfAccidents TC_3 = new typekey.NumberOfAccidents("3");
+  public static final typekey.NumberOfAccidents TC_4 = new typekey.NumberOfAccidents("4");
+  public static final typekey.NumberOfAccidents TC_5 = new typekey.NumberOfAccidents("5");
+  public static final gw.pl.persistence.type.TypeListTypeReference<typekey.NumberOfAccidents> TYPE = new com.guidewire.commons.metadata.types.TypeListIntrinsicTypeCache<typekey.NumberOfAccidents>("NumberOfAccidents");
+  private final com.guidewire.commons.typelist.TypeKeyImplManager _typeKeyImplManager;
+  private NumberOfAccidents(java.lang.String code)  {
+    _typeKeyImplManager  =  com.guidewire.commons.typelist.TypeKeyImplManager.newInstance(this, code);
+  }
+  public int compareTo(gw.entity.TypeKey arg0) {
+    return _typeKeyImplManager.getTypeKeyImpl().compareTo(arg0);
+  }
+  @java.lang.Deprecated
+  public typekey.NumberOfAccidents get() {
+    return this;
+  }
+  public static typekey.NumberOfAccidents get(java.lang.String code) {
+    return TYPE.get().getTypeKey(code);
+  }
+  public static java.util.List<typekey.NumberOfAccidents> getAllTypeKeys() {
+    return TYPE.get().getTypeKeys(true);
+  }
+  public gw.entity.TypeKey[] getCategories() {
+    return _typeKeyImplManager.getTypeKeyImpl().getCategories();
+  }
+  public java.lang.String getCode() {
+    return _typeKeyImplManager.getCode();
+  }
+  public java.lang.String getDescription() {
+    return _typeKeyImplManager.getTypeKeyImpl().getDescription();
+  }
+  public java.lang.String getDescription(gw.i18n.ILocale locale) {
+    return _typeKeyImplManager.getTypeKeyImpl().getDescription(locale);
+  }
+  public java.lang.String getDisplayName() {
+    return _typeKeyImplManager.getTypeKeyImpl().getDisplayName();
+  }
+  public java.lang.String getDisplayName(gw.i18n.ILocale locale) {
+    return _typeKeyImplManager.getTypeKeyImpl().getDisplayName(locale);
+  }
+  public gw.entity.IEntityType getEntityType() {
+    return _typeKeyImplManager.getTypeKeyImpl().getEntityType();
+  }
+  public gw.entity.ITypeList getIntrinsicType() {
+    return _typeKeyImplManager.getTypeKeyImpl().getIntrinsicType();
+  }
+  public java.lang.String getListName() {
+    return _typeKeyImplManager.getTypeKeyImpl().getListName();
+  }
+  @java.lang.Deprecated
+  public java.lang.String getName() {
+    return _typeKeyImplManager.getTypeKeyImpl().getName();
+  }
+  public int getOrdinal() {
+    return _typeKeyImplManager.getTypeKeyImpl().getOrdinal();
+  }
+  public int getPriority() {
+    return _typeKeyImplManager.getTypeKeyImpl().getPriority();
+  }
+  public int getSortOrder(gw.i18n.ILocale locale) {
+    return _typeKeyImplManager.getTypeKeyImpl().getSortOrder(locale);
+  }
+  public static typekey.NumberOfAccidents getTypeKey(java.lang.String code) {
+    return TYPE.get().getTypeKey(code);
+  }
+  @java.lang.Deprecated
+  public static typekey.NumberOfAccidents[] getTypeKeys() {
+    return TYPE.get().getTypeKeys(true).toArray(new typekey.NumberOfAccidents[]{});
+  }
+  public static java.util.List<typekey.NumberOfAccidents> getTypeKeys(boolean includeRetired) {
+    return TYPE.get().getTypeKeys(includeRetired);
+  }
+  public java.lang.String getUnlocalizedDescription() {
+    return _typeKeyImplManager.getTypeKeyImpl().getUnlocalizedDescription();
+  }
+  public java.lang.String getUnlocalizedName() {
+    return _typeKeyImplManager.getTypeKeyImpl().getUnlocalizedName();
+  }
+  public typekey.NumberOfAccidents getValue() {
+    return this;
+  }
+  public boolean hasCategory(gw.entity.TypeKey categoryToCheck) {
+    return _typeKeyImplManager.getTypeKeyImpl().hasCategory(categoryToCheck);
+  }
+  public boolean isInternal() {
+    return _typeKeyImplManager.getTypeKeyImpl().isInternal();
+  }
+  public boolean isRetired() {
+    return _typeKeyImplManager.getTypeKeyImpl().isRetired();
+  }
+  private java.lang.Object readObject(java.io.ObjectInputStream in) throws java.io.InvalidObjectException {
+    throw new java.io.InvalidObjectException("Proxy required");
+  }
+  public java.lang.String toString() {
+    return getDisplayName();
+  }
+  private java.lang.Object writeReplace() {
+    return new com.guidewire.commons.typelist.TypeKeySerializationProxy(this);
+  }
+  static {
+    com.guidewire._generated.typekey.NumberOfAccidentsInternalAccess.FRIEND_ACCESSOR.init(new com.guidewire.pl.persistence.code.TypeKeyFriendAccess<typekey.NumberOfAccidents>() {
+      public void clearCache(typekey.NumberOfAccidents typeKey) {
+        typeKey._typeKeyImplManager.resetTypeKeyImpl();
+      }
+      public com.guidewire.commons.entity.type2.TypeKeyInternal getInternalInterface(typekey.NumberOfAccidents typeKey) {    
+        return typeKey._typeKeyImplManager.getTypeKeyImpl();
+      }
+      public typekey.NumberOfAccidents newInstance(java.lang.String code) {
+        return new typekey.NumberOfAccidents(code);
+      }
+    });
+  }
+}
+# File: modules/configuration/config/extensions/typelist/NumberOfAccidents.ttx
+<?xml version="1.0"?>
+<typelistextension
+  xmlns="http://guidewire.com/typelists"
+  desc="Number of Accidents or Violations"
+  name="NumberOfAccidents">
+  <typecode
+    code="0"
+    desc="0"
+    name="0"
+    priority="1"/>
+  <typecode
+    code="1"
+    desc="1"
+    name="1"
+    priority="2"/>
+  <typecode
+    code="2"
+    desc="2"
+    name="2"
+    priority="3"/>
+  <typecode
+    code="3"
+    desc="3"
+    name="3"
+    priority="4"/>
+  <typecode
+    code="4"
+    desc="4"
+    name="4"
+    priority="5"/>
+  <typecode
+    code="5"
+    desc="5 or more"
+    name="5 or more"
+    priority="6"/>
+</typelistextension>
+# File: modules/configuration/config/metadata/typelist/NumberOfAccidents.tti
+<?xml version="1.0"?>
+<typelist
+  xmlns="http://guidewire.com/typelists"
+  desc="Number of accidents or violations"
+  final="false"
+  name="NumberOfAccidents"/>
+
+# File: modules/configuration/gsrc/gw/lob/pa/PALineDriversValidator.gs
+private function accountDriverNumberOfIncidents(){
+    //The warning should be displayed only when the policy is quoted if not all account level number of accidents and violations are set.
+    if(super.Level == typekey.ValidationLevel.TC_QUOTABLE){
+      for (driver in paLine.PolicyDrivers.where(\ d -> not d.Excluded)) {
+        var accountDriver = driver.AccountContactRole.AccountContact.getRole(typekey.AccountContactRole.TC_DRIVER) as Driver 
+        if(accountDriver.NumberofAccidents == null or accountDriver.NumberofViolations == null){
+          Result.addWarning(paLine, typekey.ValidationLevel.TC_QUOTABLE, DisplayKey.get("Web.Policy.PA.Validation.AccountAccidentsAndViolationsMissing"), DRIVERS_WIZARD_STEP)
+          break
+        }
+      }
+    }
+  }
+private function verifyBirthDateAndIncidents() {
+    if(Context.isAtLeast(ValidationLevel.TC_QUICKQUOTABLE)){
+      var noBirthDate = false
+      var noIncidents = false
+      for (driver in paLine.PolicyDrivers.where(\ d -> not d.Excluded)) {
+        if (driver.DateOfBirth == null) {
+          noBirthDate = true
+        }
+        if(driver.NumberOfAccidents == null or driver.NumberOfViolations == null){
+          noIncidents = true
+          if(noBirthDate) break  //don't need to continue looping since both warnings are necessary
+        }
+      }
+      if(noBirthDate){
+        Result.addError(paLine, Level, DisplayKey.get("Web.Policy.PA.Validation.DateOfBirthRequired"), DRIVERS_WIZARD_STEP)  
+      }
+      if(noIncidents){
+        Result.addError(paLine, Level, DisplayKey.get("Web.Policy.PA.Validation.PolicyAccidentsAndViolationsRequired"), DRIVERS_WIZARD_STEP)
+      }
+    }
+  }
+# File: modules/configuration/build/idea/classes/extensions/typelist/NumberOfAccidents.ttx
+<?xml version="1.0"?>
+<typelistextension
+  xmlns="http://guidewire.com/typelists"
+  desc="Number of Accidents or Violations"
+  name="NumberOfAccidents">
+  <typecode
+    code="0"
+    desc="0"
+    name="0"
+    priority="1"/>
+  <typecode
+    code="1"
+    desc="1"
+    name="1"
+    priority="2"/>
+  <typecode
+    code="2"
+    desc="2"
+    name="2"
+    priority="3"/>
+  <typecode
+    code="3"
+    desc="3"
+    name="3"
+    priority="4"/>
+  <typecode
+    code="4"
+    desc="4"
+    name="4"
+    priority="5"/>
+  <typecode
+    code="5"
+    desc="5 or more"
+    name="5 or more"
+    priority="6"/>
+</typelistextension>
+# File: modules/configuration/build/idea/classes/metadata/typelist/NumberOfAccidents.tti
+<?xml version="1.0"?>
+<typelist
+  xmlns="http://guidewire.com/typelists"
+  desc="Number of accidents or violations"
+  final="false"
+  name="NumberOfAccidents"/>
+# File: modules/configuration/generated/com/guidewire/_generated/typekey/NumberOfAccidentsInternalAccess.java
+package com.guidewire._generated.typekey;
+@javax.annotation.Generated(value = "com.guidewire.pl.metadata.codegen.Codegen", comments = "NumberOfAccidents.eti;NumberOfAccidents.eix;NumberOfAccidents.etx")
+@java.lang.SuppressWarnings(value = {"deprecation", "unchecked"})
+public class NumberOfAccidentsInternalAccess {
+  public static final com.guidewire.pl.system.internal.FriendAccessor<com.guidewire.pl.persistence.code.TypeKeyFriendAccess<typekey.NumberOfAccidents>> FRIEND_ACCESSOR = new com.guidewire.pl.system.internal.FriendAccessor<com.guidewire.pl.persistence.code.TypeKeyFriendAccess<typekey.NumberOfAccidents>>(typekey.NumberOfAccidents.class);
+  private NumberOfAccidentsInternalAccess()  {
+  }
+}
+# File: modules/configuration/plugins/Gosu/gclasses/gw/lob/pa/PALineDriversValidator.gs
+private function accountDriverNumberOfIncidents(){
+    //The warning should be displayed only when the policy is quoted if not all account level number of accidents and violations are set.
+    if(super.Level == typekey.ValidationLevel.TC_QUOTABLE){
+      for (driver in paLine.PolicyDrivers.where(\ d -> not d.Excluded)) {
+        var accountDriver = driver.AccountContactRole.AccountContact.getRole(typekey.AccountContactRole.TC_DRIVER) as Driver 
+        if(accountDriver.NumberofAccidents == null or accountDriver.NumberofViolations == null){
+          Result.addWarning(paLine, typekey.ValidationLevel.TC_QUOTABLE, DisplayKey.get("Web.Policy.PA.Validation.AccountAccidentsAndViolationsMissing"), DRIVERS_WIZARD_STEP)
+          break
+        }
+      }
+    }
+  }
+private function verifyBirthDateAndIncidents() {
+    if(Context.isAtLeast(ValidationLevel.TC_QUICKQUOTABLE)){
+      var noBirthDate = false
+      var noIncidents = false
+      for (driver in paLine.PolicyDrivers.where(\ d -> not d.Excluded)) {
+        if (driver.DateOfBirth == null) {
+          noBirthDate = true
+        }
+        if(driver.NumberOfAccidents == null or driver.NumberOfViolations == null){
+          noIncidents = true
+          if(noBirthDate) break  //don't need to continue looping since both warnings are necessary
+        }
+      }
+      if(noBirthDate){
+        Result.addError(paLine, Level, DisplayKey.get("Web.Policy.PA.Validation.DateOfBirthRequired"), DRIVERS_WIZARD_STEP)  
+      }
+      if(noIncidents){
+        Result.addError(paLine, Level, DisplayKey.get("Web.Policy.PA.Validation.PolicyAccidentsAndViolationsRequired"), DRIVERS_WIZARD_STEP)
+      }
+    }
+  }
+# File: modules/configuration/plugins/Gosu/idea-gclasses/gw/lob/pa/PALineDriversValidator.gs
+private function accountDriverNumberOfIncidents(){
+    //The warning should be displayed only when the policy is quoted if not all account level number of accidents and violations are set.
+    if(super.Level == typekey.ValidationLevel.TC_QUOTABLE){
+      for (driver in paLine.PolicyDrivers.where(\ d -> not d.Excluded)) {
+        var accountDriver = driver.AccountContactRole.AccountContact.getRole(typekey.AccountContactRole.TC_DRIVER) as Driver 
+        if(accountDriver.NumberofAccidents == null or accountDriver.NumberofViolations == null){
+          Result.addWarning(paLine, typekey.ValidationLevel.TC_QUOTABLE, DisplayKey.get("Web.Policy.PA.Validation.AccountAccidentsAndViolationsMissing"), DRIVERS_WIZARD_STEP)
+          break
+        }
+      }
+    }
+  }
+private function verifyBirthDateAndIncidents() {
+    if(Context.isAtLeast(ValidationLevel.TC_QUICKQUOTABLE)){
+      var noBirthDate = false
+      var noIncidents = false
+      for (driver in paLine.PolicyDrivers.where(\ d -> not d.Excluded)) {
+        if (driver.DateOfBirth == null) {
+          noBirthDate = true
+        }
+        if(driver.NumberOfAccidents == null or driver.NumberOfViolations == null){
+          noIncidents = true
+          if(noBirthDate) break  //don't need to continue looping since both warnings are necessary
+        }
+      }
+      if(noBirthDate){
+        Result.addError(paLine, Level, DisplayKey.get("Web.Policy.PA.Validation.DateOfBirthRequired"), DRIVERS_WIZARD_STEP)  
+      }
+      if(noIncidents){
+        Result.addError(paLine, Level, DisplayKey.get("Web.Policy.PA.Validation.PolicyAccidentsAndViolationsRequired"), DRIVERS_WIZARD_STEP)
+      }
+    }
+  }

@@ -1,0 +1,141 @@
+<script>
+    $(document).ready(function() {
+      $("#jira_url_defect, #email_defect, #password_defect").change(function() {
+        var jiraUrl = $("#jira_url_defect").val();
+        var email = $("#email_defect").val();
+        var password = $("#password_defect").val();
+
+        // Check if all three fields are not empty
+        if (jiraUrl && email && password) {
+          // Make AJAX call to get board IDs
+          $.ajax({
+            type: "POST",
+            url: "/get_bdd_jira_boardid",
+            data: {
+              jira_url: jiraUrl,
+              email: email,
+              password: password,
+            },
+            success: function (response) {
+              $("#board_id_defect").empty();
+              $.each(response.board_ids, function (index, board_id) {
+                $("#board_id_defect").append(
+                  '<option value="' +
+                    board_id[0] +
+                    '">' +
+                    board_id[1] +
+                    "</option>"
+                );
+              });
+            },
+            error: function (xhr, status, error) {
+              console.error(error);
+              // Handle error
+            },
+          });
+        }
+      });
+
+      // Trigger AJAX call to get sprint IDs when board ID is selected
+      $("#board_id_defect").change(function() {
+        var jiraUrl = $("#jira_url_defect").val();
+        var email = $("#email_defect").val();
+        var password = $("#password_defect").val();
+        var board_id = $(this).val(); // Get the selected board ID
+
+        // Check if all four fields are not empty
+        if (jiraUrl && email && password && board_id) {
+          // Make AJAX call to get sprint IDs
+          $.ajax({
+            type: "POST",
+            url: "/get_bdd_jira_sprintid",
+            data: {
+              jira_url: jiraUrl,
+              email: email,
+              password: password,
+              board_id: board_id,
+            },
+            success: function (response) {
+              $("#sprint_id_defect").empty();
+              $.each(response.sprint_ids, function (index, sprint_id) {
+                $("#sprint_id_defect").append(
+                  '<option value="' +
+                    sprint_id[0] +
+                    '">' +
+                    sprint_id[1] +
+                    "</option>"
+                );
+              });
+            },
+            error: function (xhr, status, error) {
+              console.error(error);
+              // Handle error
+            },
+          });
+        }
+      });
+      // Trigger AJAX call to get Issues when sprint ID is selected
+      $("#sprint_id_defect").click(function() {
+        var jiraUrl = $("#jira_url_defect").val();
+        var email = $("#email_defect").val();
+        var password = $("#password_defect").val();
+        var board_id = $("#board_id_defect").val(); // Get the selected board ID
+        var sprint_id = $(this).val(); // Get the selected sprint ID
+
+        // Check if all four fields are not empty
+        if (jiraUrl && email && password && board_id && sprint_id) {
+          // Make AJAX call to get issues 
+          console.log("Making AJAX call to get issues...");
+          $.ajax({
+            type: "POST",
+            url: "/get_bdd_jira_issue_bug",
+            data: {
+              jira_url: jiraUrl,
+              email: email,
+              password: password,
+              board_id: board_id,
+              sprint_id: sprint_id,
+            },
+            success: function (response) {
+                console.log("AJAX call successful, received response:", response);
+              $("#issue_id_defect").empty();
+              // Add "Select All" option
+              let issues = response.issue_bugs
+              $("#issue_id_defect").append('<option value="select_all">Select All</option>');
+              $.each(response.issue_bugs, function (index, issue_bug) {
+                        $("#issue_id_defect").append(
+                        '<option value="' + issue_bug + '">' + issue_bug + '</option>'
+                        );
+                });
+              // Save the entire issues array in a hidden input for form submission
+              $('<input>').attr({
+                    type: 'hidden',
+                    id: 'all_issues',
+                    name: 'all_issues',
+                    value: JSON.stringify(issues)
+                }).appendTo('#query-form');
+            },
+            error: function (xhr, status, error) {
+                console.error("Error during AJAX call:", error);
+              console.error(error);
+              // Handle error
+            },
+          });
+        }else{
+            console.log("Form validation failed. Fields are missing.");
+        }
+      });
+      // Handle form submission
+      $('#query-form').on('submit', function(e) {
+         let selectedOption = $("#issue_id_defect").val();
+
+         if (selectedOption === "select_all") {
+        // If "Select All" is chosen, submit the entire issues array
+            let issuesArray = JSON.parse($("#all_issues").val());
+            // You can also log it to verify
+             console.log("Selected 'Select All'. Submitting all issues:", issuesArray);
+    }
+});
+
+    });
+  </script>

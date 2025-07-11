@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit Keyword Dependencies</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    table {
+      width: 100%;
+      background: #fff;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 20%;
+      word-break: break-word;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 25%;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 55%;
+    }
+
+    .edit-btn {
+      padding: 5px 10px;
+      background-color: #ffc107;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 90%;
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .main-content {
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .search-form input[type="text"] {
+      width: 500px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .search-btn {
+      display: none;
+      /* We don't need the submit button for dynamic search */
+    }
+    .delete-btn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #c82333;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 20px 0; /* Optional: matches nav spacing */
+}
+
+  </style>
+</head>
+
+<body>
+  {% include 'sidebar.html' %}
+  <div class="main-content">
+    <h1>Edit Keyword Dependencies</h1>
+    <div class="search-form">
+      <input type="text" id="searchInput" placeholder="Search keyword...">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Keyword</th>
+          <th>Dependencies</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="keywordTable">
+        {% for keyword, deps in keyword_data.items() %}
+        <tr>
+          <td>{{ keyword }}</td>
+          <td>{{ deps | join(', ') }}</td>
+          <td>
+            <form method="POST" action="/edit_dependencies">
+              <input type="hidden" name="keyword" value="{{ keyword }}">
+              <textarea name="new_dependencies" rows="3" placeholder="Enter new dependencies">{{ deps | join(', ') }}</textarea>
+              <div style="margin-top: 8px;">
+                <button type="submit" class="edit-btn" style="display: inline-block;">Update</button>
+                <button type="submit" formaction="/delete_keyword" formmethod="POST" class="delete-btn" style="display: inline-block; margin-left: 8px;"
+                  onclick="return confirm('Are you sure you want to delete {{ keyword }}?');">Delete</button>
+              </div>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if message %}
+    <p style="color: green; font-weight: 500;">{{ message }}</p>
+    {% endif %}
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const tableBody = document.getElementById('keywordTable');
+    const allRows = [...tableBody.querySelectorAll('tr')];
+
+    searchInput.addEventListener('input', () => {
+      const filter = searchInput.value.toLowerCase();
+      allRows.forEach(row => {
+        const keyword = row.children[0].innerText.toLowerCase();
+        row.style.display = keyword.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>

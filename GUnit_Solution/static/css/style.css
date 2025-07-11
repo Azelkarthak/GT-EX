@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hr {
+    border-left: 2px solid black;
+    height: 48.2rem;
+    position: absolute;
+    top: 95px;
+    margin-left: 220px;
+}
+ .lob-list {
+
+            top: 100px;
+            right: 200px;
+            width: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.menu {
+    background-color: #ffffff;
+    padding: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+.menu ul {
+    padding-left: none;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding: 5px;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    background-color: #f4f4f4;
+    color: blue;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.dropdown-checkboxes .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-checkboxes .dropdown-item {
+    display: block;
+}
+
+
+#gunit-input {
+    display: none;
+    position: absolute;
+    top: 230px;
+    left: 240px;
+    font-weight: bold;
+}
+
+.textarea-large {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+}
+
+.btn-small {
+    font-weight: bold;
+    background: blanchedalmond;
+    font-size: 0.8rem; /* Adjust as needed */
+    padding: 0.25rem 0.5rem; /* Adjust as needed */
+}
+
+.form-control {
+    resize: none;
+}
+
+#output .col-md-6 {
+    margin: 10px;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+#lob-input {
+    width: 25%;
+    display: none;
+    position: absolute;
+    top: 135px;
+    margin-left: 138px;
+}
+
+.select-lob label {
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+}
+
+ .git-branch-info {
+        font-style: italic;
+        font-size: smaller;
+        margin: 0;
+        padding: 0;
+    }
+
+#output {
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 240px;
+}
+
+#alertbdd, #alert1 {
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+.upload-group .form-control {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.company-name {
+    align-items: left;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.sidebar {
+    background: #000000;
+    min-height: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.sidebarNavigation ul li a span {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebarNavigation ul li a p {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #323232;
+    color: white;
+    width: 210px;
+    padding: 8px 8px 8px 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.sidebarNavigation ul li:hover a p {
+    display: block;
+}
+
+.sidebarNavigation ul li:hover ul {
+    display: block !important;
+    position: absolute;
+    left: 100%;
+    display: inline-block;
+    width: 210px;
+    box-sizing: border-box;
+    top: 38px;
+}
+
+.sidebarNavigationNew li.submenu ul.accord-target {
+    display: none !important;
+}
+
+.sidebarNavigationNew li.submenu:hover ul.accord-target {
+    display: block !important;
+}
+
+.sidebar-content {
+    overflow: auto;
+    height: calc(100vh - 85px);
+}
+
+.link {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}

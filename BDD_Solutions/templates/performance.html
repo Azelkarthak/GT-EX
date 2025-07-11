@@ -1,0 +1,39 @@
+        <!-- templates/jira.html -->
+{% extends "index.html" %}
+
+{% block header %}
+
+  <!-- Header -->
+  <nav class="navbar navbar-light bg-light p-3 d-flex justify-content-between">
+    <img src="/static/logo/Gt-Exlogo.png" alt="Exavalu Logo" class="company-name" style="height: 50px;" />
+    <h1 class="h4 text-center flex-grow-1">Testing Accelerator using Performance Drift Detection Utility</h1>
+    <div style="width: 50px;"></div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+        <div class="col-md-10" id="performance-input">
+            <b>What Is This About :</b>
+        <i>Compare performance of two JSON files containing performance metrics.</i>
+        <br>
+        <b>How To Use:</b>
+        <ol>
+            <li>Upload the "Stats" Json file from the "js" folder of the Gatling report.</li>
+            <li>Click on the <button class="btn btn-danger">Compare Performance</button> button.</li>
+            <li>Our engine will compare the Gatling JSON reports from Execution 1 and Execution 2, extract the key metrics, and highlight any variations.</li>
+            <li>After the comparison, you can download the result as an Excel file.</li>
+        </ol>
+        <b>File Format:</b>
+        <i>JSON Format</i>
+          <div id="performance-info-message" class="alert alert-info mt-3"></div>
+          <form class="upload-group-performance" method="post" action="/compare_performance" enctype="multipart/form-data">
+              <label >Upload Execution 1 JSON File:</label>
+              <input class="form-control" name="json_file1" type="file" id="json-file1" accept=".json" required>
+      
+              <label  class="mt-3">Upload Execution 2 JSON File :</label>
+              <input class="form-control" name="json_file2" type="file" id="json-file2" accept=".json" required>
+      
+              <button class="btn btn-danger mt-5" id="compare-performance" onclick="initiateLoader()">Compare Performance</button>
+          </form>
+      </div>
+      {% endblock %}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="/static/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/favicon/favicon-16x16.png" sizes="16x16">
+
+    <!-- Apple Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+
+    <!-- Web Manifest-->
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+
+
+    <!-- Metadata -->
+    <meta name="description" content="Testing Accelerator with Gen AI">
+    <meta name="keywords" content="testing, genai, BDD">
+
+    <title>Testing Accelerator with Gen AI</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+
+<body>
+
+<nav class="navbar flex justify-content-around ">
+
+    <img src="/static/logo/exavalu.png" alt="Exavalu Logo"
+         class="company-name">
+    <h1>Testing Accelerator using Gen AI</h1>
+    <div></div>
+</nav>
+
+<div class="sidebar"></div>
+<nav class="menu">
+    <h3 class="px-2 text-danger">Menu Items</h3>
+    <ul class="p-0">
+        <li><a href="#">Generate BDD(File)</a></li>
+        <li><a href="#">Generate BDD(Jira)</a></li>
+        <li><a href="#">Generate Test Data</a></li>
+        <li>
+          <a href="#">Performance Results
+             <div id="analysis">Analysis</div>
+          </a>
+      </li>
+        <li><a href="#">Defect Pattern</a></li>
+    </ul>
+</nav>
+<p class="hr">
+<p>
+    {% if status %}
+<div class="alert alert-danger mt-3" id="alert1">
+    {{ status }}
+</div>
+{% endif %}
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-10" id="bdd-input">
+            <div id="bdd-info-message" class="alert alert-info mt-3"></div>
+            <form class="upload-group" method="post" action="/upload-bdd" enctype="multipart/form-data">
+                <input class="form-control" name="file" type="file" id="file-input" accept=".xls,.xlsx" required>
+                <button class="btn btn-danger mt-5" id="upload-bdd" onclick="initiateLoader()">Generate BDD</button>
+            </form>
+        </div>
+        <div class="col-md-10" id="bdd-jira-input">
+            <div id="bdd-jira-info-message" class="alert alert-info mt-3"></div>
+            <form class="upload-group-jira" method="post" action="/generate_bdd_jira" enctype="multipart/form-data">
+                <label for="jira_url">URL:</label>
+                <input class="form-control" type="url" name="jira_url" id="jira_url"
+                       placeholder="https://user.atlassian.net" required>
+                <label for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email" required placeholder="abc@xyz.com">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password" name="password" id="password" required>
+                <label for="board_id">Board Name:</label>
+                <select class="form-control" name="board_id" id="board_id" required>
+                    <option value="">Select Board</option>
+                </select>
+                <label for="sprint_id">Sprint(Active):</label>
+                <select class="form-control" name="sprint_id" id="sprint_id" required>
+                    <option value="">Select Sprint</option>
+                </select>
+
+                <button class="btn btn-danger mt-3" id="upload-jira-bdd" onclick="initiateLoader()">Generate BDD From
+                    Jira
+                </button>
+            </form>
+        </div>
+
+        <div class="col-md-8" id="test-input">
+            <div id="test-info-message" class="alert alert-info mt-3"></div>
+            <form class="upload-test" method="post" action="/generate_test" enctype="multipart/form-data">
+                <label for="lob">Line Of Business</label>
+                <select class="form-select" name="lob" id="lob" required>
+                    <option value="" disabled selected>Select LOB</option>
+                    <option value="personal auto">Personal Auto</option>
+                    <option value="Homeowners(Condo)">Home owners(Condo)</option>
+                    <option value="commercial property">Commercial Property</option>
+                    <option value="Commercial Auto">Commercial Auto</option>
+                    <option value="Workers Compensation">Workers Compensation</option>
+                </select>
+                <label for="state" class="mt-3">State</label>
+                <select class="form-select" name="state" id="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="AZ">Arizona (AZ)</option>
+                    <option value="IA">Iowa (IA)</option>
+                    <option value="IL">Illinois (IL)</option>
+                    <option value="OH">Ohio (OH)</option>
+                    <option value="WI">Wisconsin (WI)</option>
+                    <option value="IN">Indiana (IN)</option>
+                </select>
+                <label for="test_cases" class="mt-3">No of Test Cases</label>
+                <select class="form-select" name="test_cases" id="test_cases" required>
+                    <option value="" disabled selected>Select No of Test Cases</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="80">80</option>
+                    <option value="100">100</option>
+                    <option value="120">120</option>
+                </select>
+                <button class="btn btn-danger my-2" id="upload-test" onclick="initiateLoader()">Generate Test Data
+                </button>
+            </form>
+        </div>
+        <div class="col-md-10" id="performance-input">
+          <div id="performance-info-message" class="alert alert-info mt-3"></div>
+          <form class="upload-group-performance" method="post" action="/compare_performance" enctype="multipart/form-data">
+              <label >Upload Execution 1 JSON File:</label>
+              <input class="form-control" name="json_file1" type="file" id="json-file1" accept=".json" required>
+      
+              <label  class="mt-3">Upload Execution 2 JSON File :</label>
+              <input class="form-control" name="json_file2" type="file" id="json-file2" accept=".json" required>
+      
+              <button class="btn btn-danger mt-5" id="compare-performance" onclick="initiateLoader()">Compare Performance</button>
+          </form>
+      </div>
+        <div class="col-md-10" id="defect-jira-input">
+            <div id="defect-jira-info-message" class="alert alert-info mt-3"></div>
+            <div class="row">
+                <!-- Button for Summarization_and_store_in_s3 -->
+                <div class="col-md-6">
+                  <form action="/trigger_summarization" method="post">
+                    <button class="btn btn-primary my-3 w-100" type="submit">
+                      Summarization
+                    </button>
+                  </form>
+                </div>
+    
+                <!-- Button for Embedding -->
+                <div class="col-md-6">
+                  <form action="/trigger_embedding" method="post">
+                    <button class="btn btn-primary my-3 w-100" type="submit" onclick="initiateLoader()">
+                      Start Embedding
+                    </button>
+                  </form>
+                </div>
+              </div>
+            <form class="upload-group-jira" method="post" action="/generate_defect" id="query-form" enctype="multipart/form-data">
+                <label for="jira_url1">URL:</label>
+                <input class="form-control" type="url" name="jira_url" id="jira_url1"
+                       placeholder="https://user.atlassian.net" required>
+                <label for="email1">Email:</label>
+                <input class="form-control" type="email" name="email" id="email1" required placeholder="abc@xyz.com">
+                <label for="password1">Password:</label>
+                <input class="form-control" type="password" name="password" id="password1" required>
+                <label for="board_id1">Board Name:</label>
+                <select class="form-control" name="board_id" id="board_id1" required>
+                    <option value="">Select Board</option>
+                </select>
+                <label for="sprint_id1">Sprint(Active):</label>
+                <select class="form-control" name="sprint_id" id="sprint_id1" required>
+                    <option value="">Select Sprint</option>
+                </select>
+                <label for="sprint_id1">Issue_Summary(Bug):</label>
+                <select class="form-control" name="issue_id1" id="issue_id1" required>
+                    <option value="">Select Issue</option>
+                  </select>
+
+                <button class="btn btn-danger mt-3" id="submit-defect-detecction" onclick="initiateLoader()">Defect Pattern
+                </button>
+            </form>
+        </div>
+        
+
+        {% if response %}
+        <div class="col-md-4" id="output">
+            <div class="alert alert-success mt-3">
+                <h3>Download Output File From The Below button</h3>
+                <a href="{{ response }}" class="btn btn-dark mt-3">Download</a>
+            </div>
+        </div>
+        {% endif %}
+        <!--Loader-->
+        {% if not response %}
+        <div class="loader text-center" id="loader" hidden>
+            <div class="spinner-border text-danger" style="width: 5rem; height: 5rem;" role="status"></div>
+        </div>
+        {% endif %}
+        <!--End Loader-->
+    </div>
+
+</main>
+<script>
+    function initiateLoader(){
+        document.getElementById('loader').hidden = false;
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./static/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $("#jira_url, #email, #password").change(function() {
+        var jiraUrl = $("#jira_url").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+
+        // Check if all three fields are not empty
+        if (jiraUrl && email && password) {
+            // Make AJAX call to get board IDs
+            $.ajax({
+                type: "POST",
+                url: "/get_bdd_jira_boardid",
+                data: {
+                    jira_url: jiraUrl,
+                    email: email,
+                    password: password
+                },
+                success: function(response) {
+                    $("#board_id").empty();
+                    $.each(response.board_ids, function(index, board_id) {
+                        $("#board_id").append('<option value="' + board_id[0] + '">' + board_id[1] + '</option>');
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error(error);
+                    // Handle error
+                }
+            });
+        }
+    });
+
+    // Trigger AJAX call to get sprint IDs when board ID is selected
+    $("#board_id").change(function() {
+        var jiraUrl = $("#jira_url").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+        var board_id = $(this).val(); // Get the selected board ID
+
+        // Check if all four fields are not empty
+        if (jiraUrl && email && password && board_id) {
+            // Make AJAX call to get sprint IDs
+            $.ajax({
+                type: "POST",
+                url: "/get_bdd_jira_sprintid",
+                data: {
+                    jira_url: jiraUrl,
+                    email: email,
+                    password: password,
+                    board_id: board_id
+                },
+                success: function(response) {
+                    $("#sprint_id").empty();
+                    $.each(response.sprint_ids, function(index, sprint_id) {
+                        $("#sprint_id").append('<option value="' + sprint_id[0] + '">' + sprint_id[1] + '</option>');
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error(error);
+                    // Handle error
+                }
+            });
+        }
+    });
+});
+
+</script>
+
+<script>
+    $(document).ready(function() {
+      $("#jira_url1, #email1, #password1").change(function() {
+        var jiraUrl = $("#jira_url1").val();
+        var email = $("#email1").val();
+        var password = $("#password1").val();
+
+        // Check if all three fields are not empty
+        if (jiraUrl && email && password) {
+          // Make AJAX call to get board IDs
+          $.ajax({
+            type: "POST",
+            url: "/get_bdd_jira_boardid",
+            data: {
+              jira_url: jiraUrl,
+              email: email,
+              password: password,
+            },
+            success: function (response) {
+              $("#board_id1").empty();
+              $.each(response.board_ids, function (index, board_id) {
+                $("#board_id1").append(
+                  '<option value="' +
+                    board_id[0] +
+                    '">' +
+                    board_id[1] +
+                    "</option>"
+                );
+              });
+            },
+            error: function (xhr, status, error) {
+              console.error(error);
+              // Handle error
+            },
+          });
+        }
+      });
+
+      // Trigger AJAX call to get sprint IDs when board ID is selected
+      $("#board_id1").change(function() {
+        var jiraUrl = $("#jira_url1").val();
+        var email = $("#email1").val();
+        var password = $("#password1").val();
+        var board_id = $(this).val(); // Get the selected board ID
+
+        // Check if all four fields are not empty
+        if (jiraUrl && email && password && board_id) {
+          // Make AJAX call to get sprint IDs
+          $.ajax({
+            type: "POST",
+            url: "/get_bdd_jira_sprintid",
+            data: {
+              jira_url: jiraUrl,
+              email: email,
+              password: password,
+              board_id: board_id,
+            },
+            success: function (response) {
+              $("#sprint_id1").empty();
+              $.each(response.sprint_ids, function (index, sprint_id) {
+                $("#sprint_id1").append(
+                  '<option value="' +
+                    sprint_id[0] +
+                    '">' +
+                    sprint_id[1] +
+                    "</option>"
+                );
+              });
+            },
+            error: function (xhr, status, error) {
+              console.error(error);
+              // Handle error
+            },
+          });
+        }
+      });
+      // Trigger AJAX call to get Issues when sprint ID is selected
+      $("#sprint_id1").click(function() {
+        var jiraUrl = $("#jira_url1").val();
+        var email = $("#email1").val();
+        var password = $("#password1").val();
+        var board_id = $("#board_id1").val(); // Get the selected board ID
+        var sprint_id = $(this).val(); // Get the selected sprint ID
+
+        // Check if all four fields are not empty
+        if (jiraUrl && email && password && board_id && sprint_id) {
+          // Make AJAX call to get issues 
+          console.log("Making AJAX call to get issues...");
+          $.ajax({
+            type: "POST",
+            url: "/get_bdd_jira_issue_bug",
+            data: {
+              jira_url: jiraUrl,
+              email: email,
+              password: password,
+              board_id: board_id,
+              sprint_id: sprint_id,
+            },
+            success: function (response) {
+                console.log("AJAX call successful, received response:", response);
+              $("#issue_id1").empty();
+              // Add "Select All" option
+              let issues = response.issue_bugs
+              $("#issue_id1").append('<option value="select_all">Select All</option>');
+              $.each(response.issue_bugs, function (index, issue_bug) {
+                        $("#issue_id1").append(
+                        '<option value="' + issue_bug + '">' + issue_bug + '</option>'
+                        );
+                });
+              // Save the entire issues array in a hidden input for form submission
+              $('<input>').attr({
+                    type: 'hidden',
+                    id: 'all_issues',
+                    name: 'all_issues',
+                    value: JSON.stringify(issues)
+                }).appendTo('#query-form');
+            },
+            error: function (xhr, status, error) {
+                console.error("Error during AJAX call:", error);
+              console.error(error);
+              // Handle error
+            },
+          });
+        }else{
+            console.log("Form validation failed. Fields are missing.");
+        }
+      });
+      // Handle form submission
+      $('#query-form').on('submit', function(e) {
+         let selectedOption = $("#issue_id1").val();
+
+         if (selectedOption === "select_all") {
+        // If "Select All" is chosen, submit the entire issues array
+            let issuesArray = JSON.parse($("#all_issues").val());
+            // You can also log it to verify
+             console.log("Selected 'Select All'. Submitting all issues:", issuesArray);
+    }
+});
+
+    });
+  </script>
+</body>
+
+</html>

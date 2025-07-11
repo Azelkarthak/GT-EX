@@ -1,0 +1,45 @@
+Type,Defect ID/CR,"Summary
+",Automated TC ID,Comments,Applause TC ID,Priority,Date Opened,Raised By,Assigned To,Defect Status
+Defect,HRP-13773,The system is removing locked Vehicle when the drive is changed or regenerated for any reason.,TC_DriveLockAssets_01,08-01-2025 : Fixed in test and working as expected,HRP-10387,High,11/13/2024,Soumojit Sur,Ney,Closed
+Observation,,"Script is updated with 2.1 release. As per the  tc we should get bsf custom notification upon the task generation but that is not getting generated(Looks like an issue)
+",TC_DriveGeneration_FixedSite_DRDTaskCreation_01,working as expected . Custom notofication validation is not required. ,,High,02-11-2025,Soumojit Sur,,Closed
+Observation,,"Issue details- 07-01-2025 : Potential defect . Pending confirmation from Ney . Issue is related to 2071-01 - Due date calculation logic is not working for publicity review needed task.
+2.0 release change . It is yet to be updated",TC_GeneratedPublicityTaskAM_01,This is working as expected. Please make sure that we review the batch code from the step 4.,,High,02-11-2025,Soumojit Sur,,Closed
+Observation,,Issue Details : 03-01-2025 : Assertion failed need to confirm from ney.,TC_GOATS_AM_Supervisor_Profile,This is working as expected. Confusion with the Pre Requisite and some steps. I have updated the TCP with correct steps and data needs.,,High,02-11-2025,Soumojit Sur,,Closed
+Defect,HRP-14072,HRP-6067 After creation of a 'Create After Hours Call Out Management Activity'  when resources are being associated to that activity and then performing call out for the same unable to see any row under the subtab Call Out of Scheduling Console,TC_AfterHoursCallOutManagement_01,"15-01-2025: Retested and passed.
+08-01-2025: Ney confirmed this one.",HRP-6067,High,01-08-2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14088,Timezone for call out is not getting displayed in the RAC when a resource is making a call out from a job,TCExceptionConsole_RelatedRecords_01,"15-01-2025: Retested manually It is working fine.
+",,High,01-08-2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14108,HRP-7213 - Reassignment of System generated tasks to the new AM/DM is not happening for the 'Post Drive Analysis' Task,TC_Portfolio_Change_Reassign_01,"16-01-2025: Currently It is in DEV 
+15-01-2025: Automation script got failed at the same place. - This is a hot fix which will be best from Prod Copy tomorrow
+13-01-2025: Ney confirmed this one.
+This will be fixed in this release  but not a critical issue.",HRP-7213,High,1/13/2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14112,HRP-12142 - Post Drive Analysis Task the checklist items are not getting populated under the checklist tab,TC_DriveAnalysisTask_StaffingConstraints_01,"17-01-2025: Retested and Passed.
+15-01-2025 - back sync for a hot fix . Should be available for retest tomorrow.",HRP-12142,High,1/14/2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14125,Days of Week Preferred and Declined are not getting highlighted in Green and Yellow on Plan A Drive tab on Opportunity,TC_DayPreference_Account_PlanDrive_BDO_01,"16-01-2025: Retested and the script got passed.
+15-01-2025 - Dev team is assigned . This is a a regression bug",HRP-1645,High,1/15/2025,Soumojit Sur,Ney,Closed
+Observation,Not logged in JIRA,"Unable to add Covering Recruiter  - The issue was reported to Ney and the ticket was sent back to Dev. 
+Later it is fixed and working","Impacted all test cases which are using the following callible TC - ""AddUserToCoveringRecruTeamOnAccountPage_AccManager""",Due to this CR there were many testcases got failed as we were not able to add any AM/DM to the account teams.The ticket then goes back to DEV.,HRP-13351,High,03-11-2025,Soumojit Sur,,Closed
+Defect,HRP-14421,HRP-6144 HRP-11740 - System does not create NEW TTII for Sites+NewCO when CO is moving (new staging location),"TC_TravelTime_StagingLocations_Creation_DCR
+TC_TravelTime_New_Refresh_Button
+TC_TravelTime_SCO_NEW_IndexRefresh_Button
+TC_TT_Refresh_SiteToCo
+TC_TT_Refresh_SiteToCo_2","27-03-2025: Defect needs to be retested.
+17-03-2025 - Defect triaged and informed Gejuana . ","HRP-6144 
+HRP-11740",High,2/25/2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14588,User is able to create a series for mobile drives even if the start date is less than 6 months,TC_TemplateCreation_RecurringeDrive_02,,,High,3/18/2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14632,"After changing Double Red Procedures Projected Value in the time of capturing impacts throwing error ""Error notification. this.helper.updateDriveAverageStaffCapacity is not a function""",TC_NEW_ExcessStaffCapacity_Calculation_FS,,,High,3/24/2025,Sumit Dutta,Ney,Closed
+Defect/CR,HRP-14633/HRP-13961,After removing the value from Travel Time Breakdown JSON Backup in associated SCO Travel Time Breakdown Data is not coming,TC_TravelTime_SCO_Breakdown_Format,25-03-2025: Ney has confirmed that  It was identified as 'Change of Functionality' rather than an actual issue.,,High,3/24/2025,Sumit Dutta,Ney,Closed
+Defect,HRP-14634,While doing plan a drive for fixed site type the drives are not going to the tentative status automatically,"TC_FSDriveGenerationAppoinments_01
+TC_FSDriveGeneration_DefferalQNS_ENMasse_01
+TC_Volunteers_QuantityZero_VariationType_01
+TC_PreferredDates_Drive_01
+TC_DriveChanges_LinkedDrives_CrossRegion_Fixed
+TC_FSDriveReccurenceGenerationAppoinments_01
+TC_APSPlanner_ReviewDrive_DrivesInheritBothAccount&SiteTags_01",,,High,3/24/2025,Soumojit Sur,Ney,Closed
+Defect,HRP-14661,Not able to see the Jobs and Job allocations on the drive staffing modal - in scheduling console as well as in the drive scheduling tab,,,,High,3/27/2025,Soumojit Sur,Ney,Closed
+Observation,Yet to be logged,After changing the new stagging location end date all TTII are not generating,TC_TravelTime_StagingLocations_Creation_DCR,,,,04-02-2025,Sumit Dutta,Ney,Closed
+Defect,HRP-14753,The system is not assigning the Post Drive Analysis Task AM to the covering recruiter,,,,Medium,04-09-2025,Soumojit Sur,Ney,Open
+Defect,HRP-14754,The district value for the Baltimore MD Collection operation has been changed,,Environment issue. Hence rejected,,Minor,04-09-2025,Soumojit Sur,Ney,Rejected
+Defect,HRP-14125,On Opportunity object under Plan A Drive tab Days of Week Declined and Preferred are not getting highlighted in Yellow and Green  ,TC_DayPreference_Account_PlanDrive_BDO_01,"16-01-2025: Retested and the script got passed.
+15-01-2025 - Dev team is assigned . This is a a regression bug",HRP-1645,High,1/15/2025,Soumojit Sur,Ney,Closed

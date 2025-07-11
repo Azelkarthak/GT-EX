@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gherkin Test Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav img {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        nav h1 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        label {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output-container {
+            margin-top: 30px;
+            margin-left: 240px; /* slightly more than sidebar width for spacing */
+            padding: 20px;
+        }
+
+        .output {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            white-space: pre-wrap;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .file-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .copy-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .copy-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: #555;
+        }
+
+        .copy-icon:hover svg {
+            stroke: #007bff;
+        }
+
+        #loader {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #loader img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .main-content {
+    margin-left: 240px; /* slightly more than sidebar width for spacing */
+    padding: 20px;
+}
+
+
+        @media (max-width: 600px) {
+            nav h1 {
+                font-size: 18px;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+{% include 'sidebar.html' %}
+<!-- Navigation -->
+
+ <div class="main-content">
+<nav>
+    <!-- <img src="/static/logo/exavalu.png" alt="Exavalu Logo"> -->
+    <h1>Intelligent Regression using GenAI</h1>
+</nav>
+
+<form method="POST" onsubmit="showLoader()">
+    <!-- Center Dropdown -->
+    <select name="center" id="center" onchange="updateKeywords()" required>
+        <option value="">-- Select Center --</option>
+        <option value="PolicyCenter">PolicyCenter</option>
+        <option value="ClaimCenter">ClaimCenter</option>
+        <option value="BillingCenter">BillingCenter</option>
+    </select>
+
+    <!-- LOB Dropdown -->
+    <select name="lob" id="lob" onchange="updateKeywords()" required>
+        <option value="">-- Select LOB --</option>
+        <option value="PA">Personal Auto</option>
+        <option value="HO">Homeowners</option>
+    </select>
+
+    <!-- Keywords Dropdown -->
+    <select name="keyword" id="keyword" required>
+        <option value="">-- Select Keyword --</option>
+    </select>
+
+    <button name="action" value="scenario" type="submit">Generate Test Scenario</button>
+</form>
+</div>
+
+<script>
+    let keywordMapping = {};
+
+    // Load JSON on page load
+    fetch('/static/dropdown_mapping.json')
+        .then(response => response.json())
+        .then(data => {
+            keywordMapping = data;
+        })
+        .catch(error => console.error('Error loading keyword mapping:', error));
+
+    function updateKeywords() {
+        const center = document.getElementById("center").value;
+        const lob = document.getElementById("lob").value;
+        const keywordSelect = document.getElementById("keyword");
+
+        // Reset keywords dropdown
+        keywordSelect.innerHTML = '<option value="">-- Select Keyword --</option>';
+
+        if (center && keywordMapping[center]) {
+            // Get common keywords for center, or empty array
+            const commonKeywords = keywordMapping[center]["COMMON"] || [];
+
+            // Get LOB keywords if LOB is selected and exists, else empty array
+            const lobKeywords = lob && keywordMapping[center][lob] ? keywordMapping[center][lob] : [];
+
+            // Combine arrays
+            const combinedKeywords = [...commonKeywords, ...lobKeywords];
+
+            // Append keywords to dropdown
+            combinedKeywords.forEach(item => {
+                const option = document.createElement("option");
+                option.value = item.value;
+                option.text = item.text;
+                keywordSelect.appendChild(option);
+            });
+        }
+    }
+</script>
+
+
+
+    <!-- Loader -->
+    <div id="loader">
+        <img src="{{ url_for('static', filename='logo/loader.gif') }}" alt="Generating...">
+        <p>Generating Gherkin Test Scenario. Please wait...</p>
+    </div>
+
+    <!-- Display Results -->
+    {% if results %}
+        <div class="output-container">
+            <h3>Generated Test Scenarios:</h3>
+            {% for item in results %}
+                <div class="output">
+                    <div class="file-title">{{ item.path }}</div>
+                    <pre id="result{{ loop.index }}">{{ item.result }}</pre>
+                    <button class="copy-icon" onclick="copyToClipboard('result{{ loop.index }}')" title="Copy to Clipboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M8 4h10a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V8l4-4z" />
+                        </svg>
+                    </button>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p></p>
+    {% endif %}
+</div>
+
+<script>
+    function showLoader() {
+        document.getElementById('loader').style.display = 'block';
+    }
+
+    function copyToClipboard(elementId) {
+        const text = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("Copied to clipboard!");
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+    }
+</script>
+
+</body>
+</html>

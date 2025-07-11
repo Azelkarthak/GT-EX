@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Update Keyword Mapping</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .main-content {
+      margin-left: 240px;
+      /* keep sidebar space */
+      padding: 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
+      /* Remove max-width restriction */
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      /* Make form full width */
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #333;
+      font-size: 14px;
+    }
+
+    select,
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #333;
+      margin: 0 0 20px 0;
+      /* Optional: matches nav spacing */
+    }
+
+    p.message {
+      /* Remove max-width and center margin */
+      margin: 10px 0 20px 0;
+      color: green;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'sidebar.html' %}
+  <div class="main-content">
+    
+    <form method="POST" action="/update_keywords" novalidate>
+      <h1> Update Keyword Mapping</h1>
+    {% if message %}
+    <p class="message">{{ message }}</p>
+    {% endif %}
+      <label for="center">Center</label>
+      <select name="center" id="center" required>
+        <option value="">-- Select Center --</option>
+        <option value="PolicyCenter">PolicyCenter</option>
+        <option value="ClaimCenter">ClaimCenter</option>
+        <option value="BillingCenter">BillingCenter</option>
+      </select>
+
+      <label for="lob">LOB</label>
+      <select name="lob" id="lob" required>
+        <option value="">-- Select LOB --</option>
+        <option value="COMMON">Common for all LOBs</option>
+        <option value="PA">Personal Auto</option>
+        <option value="HO">Homeowners</option>
+      </select>
+
+      <label for="keyword">Keyword</label>
+      <input type="text" name="keyword" id="keyword" placeholder="Enter new keyword" required />
+
+      <label for="keyword_dependency">Keyword Dependency <small>(comma separated, optional)</small></label>
+      <input type="text" name="keyword_dependency" id="keyword_dependency"
+        placeholder="e.g. dependency1, dependency2" />
+
+      <button type="submit">Update</button>
+    </form>
+  </div>
+</body>
+
+</html>

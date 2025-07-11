@@ -1,0 +1,17 @@
+Microsoft Windows [Version 10.0.26100.3915]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>netstat -ano | findstr :8180
+  TCP    0.0.0.0:8180           0.0.0.0:0              LISTENING       1936
+  TCP    [::]:8180              [::]:0                 LISTENING       1936
+
+C:\Users\user>tasklist /FI "PID eq 1936"
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+java.exe                      1936 Console                    1  23,32,584 K
+
+C:\Users\user>taskkill /PID 1936 /F
+SUCCESS: The process with PID 1936 has been terminated.
+
+C:\Users\user>

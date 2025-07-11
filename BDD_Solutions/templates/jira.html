@@ -1,0 +1,52 @@
+<!-- templates/jira.html -->
+{% extends "index.html" %}
+
+{% block header %}
+
+  <!-- Header -->
+  <nav class="navbar navbar-light bg-light p-3 d-flex justify-content-between">
+    <img src="/static/logo/Gt-Exlogo.png" alt="Exavalu Logo" class="company-name" style="height: 50px;" />
+    <h1 class="h4 text-center flex-grow-1">Testing Accelerator using BDD Based Test Automation</h1>
+    <div style="width: 50px;"></div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<div class="col-md-10" id="bdd-jira-input">
+  <b>What Is This About :</b>
+        <i>Transform your user stories into BDD feature file scenarios seamlessly using Jira.</i>
+        <br>
+        <b>How To Use:</b>
+        <ol>
+            <li>Enter the required Jira details.</li>
+            <li>Click on the <button class="btn btn-danger">Generate BDD From Jira</button> button to generate BDD scenarios.</li>
+            <li>Our Gen AI engine will then generate BDD scenarios based on your user stories.</li>
+            <li>After the scenarios are generated, click on the <button class="btn btn-dark">Download</button> button to save the BDD scenario Excel file to your device.</li>
+        </ol>
+  <h3 class="mt-4">Generate BDD from Jira</h3>
+  <div id="bdd-jira-info-message" class="alert alert-info mt-3">Fill the form below to generate BDD from Jira.</div>
+  
+  <form class="upload-group-jira" method="post" action="/generate_bdd_jira" enctype="multipart/form-data">
+    <label for="jira_url">URL:</label>
+    <input class="form-control" type="url" name="jira_url" id="jira_url" placeholder="https://user.atlassian.net" required>
+
+    <label for="email" class="mt-2">Email:</label>
+    <input class="form-control" type="email" name="email" id="email" placeholder="abc@xyz.com" required>
+
+    <label for="password" class="mt-2">Password:</label>
+    <input class="form-control" type="password" name="password" id="password" required>
+
+    <label for="board_id" class="mt-2">Board Name:</label>
+    <select class="form-control" name="board_id" id="board_id" required>
+      <option value="">Select Board</option>
+    </select>
+
+    <label for="sprint_id" class="mt-2">Sprint (Active):</label>
+    <select class="form-control" name="sprint_id" id="sprint_id" required>
+      <option value="">Select Sprint</option>
+    </select>
+
+    <button class="btn btn-danger mt-4 w-100" id="upload-jira-bdd" onclick="initiateLoader()">Generate BDD From Jira</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{
+  "PolicyCenter": {
+    "PA": [
+      {
+        "value": "Accident",
+        "text": "No of Accidents"
+      },
+      {
+        "value": "Endorsement",
+        "text": "Endorsement"
+      }
+    ],
+    "HO": [
+      {
+        "value": "Condo",
+        "text": "Condominiums"
+      }
+    ]
+  },
+  "ClaimCenter": {
+    "COMMON": [
+      {
+        "value": "FNOL",
+        "text": "First Notice of Loss"
+      },
+      {
+        "value": "Endorsement",
+        "text": "Endorsement"
+      }
+    ],
+    "PA": [
+      {
+        "value": "Discount",
+        "text": "Discounts"
+      }
+    ]
+  },
+  "BillingCenter": {
+    "PA": [
+      {
+        "value": "Discount",
+        "text": "Discounts"
+      }
+    ]
+  }
+}

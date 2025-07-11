@@ -1,0 +1,1002 @@
+﻿Summary,Issue key,Issue id,Status,Project key,Project name,Priority,Assignee,Components,,Custom field (Root Cause)
+Stab 4_IMCPPCOP LoBs_Line category typelist values for ClaimCost/Indemnity reserve values are displayed incorrectly,XXX-34126,213310,To Do,XXX,ANIC P&C Migration,Medium,Martin,ClaimCenter,,Coding
+Auto > For few cases description Fields are not updating properly from Policy Level to the Covered Symbol Screen.,XXX-34125,213309,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_Rating_GL_Cancellation_Manuscript Premium is NOT displayed during Flat cancellation in Cost change detail tab.,XXX-34124,213308,To Do,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Jasper CE - Orange Boarder line is not available on the prompts.,YYY-16552,213307,Ready for Dev,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Jasper PE - Policy Review screen OCL checkbox are displayed incorrectly,YYY-16551,213306,To Do,YYY,ANIC WC Migration,Medium,Williams,Digital,,Coding
+"Jasper CE - Filling a claim is always displaying ""Possibly duplicate claim"" message.",YYY-16550,213304,Ready for Dev,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Stab4_XXX-31562-CPP_CP+Crime -Renewal- - Limit value should  increased based on the Inflation guard selected on Blanket screen and building screenOccupancy And Personal Property-not working ,XXX-34122,213303,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4_PC_MEL_NewSubmission - User able to quote the policy without giving Minimum Premium value in line cov screen,XXX-34119,213300,In Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_PC_CP_Renewal_Inflation guard set on blanket during submission is not applied during Renewal,XXX-34118,213299,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Jasper BC QA01 env_Documents are not getting generated under Account-->Documents Screen,YYY-16549,213296,To Do,YYY,ANIC WC Migration,High,Williams,BillingCenter,,Coding
+PROD | GWCM Stage to EDW balance failure | 08/08,BBB-8080,213290,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_Integ_Medicare Reporting_The Delete Record is not getting created upon updating the Compensability status to Denied.,YYY-16548,213289,Requirements,YYY,ANIC WC Migration,High,Martin,Integrations,,Coding
+BC should have sent the Rescind Cancellation to ESB for 24AWS13156,ZZZ-1449,213263,To Do,ZZZ,BillingCenter,Medium,Williams,BillingCenter,,Coding
+Stab4_CC_Incident Limit is not displayed on Personal Property Coverage,XXX-34097,213260,To Do,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Coding
+"PE Submission for CA Generating an error message ""The Selected underwriting company (XYC Crop Premier Insurance Company) is not valid for all the states in the policy. ",EEE-1853,213258,To Do,EEE,PolicyCenter,Critical,Williams,ProducerEngage,,Coding
+CLM00054 - WCIRB RBBBrt Validations 6.30.2024- Because of switching of States,BBB-8078,213256,Invalid/Duplicate,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Invalid Quote was generated unable to Rewrite,EEE-1852,213255,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+UAT1 - Correct Form # IM 7420 Storage Location Coverage,XXX-34096,213254,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+MedicalBillFeedIndicator - Not Populated As Expected,BBB-8077,213253,New Item,BBB,EDW Production Operations,Medium,David,,,Coding
+Stab3-CA7 Audit: Commercial Auto Enhancement Endorsement Coverages and its respective premiums should be displayed during Premium Report as with proration as per Reporting Period.,XXX-34095,213252,To Do,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_CA7 Vehicle Import: Primary Class Code & Few Other details are getting reset to None for the Trucks imported through Vehicle Import/Export functionality when Location is changed for those respective Vehicles.,XXX-34094,213251,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1 - IM 7155 Sched of Coverages - Riggers Coverage and IM 7156 Riggers Legal Liability Coverage: UI is missing Deposit Premium and Minimum Premium also dropdown in Manual Premium does not display all options,XXX-34089,213246,To Do,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+PROD| GL Paid Loss – 10 records got errored out| 08/07,BBB-8074,213242,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+UAT1 - Correct Form # IM 7419 Fraud and Deceit Limitation,XXX-34088,213240,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Generation Updates for State.LossAdjustmentFeePercentage and UnitAtRisk.USLHFeePercentage,BBB-8073,213239,New Item,BBB,EDW Production Operations,High,David,,,Coding
+Stab4_PC_MEL_NewSubmission - Waiver of Our Right to Recover from Others Endorsement condition cov term issue,XXX-34087,213238,In Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+ Stab4-  XXX-31569_CPP_Crime +GL_Policychange_mid term _invalid quote,XXX-34086,213237,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Prod| AL_UW_RES job failed on 08/07,BBB-8072,213236,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+ccst_claim : having error in Cpmicreateuserid_Ext,XXX-34085,213235,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+ccst_activity : error in Cpmicreateuserid_Ext,XXX-34084,213233,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+PE: Submission Intake rollback 2407 code,GGG-1478,213232,In Dev,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+Stab4_Rating_GeneralLiability-PolicyChange-> Flat premiums are not getting prorated,XXX-34083,213231,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,Rating,,Coding
+UAT1 - Correct Form # IM 7418 Breakage Limitation,XXX-34082,213230,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+PE: Policy Summary page Cancellation Date and Reason not on the same line,GGG-1477,213229,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+PE/CE: Payroll Reporting Sorting incorrectly,GGG-1476,213228,Requirements,GGG,GW Cloud Digital,Very High,Williams,,,Coding
+Stab4 BC QA06env_Premium Deferral functionality-'Invoices are released from hold before submitting the Final Audit',XXX-34081,213227,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+Stab 4_XXX-31555-CPP_CP+Crime +GL--Policy: View button not displayed-as not able to open doc in  QA6,XXX-34080,213226,Ready for Dev,XXX,ANIC P&C Migration,High,David,SmartCOMM,,Duplicate
+Update ANIC Agency Lookup Table (ANICAgencyMapping) - Agencies A80 D50,BBB-8071,213225,Done,BBB,EDW Production Operations,Critical,Williams,,,
+Stab4-  XXX-31548_CPP_Crime +GL_-Policy change for mid -term policy getting invalid quote in QA6,XXX-34079,213224,In Dev,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+UAT1 - Correct Form # IM 7360 Breakage Endorsement,XXX-34078,213222,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Jasper CE - FNOL Additional information page throwing error prompt upon routing back to previous screen with an added party on additional information page.,YYY-16546,213221,In Dev,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Stab4_PC_PolicyChange_CP 1034 form should not trigger,XXX-34077,213219,Ready for QA,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4_PC_PolicyChange_CP 530 form not triggered,XXX-34076,213218,In Dev,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+Stab4_PC_CU_Validation error is not throwing on adding WC internal policy with maritmine coverage with limit < 500000,XXX-34075,213217,In Dev,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+ODS_DetailCoverage AU Nonowned - INTSEC : Missing records in the ODS_DetailCoverage for AU Nonowned flow. ,AAA-6073,213216,Done,AAA,AAA,Medium,Williams,,,Coding
+UAT1 - Occ/Agg Limits not showing on Risks screen for Flood/Earthquake when Blanket applies,XXX-34074,213214,To Do,XXX,ANIC P&C Migration,Medium,Peter,,,Coding
+Stab4_Rating_Commercial Package_Renewal: Getting Invalid Quote during Renewal with Rules Mod value indicating Null in Partial Worksheet,XXX-34073,213212,In Dev,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab 4_CC_All Lobs_Catastrophe_Perils Value Mismatch for Losstype Auto/property/Liability in Catastrophe Admin screen,XXX-34072,213211,Ready for Dev,XXX,ANIC P&C Migration,High,Martin,ClaimCenter,,Coding
+QA environment - Invalid quote issue occured during policy change ,YYY-16545,213208,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Environment
+IM 7205 01 12 & IM 7207 01 12 Commercial Inland Marine - Electronic Data Processing: Scheduled items are not mapped in the payload,XXX-34071,213207,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+PolicyChange_CP 15 45 09 17_Need Payload,XXX-34070,213205,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+PolicyChange_CP 04 17 10 12_Need Payload,XXX-34069,213204,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Render Exception occured in QA environment ,YYY-16544,213202,Ready for Dev,YYY,ANIC WC Migration,Medium,Peter,Jasper,,Coding
+Stab4_PC_CU_Total Unmanned Aircrat Aircraft (Other Than Unmanned Aircraft) And Watercraft Liability Exclusion,XXX-34068,213201,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+QA1 - Application error when user click on Issue policy ,YYY-16543,213200,Done,YYY,ANIC WC Migration,Very High,Williams,Jasper,,Coding
+PROD | Mismatch in UWPricingResponseScoringResultReason | 08/07,BBB-8070,213199,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab 4_CC_CPP CIM MEL WC_Catastrophe_In FNOL & Post FNOL Catastrophe dropdown values are not retrieved based on Loss type for CPP (Property) CIM MEL & WC.,XXX-34066,213196,In Dev,XXX,ANIC P&C Migration,Very High,John,ClaimCenter,,Coding
+Jasper CE - Add User Creation Failing(Timeout),YYY-16542,213195,In Dev,YYY,ANIC WC Migration,High,Williams,Jasper,,Coding
+custom_note : counts are not matching for Subject Conversion-Vehicle/Drivers,XXX-34065,213193,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+custom_note : counts are not matching for Subject Conversion-material damage,XXX-34064,213192,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+custom_note : counts are not matching for Subject :Conversion-Property,XXX-34063,213191,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+Stab4_Rating_Commercial Output_Policy Change_TX - Getting Invalid Quote during Policy change OOS transaction.,XXX-34062,213190,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+Prod| GWPC- Duplicate records in SplitPeriod table on 08/07,BBB-8069,213189,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_PC_GL_NB- Rate is 0 for all the exposures on Quote screen,XXX-34061,213188,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+ccst_note: issue at Extraction logic for subject :Conversion-Material Damage,XXX-34059,213186,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+ccst_note: issue at Extraction logic for Subject : Conversion-Property,XXX-34058,213185,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+3.1: [EWD-5819] : AAA:UnitAtRisk: UnitAtRiskLogicalDeleteIndicator is not populating as per requirement.,AAA-6068,213184,Ready For Test,AAA,AAA,Medium,Williams,,,Coding
+Class codes applied to submission not displayed in Quote screen or QPAKT,EEE-1850,213182,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+UAT1 IM 7331 02 12 AZ Rolling Stock Coverage - Schedule of Coverages - remove Coinsurance from UI,XXX-34057,213176,Ready for Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Requirements
+UAT1 - IM 7331 01 12 Rolling Stock Coverage - Schedule of Coverages issues,XXX-34056,213173,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_CC_Jurisdiction is not set when a new property incident is created/updated for Property,XXX-34055,213171,In Dev,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Coding
+UAT1 - CL 1045 not generating on Forms screen and not coming thru in payload - COP & IM,XXX-34054,213161,Blocked,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+UAT1 - Unable to pull payload for MEL policy changes ,XXX-34053,213160,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+PROD:  Business Group <None> for General Ledger,CC-5263,213155,To Do,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+Technical - EventBridge - Initial load (batch data) is not coming via Eventbridge events,AAA-6060,213154,New Item,AAA,AAA,High,Williams,,,Coding
+Technical - EventBridge - Messages are coming with blank tables written.,AAA-6059,213153,New Item,AAA,AAA,High,Williams,,,Coding
+AAA_Policy_DeductibleBillingTypeCode has NULL values ,AAA-6058,213152,New Item,AAA,AAA,Medium,Martin,,,Coding
+Two Commission payments did not get picked up in the BL file,ZZZ-1444,213140,To Do,ZZZ,BillingCenter,Critical,Martin,,,Coding
+Correct State of Venue on USLH Claims for CMS Section 111 Reporting,CC-5262,213128,In Dev,CC,Claim Center,Medium,Williams,,,Coding
+Prod| GL Paid Loss - 2 records errored out on 08/06,BBB-8068,213127,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+CLONE - Stab4_PC_CU_Additional Coverages_Limited Coverage For Designated Unmanned Aircraft (Coverage B Only),XXX-34047,213124,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+CLONE - Stab4_PC_CU_Additional Coverages_Limited Coverage For Designated Unmanned Aircraft (Coverage A Only),XXX-34046,213123,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+CLONE - Stab4_PC_CU_Additional Coverages_Limited Coverage For Designated Unmanned Aircraft,XXX-34045,213122,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4_PC_CU_Additional Coverages_Designated Location(s) Aggregate Limit Of Insurance,XXX-34044,213120,In Dev,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_PC_CP_NewSubmission_Flood Coverage on Policy & Earthquake Coverage on Policy UWI not trigerred,XXX-34043,213117,In Dev,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+SL - Non EDW Data Is Missing For July Month End,BBB-8067,213112,Done,BBB,EDW Production Operations,Critical,David,,,Coding
+Stab4_PC_MEL_NewSubmission - large deductible cov term issues,XXX-34042,213111,Ready for QA,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 - Correct Form # for IM 7408 Fine Arts Schedule - Comprehensive Form,XXX-34037,213105,Ready for QA,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_Rating_Commercial Output_Policy Change_LA - Premium is NOT matching when we perform Mid Term Policy change and add location.,XXX-34036,213104,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Incorrect Pattern codes displayed for Umbrella and Commercial Auto,XXX-34035,213102,To Do,XXX,ANIC P&C Migration,Very High,Peter,Rating,,Coding
+Unable to see roll deposit during policy change transaction,YYY-16541,213097,Cancelled,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+[AAA-5824]: Staging: Unit At Risk: ReportingBureauCode Column is not populating as per requirement.,AAA-6049,213095,Ready For Test,AAA,AAA,Medium,Williams,,,Coding
+ Stab 4_XXX-31555-CPP_CP+Crime +GL-At cancellation& reinstatement-notice of cancellation  and cancellation packet still blank-Policy: doc not able to open in QA5&QA6-all doc are not able open,XXX-34034,213094,Cancelled,XXX,ANIC P&C Migration,Very High,Martin,PolicyCenter,,Coding
+August Release - CORE Approved Tickets,BBB-8066,213093,Waiting for Data Load,BBB,EDW Production Operations,Medium,David,,,Coding
+PatterCode for Actual Loss Sustained Coverage is not valid in Payload,XXX-34033,213091,Done,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Invoices are not getting Billed in QA01env,YYY-16540,213090,Done,YYY,ANIC WC Migration,Very High,Peter,BillingCenter,,Coding
+SBT Gap -Stab4_PC_CP_PolicyFile_Location screen not visible or displayed on Policy file,XXX-34032,213089,Requirements,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Jasper-ODS- Error occured while fetching ODS polices in CC,YYY-16539,213088,Done,YYY,ANIC WC Migration,Medium,John,Integrations,,Data
+ccst_transaction_pmt : having issue with  RecoverycodingID field,XXX-34031,213087,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+Stab4_PC_CU_Renewal is not triggering when policy has both external and internal underlying policy ,XXX-34030,213086,Ready for Dev,XXX,ANIC P&C Migration,Medium,John,PolicyCenter,,Coding
+ having a issue in exposure.lossparty,XXX-34029,213085,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+P-505 form - not applicable for AZ state ,YYY-16538,213079,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Claim- Notes having issue with Typelist field : Topic,XXX-34023,213078,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+ccst_claim: Having issue with the field ReopeningRequestedDate_Ext,XXX-34022,213077,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+QA env - Vol type policy ->  When user click on get More info link under Quote screen -> blank screen has been displayed  instead  Analytics Unified Dashboard should display ,YYY-16537,213076,To Do,YYY,ANIC WC Migration,Medium,Williams,Integrations,,Coding
+"Stab 4_BC CPP_Past Due Amount is displaying as '0' in Demand Letter34 document for ""Past Due delinquency"" workflow",XXX-34021,213075,To Do,XXX,ANIC P&C Migration,Very High,Williams,BillingCenter,,Coding
+AZ state - maritime coverage -> 2 coverterms are not applicable for AZ state ,YYY-16536,213074,Ready for QA,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+ccst_Claim having issue with field -FaultRating,XXX-34020,213073,To Do,XXX,ANIC P&C Migration,Medium,Williams,Claims Conversion,,Coding
+Issues_CG DS 04 07 98_Pending Data Elements,XXX-34019,213064,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issue_CG DS 03 07 98_Pending Data Elements,XXX-34018,213063,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issue_CG DS 02 07 98_Pending Data Elements,XXX-34017,213062,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issue_CG DS 01 10 01_Pending Data Elements,XXX-34016,213060,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+UAT1 - IM 7486 Refrigerator Breakdown Coverage - system allowing deductible to be less than $1000 and Property in Vehicle Coverage not defaulting from Part coverage level,XXX-34015,213039,In Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1  - Form IM 7472 Trailer Schedule - Motor Truck Cargo issues,XXX-33574,212596,Ready for QA,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+SmartComm - Welcome Letter Changes to comply with CA Bill 1870,EEE-1847,212594,To Do,EEE,PolicyCenter,Normal,Williams,PolicyCenter,,Coding
+UAT1 - Correct form # for IM 7404 Additional Premises Schedule - Fine Arts Comprehensive Form,XXX-33573,212593,To Do,XXX,ANIC P&C Migration,Medium,Martin,Forms Mapping,,Coding
+[DbDrop] - Stab4-IM-Motor Truck Cargo-Contingent Cargo- Exclusions-Property Excluded and Theft Exclusion cov terms are not as per requirement,XXX-33572,212592,Blocked,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+Stab4-IM-Motor Truck Cargo-Contingent Cargo- Additional Coverages screen-Cov terms 'Adulterated Food Limit' and 'Adulterated Food Deductible' are displayed as Limit and Deductible,XXX-33571,212590,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Not a Defect
+AL usp_Load_DIM_DerivedClaimType_Reprocess needs a small tweak,BBB-8065,212589,In Test,BBB,EDW Production Operations,Medium,David,,,Coding
+Stab4-IM-Motor Truck Cargo-Contingent Cargo- Contingent Cargo Coverage and Schedule of Coverages should be unchecked checkboxes when user select Contingent cargo from dropdown but currently by defaulted they are checked,XXX-33570,212587,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1 - IM 7470 (Ed 01 12 and 02 12) Mobile Equipment - Deductible Min $1000,XXX-33568,212584,In Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1 - Occurrence Limit not totaling - Schedule of Coverages Museum Collection Coverage Fine Art Comprehensive Form,XXX-33567,212583,In Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3-CA7: Without change in Vehicle Coverage Limitsthere shouldn’t be 2 slices created for the Composite Rated Vehicles during MidTerm PolChange & also 2nd slices shouldn’t have premium during Final Audit post  MidTerm PolChange,XXX-33566,212582,To Do,XXX,ANIC P&C Migration,High,Williams,Rating,,Not a Defect
+UAT1 - Wrong table for Schedule of Coverages Museum Collection Coverage Fine Art Comprehensive Form,XXX-33565,212580,To Do,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab3-CA7 Audit: During both Premium Report & Final Audit Audited Premium is not calculated & displayed properly for the Composite Schedules which are added in Mid-Term Policy Change.,XXX-33564,212579,Ready for QA,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Policy change_CU 24 50 06 15 CU 24 51_Need Payload,XXX-33563,212578,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Stab3-CA7 Audit: Proration is not applied correctly to Audited Premium for Auditable Coverages during Premium Report,XXX-33562,212577,In Dev,XXX,ANIC P&C Migration,High,Martin,Rating,,Coding
+Pending_Data_Element - CR DS 03 08 13,XXX-33561,212576,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Policy change_(CG 24 50 CG 24 51 & CG 24 52)_Need Payload,XXX-33560,212575,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+[SME Clarification] - Stab3-GL7 Audit: During Premium Report Terrorism Premium should be calculated using Basis as per the Reporting period not full Annual period.,XXX-33559,212573,Blocked,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3-GL7 Audit: Exposure Level Terrorism Premiums of Non-Auditable Exposure Classes aren’t displayed during Premium Report.,XXX-33558,212572,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Issues_CO 1277 04 02_Payload Required,XXX-33557,212568,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+UAT1 - Inland Marine - QuoteScreen[] Not Mapped in Payload,XXX-33556,212567,To Do,XXX,ANIC P&C Migration,Very High,Williams,Forms Mapping,,Coding
+UAT1 - Auto - AZ CA & MN Assessments Not Mapped in Payload,XXX-33555,212566,To Do,XXX,ANIC P&C Migration,High,Williams,Forms Mapping,,Coding
+Stab3-GL7 Audit: Estimated & Audited Basis/Premium aren’t correctly displayed for Enhancement Endorsement CoveragesContractor's Errors And Omissions Endorsement & Limited Pollution Liability Coverage for Contractors during Interim Reporting.,XXX-33554,212564,Ready for Dev,XXX,ANIC P&C Migration,High,Peter,Rating,,Coding
+UAT1 - IM 7257 Trip Transit Cvg - Sched of Cvgs: List of issues,XXX-33553,212563,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Requirements
+"Stab4_Rating_Commercial Package_New Submission_""Agency Expense Reduction Mod"" not applied for applicable coverages(Government Entity Type) in Crime LOB",XXX-33551,212557,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+PE/CE: Monthly Loss Runs not working as expected,GGG-1419,212541,Ready for Dev,GGG,GW Cloud Digital,High,Williams,,,Coding
+AL dim_PolicyLine is missing records from dbo.AutoLineOfInsurance,AAA-6037,212539,New Item,AAA,AAA,Medium,Williams,,,Coding
+Stab4_Rating_Commercial Property_Submission_KS -  totalPremium is incorrect for Property Coverage Enhancement,XXX-33550,212537,In Dev,XXX,ANIC P&C Migration,High,Martin,Rating,,Coding
+Payload missing data/coverage terms for form IM 7466 Property Excluded IM 7474 Theft Exclusion,XXX-33549,212533,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_PC_GL_NB- IL 00 17 Common Policy Conditions is not getting inferred,XXX-33548,212531,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab4_Rating_Commercial Property_Submission_KS - Getting Invalid quote on click of Quote button,XXX-33547,212529,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Not a Defect
+Stab4_PC_GL_NB- Policy Package (PPAKT) is not having all the forms from Forms UI,XXX-33546,212528,Done,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+[ReqUpdate] - UAT1 - CP 03 21 06 07 Wind/Hail % ded form not showing on the Forms screen and missing from payload,XXX-33545,212527,Ready for QA,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Stab4_PC_MEL_NewSubmission - PN-910 form is not getting triggered,XXX-33544,212526,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+"Stab4_Rating_Commercial Package_All Transactions: ""Rules Mod"" value never resets in worksheet even though changed to ""No"" for Government Crime & Fidelity coverages. Also not editable after first entry.",XXX-33543,212525,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab4_PC_MEL_Renewal - Auto renew indicator is missing from policy info and quote screen(renewal transaction),XXX-33542,212524,Ready for Dev,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Wrong Form Number Issue,XXX-33541,212523,Blocked,XXX,ANIC P&C Migration,High,Williams,Forms Mapping,,Coding
+Document Search failed error ->  QA / QA1 environment ,YYY-16535,212522,Done,YYY,ANIC WC Migration,Very High,Williams,Jasper,,Coding
+Issues_CR 20 14 10 10_Need Payload,XXX-33540,212521,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Jasper CE - Document are not saving on the FNOL process.,YYY-16534,212520,In Dev,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+"Stab4_PC_MEL_NewSubmission - Multiple Invoicing - If User opts to create a New one after clicking on ""New"" button a non blocking warning is not getting triggered",XXX-33539,212519,Cancelled,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Not a Defect
+Jasper CE - Additional Information Page formatting is incorrect,YYY-16533,212518,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Jasper CE - Calendar icon is missing/Remove delete icon is not visible,YYY-16532,212516,Done,YYY,ANIC WC Migration,Low,Williams,Jasper,,Coding
+Jasper-ECC-created packets not flow to CC and uploaded document in CC not flow to ECC.,YYY-16531,212515,In Dev,YYY,ANIC WC Migration,Medium,Williams,Integrations,,Coding
+Jasper-salesforce- Accounts and Policies are stuck in sales force message queue,YYY-16530,212510,Done,YYY,ANIC WC Migration,Medium,John,Integrations,,Data
+Stab4_Rating_Commercial Umbrella-Preemption transaction-> Unable to view rate worksheet-Getting render Exception,XXX-33538,212509,In Dev,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab4_Rating_Commercial Umbrella-Preemption transaction-> Layer premiums displaying at line level,XXX-33537,212508,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+PolicyChange_CA 23 98 10 13_Need Payload,XXX-33536,212507,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+PolicyChange_CA 23 13 10 13_Need Payload,XXX-33535,212506,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+PolicyChange_CA 99 37 10 13_Need Payload,XXX-33534,212505,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Stab4_PC_MEL_Audit - Audit rating group issue,XXX-33533,212504,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Requirements
+Stab4-Integ- Docuid not displayed in the documents screen for submit job api.,XXX-33531,212497,Ready for Dev,XXX,ANIC P&C Migration,High,Williams,Integrations,,Coding
+"Stab4_Rating_Commercial Package_Cancellation: ""CR7ApplyModifiers_PC_Ext"" and corresponding Coverage related Routine Triggered twice(Duplicated) in Rateworksheet with Schedule Mod added but no impact on Premium",XXX-33530,212485,Ready for Dev,XXX,ANIC P&C Migration,Low,John,Rating,,Coding
+Issues_CG-708 03 24_Data Element missing,XXX-33529,212484,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Prod | ANICVoluntaryPremium monthly OF job failed on 8/4,BBB-8055,212483,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_Rating_Commercial Output_Submission - Getting Invalid Quote during Quote,XXX-33528,212482,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Prod | GWPC Stage to EDW balance failed on 4/8,BBB-8054,212481,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_Rating_Commercial Package_Reinstatement: Modifier Value Inconsistent in DB resulting in New(Changed) Mod factor value Not updated in Rateworksheet and premium during all Subsequent Transactions,XXX-33527,212473,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab4_Rating_Commercial Package_Reinstatement: Rules Modifier Reinsurance Modifier Other Modifier & Schedule Modifier are Editable during Policy Reinstatement for all 3 Lines(CP Crime & GL),XXX-33526,212472,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab4_Rating_Crime_Reinstatement: Render Exception on Click on Cost Change Detail Tab,XXX-33525,212471,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_Rating_Commercial Output_Policy Change - TotalStatePremium is not calculated correctly.,XXX-33524,212470,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab4_Rating_Commercial Output_Renewal - Spoilage limit is NOT updated in the Building screen.,XXX-33523,212469,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Environment
+Stab4_Rating_Commercial Output_Reinstaement- Premium mismatch between Cancellation and Reinstatement transaction,XXX-33522,212468,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+PROD | GWPC Duplicates on Policy table on 08/03 data,BBB-8053,212467,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+Stab4_Rating_Commercial Output_Submission - Null is displayed in the rating worksheet.,XXX-33521,212466,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+PROD | GWCM Stage to EDW failed due to Balance Failure - 03/08/2024,BBB-8052,212465,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+UAT1 - IM 7479  Requirements state a freeform table with multiple entries there is no table,XXX-33518,212458,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Missing rows in AccessLayer on DerivedTables,BBB-8051,212443,New Item,BBB,EDW Production Operations,High,Martin,,,Coding
+CMS Quarterly reporting Mitchell and CMS acknowledgments integrations: update logic to handle duplicate original claim numbers while processing acknowledgment records.,CC-5261,212442,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+GL/SL - 2 Claims Where GWCC and EDW Don't Match,BBB-8050,212441,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+CMS Query and Quarterly reporting integrations: update gender mapping for new gender types.,CC-5260,212440,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+UAT1 - IM 7473 Additional Insured Endt - In UI Zip Code has a comma,XXX-33517,212435,To Do,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+Stab4_Automated payment message is sent twice to Hi marley,XXX-33516,212427,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,ClaimCenter,,Coding
+Issues_PC-708 03 24_Data Element missing,XXX-33515,212426,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Audited premium subtotal field  should not come under Rating group screen as per the requirement in Premium report and in Final Audit ,YYY-16529,212419,To Do,YYY,ANIC WC Migration,Medium,Peter,Jasper,,Coding
+Stab 4_-CPP_CP+Crime -UW Company selected at quote screen on submission is not retained after edit & requote,XXX-33514,212418,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+DIM_DerivedClaimType - Reprocess 3 claims,BBB-8042,212415,Done,BBB,EDW Production Operations,Medium,Andrea,,,Coding
+UAT1 - application error when selecting Replacement Cost for Building Coverage - COP,XXX-33512,212414,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Issues_IM 7498 04 18_Data Element missing in payload,XXX-33511,212408,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issues_IM 7489 04 18_Need Payload,XXX-33510,212407,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issues_IM 7850 01 12_Need Payload,XXX-33509,212406,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issues_CO 1077 04 02_Need Payload,XXX-33508,212405,Ready for QA,XXX,ANIC P&C Migration,Medium,David,Forms Mapping,,Coding
+Stab3: After CA7 Vehicle import Size Class is getting updated correctly but after VIN Validation is Done on Click of Next. Vehicle Size Class is getting updated to 2/Small/Large which aren’t the correct values for Size Class Typelist.,XXX-33507,212404,Ready for QA,XXX,ANIC P&C Migration,High,Williams,Integrations,,Coding
+Jasper CE - Loss Run Subcribtion (EXCEL) record is not available on Electronic Notification Section.,YYY-16528,212403,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Stab3-CA7 Vehicle Screen: For Truck and Zone Rate Truck Employee As Lessor should be Optional & Available for Selection under Vehicle Level Additional Coverage if ‘Vehicle Is Owned Or Leased’ = Leased six months or more.,XXX-33506,212402,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_Integ_DocManagement_The Guidewire is not sending correct File type for 'JPEG' and 'RTF' to ImageNow.,XXX-33505,212401,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,Integrations,,Not a Defect
+Stab3_PC_CP_Renewal_Able to issue Renewal When CA is added on Renewal & UWC is not ANIC,XXX-33504,212399,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_CA7 Vehicle Screen: Few Vehicle Level attributes as mentioned in description aren’t available for Truck & Zone rated Truck,XXX-33503,212398,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Issues_CA 1265 CP 03 24_Need Payload,XXX-33502,212397,Ready for QA,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Stab4_Rating_Commercial Auto_Submission_ Vehicle is removed after we quote the submission,XXX-33501,212396,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Not a Defect
+Spacing/format issues in Form number/Edition Date,XXX-33500,212395,Blocked,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Form number missing in payload ,XXX-33499,212394,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Stab4-Integ-Unable to finalize interactive type document at account level.,XXX-33498,212393,In Dev,XXX,ANIC P&C Migration,High,Williams,Integrations,,Coding
+GWCC - Postgres Vs Landing Comparison - 07/31 through date,DDD-5818,212389,Selected for Development,DDD,EDW QA COE,Medium,Andrea,,,Coding
+Jasper - GW Ticket #793017  Update Submission Intake Iframe - digital deployment(Tracking Defect),YYY-16527,212388,In Dev,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+stab4-IM-Trip Transit-Schedule Vehicle Endorsement-Limits - Should be Prefill with Owned Vehicle  amount  from Trip Transit Schedule of Coverages but currently blank,XXX-33497,212386,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4-IM-Transit-Coverage Extension tab is not available for Trip Transit coverage part,XXX-33496,212385,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 - Form IM 7484  - form inferring when 2 or less terminals are listed in table.,XXX-33495,212368,In UAT,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Unable to select a line item value on Other Indemnity Overpayment Recovery. ,CC-5258,212366,Ready for Dev,CC,Claim Center,Medium,Peter,ClaimCenter,,Coding
+UAT1 - IM 7474 Table should allow maximum of 6 items after 5 listed excluded which totals to 11 - form only has 10 fields,XXX-33494,212365,To Do,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+When updating Time of Injury on Loss Details policy is being changed to Unverified.,CC-5257,212364,Ready for Dev,CC,Claim Center,Medium,John,ClaimCenter,,Coding
+UAT1 - IM 7466 - Table should allow maximum of 10 rows (in addition to first 5 items),XXX-33493,212363,To Do,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+UAT1 - Correct Form # for IM 7407 Schedule Of Coverages - Fine Arts Comprehensive Form,XXX-33492,212361,In UAT,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+GL/SL - BusinessSource is not popoulating for GL Account 155510,BBB-8031,212358,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+LTI - IVANS TX and standard premium fix impacting CA standard premium,EEE-1819,212351,In Dev,EEE,PolicyCenter,Very High,Peter,PolicyCenter,,Coding
+Issue_CG 26 95 10 08 MO Changes - Amendment of Definition of Pollutants,XXX-33491,212345,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issues_CG 24 17 10 01 and CG 26 02 04 13,XXX-33490,212344,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Do not require reopening claim for payments loaded via Corvel if within thresholds,CC-5256,212343,Ready for Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+Stab4_Rating_IM_Audit-XXX-29346 - Incorrect basis and rate on premium screen during interim audit,XXX-33489,212342,In Dev,XXX,ANIC P&C Migration,Medium,John,Rating,,Coding
+Reload SubLedger Due To Issue When We Recreated The 7-2-24 File,BBB-8030,212341,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+Issues_PC-001 03 24 PC-013 03 24 PC-019 03 24_Need Payload,XXX-33488,212340,Requirements,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+CP DWH - Load missing Billing transactions from May and June into billing related tables,BBB-8029,212339,Done,BBB,EDW Production Operations,High,Martin,,,Coding
+Requirements/Issues in 'CG-810 03 24 - Test/Check Audit Report - GL',XXX-33487,212338,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Audit not picking up extended policy period,EEE-1818,212337,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+Assign EDI Error Activities to Claim Adjuster,CC-5255,212336,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+Policy change logic fix for CG,XXX-33486,212335,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Stab4_Rating_Commercial Umbrella_Renewal_CO - Getting Render Exception while click on Edit Policy transaction for CA,XXX-33485,212334,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+Prod| AL_UW_RES job failed on 08/01,BBB-8028,212333,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_PC_CU_Ovveride layers are not coming in sequence,XXX-33484,212332,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+LTI - California Renewals for 11/01 & later not carrying forward rejecting owners,EEE-1817,212331,Ready for Dev,EEE,PolicyCenter,Very High,Williams,PolicyCenter,,Coding
+UAT1 - IM 7455 - Coverages spelled incorrectly on form screen,XXX-33483,212330,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Data
+Stab4_PC_CU_Underlying WC coverage details are coming ediatble ,XXX-33482,212323,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_PC_CU_Renewal- Premium Adjustment Modifier should not reset to No during renwal transaction,XXX-33481,212321,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab4_Rating_Commercial Umbrella_Submission_CO - Incorrect Proration value is displayed in the Quote during mid term cancellation,XXX-33480,212319,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Prod | ANIC Reinsurance Monthly Output job failed on 8/1,BBB-8027,212317,Selected for Development,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Stab4_PC_CU_Rewrite/Renewal- Changes made are not reflecting on Policy review difference screen ,XXX-33479,212316,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4-  XXX-31569_CPP_Crime +GL_NB_ _GL 672 CP DED. LIAB. INS.-DEFENSE COST WITHIN DED-is inferred without satisfying the conditionas Defense Cost Within Deductibles not visible in UI to select for ID location,XXX-33478,212315,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stage to EDW CorvelTPA Loss Inc |  Job failure | ,DDD-5817,212314,New Item,DDD,EDW QA COE,Medium,Williams,,,Coding
+Stab4_PC_MEL_PolicyChange - Alternate Employer Endorsement forms is not getting triggered for policy change when this coverage is added the first time,XXX-33477,212311,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Unable to issue policy change in QA environment - all 3 type of policies,YYY-16526,212310,Ready for Dev,YYY,ANIC WC Migration,Very High,Peter,Jasper,,Coding
+Stab4_PC_MEL_NewSubmission - invalid quote issue,XXX-33476,212307,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+3.1 P&C | ODS RiskPC Table - PClocationid column data poluplating wrongly for Composite Groups - GL,AAA-6009,212305,Development,AAA,AAA,Medium,Williams,,,Coding
+Stab4_PC_MEL_NewSubmission - AK forms are not getting triggered,XXX-33475,212303,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Jasper-AAA- Control records not stored into Integration database.,YYY-16525,212301,Done,YYY,ANIC WC Migration,Medium,Martin,Integrations,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STHired - Additional records loaded with sum(AddlRetPremAmt) = 0,AAA-6007,212300,In Test,AAA,AAA,Medium,Peter,,,Coding
+Stab4_CC_Charge pattern value of bulk invoice should not be empty for IA fees checks ,XXX-33473,212294,In Dev,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Coding
+Resident Agent Countersignature Endorsement form not retired as per requirement,XXX-33472,212293,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_PC_CP_NewSubmission_Blocking Quote when  MLPDC added with Earthquake & Blanket added & limit is read only & set to '0' . & full Building value satisfy the condition >= $50000,XXX-33471,212292,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Rating-XXX-31531-GL: [Change Log] Unmanned Aircraft rate tables updated values are not matching in UI,XXX-33470,212291,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+DIM_BLANKET Table - PolicyLine_Groupkey and PolicyLine_SKey fields are populated incorrectly,AAA-6006,212290,New Item,AAA,AAA,Medium,Martin,,,Coding
+Jasper CE - Loss run Header Bar is incorrect/ CC Payment notification bar cross mark needs to be removed.,YYY-16524,212285,In QA,YYY,ANIC WC Migration,Low,Williams,Jasper,,Coding
+CorveTPA claims is not getting processed through include capability on Prod,BBB-8022,212283,In Test,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab 4_XXX-31555-CPP_CP+Crime +GL-At cancellation- Cancellation Effective Date is not displayed correctly as per req for FL when we select reason as  Underwriting reasons,XXX-33469,212282,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab 4_PC_CA_ - New Submission - Rating Base on Auto Dealers screen is defaulting to 'Not Applicable' (read only) when submission is in draft and is changing to 'Legal Liability' after issuance,XXX-33468,212273,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab4_Rating_General Liability_NB_ApplySizeModifier routine is triggered twice for Designated Location,XXX-33467,212272,To Do,XXX,ANIC P&C Migration,Medium,Peter,Rating,,Coding
+Stab4_Integ_PC-BC_Charge group is empty for CIM  MN premium surcharge ,XXX-33466,212271,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Integrations,,Coding
+LTI - IVANS: (ADP Issue)Getting Stuck AL3 message -The message queue has a null pointer exception,EEE-1815,212270,Ready for QA,EEE,PolicyCenter,Critical,Martin,PolicyCenter,,Coding
+Stab4_Rating_Commercial Output_Submission_WA - Getting Render Exception on click of show Rating Worksheet button.,XXX-33465,212268,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Environment
+3.1 P&C | ODS Detail Coverage Table - Auto - STHired - The column PremiumAmount is not populated as expected,AAA-5995,212258,Development,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS_DetailCoverageInland table - Extra records coming from the ODS_DetailCoverageInland table,AAA-5993,212245,Done,AAA,AAA,Medium,Martin,,,Coding
+Data Fix - Business Group Update 2 Records for 7/31 Data,BBB-8017,212234,Done,BBB,EDW Production Operations,Critical,Williams,,,Coding
+Pricing Model not working for NB Submission,EEE-1795,212232,To Do,EEE,PolicyCenter,High,Williams,PolicyCenter,,Coding
+UAT1 - Form 7489 04 18 Sched Veh and Newly Acqd Veh Endt - issues,XXX-33463,212227,To Do,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Requirements
+UAT1 - Proration Factor Missing in Payload for Policy Changes,XXX-33456,212220,Ready for Dev,XXX,ANIC P&C Migration,High,Williams,SmartCOMM,,Coding
+Application error occurred when user trying to move charges to a future invoice,ZZZ-1426,212214,To Do,ZZZ,BillingCenter,Critical,Williams,BillingCenter,,Coding
+Stab3-GL Composite Rating: Total Exposure Premium for respective Group ID should be ‘Sum of Exposure Premiums belonging to same Composite Group ID’ but excluding ‘Sum Of Exposure Level Terrorism Premiums & Manuscript Premiums.’,XXX-33455,212213,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3-GL Composite Rating: Total Exposure & Total Exposure Premium under Calculated Policy Exposure Premium section of Composite Rate Endorsement should not be displayed for the Exposure without any Composite Group ID tagged.,XXX-33454,212212,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3-GL Composite Rating: If 2 MidTerm PolChange are done on same eff datethen on 2nd MidTerm PolChange Composite Rate/Basis/Measure are editable.Ideally these attributes should be non-editable during Mid-Term PolChange for existing Composite Schedules.,XXX-33453,212211,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3-GL Composite Rating: When ‘Measure’ = ‘Other’ then ‘Other Measure’ should be non-editable during MidTerm PolChange for Existing Composite Rate Endorsement Schedules. Same should be implemented for ‘Other Rating Basis’ when ‘Rating Basis’ = ‘Other’.,XXX-33452,212210,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+PE: Policy View Summary tile Incorrect cancellation date showing if account has prior cancellations,GGG-1408,212208,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+Issues_IM 7856 01 12 Property Excluded,XXX-33451,212203,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Non Printable Characters in GlobalTypeList,BBB-8016,212200,New Item,BBB,EDW Production Operations,Medium,David,,,Coding
+Issues_IM 7032 01 12 Equipment Schedule - Income Coverage - Contractors' Equipment,XXX-33450,212199,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+CLONE - E-Mail Notification Issues from Salesforce,FFF-548,212198,Development EDW,FFF,XYC Crop - ESB - Support,Medium,Martin,,,Coding
+UAT1 - Cannot generate payload for COP submission,XXX-33449,212195,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+UAT1 - COP forms not generating on Forms Screen or in payload,XXX-33448,212193,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+CC-Config-PSR- Adjusters can open exposures on Coverages that are not available on the policy (All lines),XXX-33447,212192,Requirements,XXX,ANIC P&C Migration,Critical,David,ClaimCenter,,Coding
+Add new states of TX and OK to EDI Reporting ,CC-5254,212191,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+Update EDI Gross Weekly Wage Amount for AK and ID ,CC-5253,212184,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+UAT1 - Auto - Covered Vehicle Symbols Not Keeping Overridden Selections,XXX-33446,212178,In UAT,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+"Stab4_Rating_Commercial Package_New Submission_""Other Mod"" not applied for applicable coverages(Commercial & Government) in Crime LOB",XXX-33445,212177,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+LTI - IVANS issue with TX and premium Incentive,EEE-1794,212168,To Do,EEE,PolicyCenter,Very High,Peter,PolicyCenter,,Coding
+Stab4-XXX-31554_CPP_CP+Crime +GL_FL base state Earthquake Cause of Loss Form-is not dispalyed as per req,XXX-33441,212162,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Mid Term location change blockd by 'Effective Date and Base State combination is not valid.' error,EEE-1793,212161,To Do,EEE,PolicyCenter,High,Williams,PolicyCenter,,Coding
+Prod| AAA-DL-GL Load ErrorCorrected Tables job failed on 07/31,BBB-8014,212160,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+"Jasper upgrade_CC_WC_""Potential TPA claim"" activity is not generating",YYY-16523,212158,Done,YYY,ANIC WC Migration,Medium,Peter,ClaimCenter,,Environment
+AL - Duplicate Value Populated in DIM_PREMIUMTRANSACTION table,AAA-5971,212155,Invalid/Duplicate,AAA,AAA,Medium,David,,,Coding
+Stab4_Rating_Commercial Auto_CA7ExperienceModlia_PC_Ext routine are applied for the below coverages ,XXX-33440,212154,Requirements,XXX,ANIC P&C Migration,High,Peter,Rating,,Coding
+Stab 4_BC CPP_Payment Request Amount is getting incorrectly auto updated at 'Draft status' for Billed Invoice,XXX-33439,212150,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+Stab4_Rating_Commercial Output_Submission_CA - LCM is incorrectly applied for Blanket Spoilage coverage,XXX-33437,212147,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab4-Integ-Document name not displayed in the BC because not stored in imagenow.,XXX-33430,212137,Ready for Dev,XXX,ANIC P&C Migration,High,Williams,Integrations,,Coding
+Jasper PE - Unable to see policies in Policies In Force tab,YYY-16522,212136,Done,YYY,ANIC WC Migration,Medium,Williams,Digital,,Coding
+Update typecode in BC for Mountain point underwriting company to match with PC,ZZZ-1421,212130,Done,ZZZ,BillingCenter,Medium,Martin,,,Coding
+Prod | Duplicate in Claimant and  ClaimSourcedControlAmount table while running GWCC LandingtoStage job on 7/31,BBB-8012,212128,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_PC_MEL_NewSubmission - large ded coverage is not coming in line cov screen,XXX-33429,212127,Done,XXX,ANIC P&C Migration,Low,Peter,PolicyCenter,,Coding
+AAA 3.1 | GL | ODS-DetailCoverage :Data Populating incorrectly for LineofInsurance='UMB',AAA-5959,212109,Done,AAA,AAA,Medium,David,,,Coding
+Stab4-XXX-31554_CPP_CP+Crime +GL_FL(Hi added)-Risk FL-Building -Additional Coverage -cover term (DESCRIBED PREMISES)is capital letter for Windstorm Protective Devices,XXX-33417,212105,Ready for Dev,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+CDA PROD | Error in PC DBzone for task pcx_servicetype_ext_aurora_data_copy | 07/30,BBB-8007,212099,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Issue_IM 7095 07 20 Equipment Breakdown and Testing Schedule,XXX-33412,212089,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Data Fix - RBBBrtedBusinessGroupCode & BusinessGroup - Need To Update <none> and ? Records,BBB-8001,212088,Done,BBB,EDW Production Operations,Critical,Williams,,,Coding
+365,EEE-1792,212087,To Do,EEE,PolicyCenter,Medium,Williams,,,Coding
+Several Cancellation Reasons for Carrier Source are missing,EEE-1791,212086,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+E-Mail Notification Issues from Salesforce,FFF-537,212085,Done,FFF,XYC Crop - ESB - Support,Medium,Martin,,,Coding
+Prod| GL Paid Loss - 88 records errored out on 07/30,BBB-8000,212068,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+UAT1 - Form 7455 Motor Truck Cargo Legal Liab Cvg - Sched of Cvgs,XXX-33411,212067,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Update ANIC Agency Lookup Table (ANICAgencyMapping) - Agency U05,BBB-7999,212055,Done,BBB,EDW Production Operations,Critical,David,,,
+Incoming Mail  Legal Hearing Docs with In-House Attorney should go to Legal Queue,CC-5251,212054,Requirements,CC,Claim Center,Medium,John,ClaimCenter,,Coding
+CE: Loss Run Subscription (Excel) E-Notification button missing in User Admin/My Profile pages for CE users,GGG-1389,212053,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+Stab4_CC_FNOL Reference Number field is not displayed for IM and CPP LoBs during FNOL,XXX-33410,212052,Done,XXX,ANIC P&C Migration,Medium,John,ClaimCenter,,Coding
+Data Fix - ANIC Claims with 2 claims source system codes As of 7/30/2024,BBB-7998,212051,Done,BBB,EDW Production Operations,Very High,David,,,Coding
+Stab4_Integ_ODS_Need to have the state level and the composite level coverages from ODS tables in the CC.,XXX-33409,212050,Ready for Dev,XXX,ANIC P&C Migration,Critical,Williams,ClaimCenter,,Coding
+Stab4_CC_Initial Workplan activities are not triggered correctly for GLIMCOPCPPCU,XXX-33408,212049,In QA,XXX,ANIC P&C Migration,Very High,John,ClaimCenter,,Coding
+UAT1 - Inland Marine - 4 Coverage Parts are missing their CovTerms in the Payload,XXX-33402,212039,In UAT,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Stab4_Integ_CC_author field and created on field in documents screen for Hi marley sent images is empty,XXX-33401,212038,Done,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Coding
+Prod | corvelTPA stage to EDW balance failed on 7/30,BBB-7996,212036,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+3.1 P&C | ODS - Default Keys - RI failure in DetailedCoverage Table,AAA-5946,212034,Analysis,AAA,AAA,Medium,Martin,,,Coding
+Stab3_PC Config_CA7 Large Deductible: Validation w.r.t. Minimum & Maximum value of ‘Deductible Credit Factor’ & ‘Loss Adjustment Fee Factor (%)’ is there at screen level. Validation should throw Quote Level as well.,XXX-33400,212033,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STHired - Records got dropped,AAA-5944,212030,In Test,AAA,AAA,Medium,Williams,,,Coding
+Stab4_Integ_WC- Email functionality not available in quote screen for Workers compensation.,XXX-33398,212027,Ready for QA,XXX,ANIC P&C Migration,High,Martin,Integrations,,Requirements
+Commercial Auto: Medical Coverage and Trailer Interchnage Coverage Symbol is not coming in payload,XXX-33397,212020,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Commercial Auto: Vehicles details need to be sent in ascending order by vehicle number under each vehicle types node in the payload.,XXX-33396,212019,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Commercial Auto: Patterncodes for Added PIP and UIM Coverage Symbols in payload are not valid,XXX-33395,212018,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Prod | GWCC EDW ABC Stage to edw balance check failed for 'LL5_Incurred' and 'LL5_Paid' balances on 7/30,BBB-7995,212016,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4-  XXX-31569_CPP_Crime +GL_Policychange_inception date _invalid quote,XXX-33394,212014,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+"Stab3_CA7 Vehicle import: ""Fleet” Indicator is hidden in Vehicle Screen/Import template but the same should be derived from the policy level fleet indicator. But getting Validation when Vehicles added through Vehicle import.",XXX-33393,212013,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_PC_CU_Exclusion -  Professional Liability Exclusion - Web Site Designers  should not be avaialble,XXX-33392,212012,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Prod | GWPC stage to Edw job failed on 7/30 due to error occurred in stored procedure usp_Insert_Commission_WrittenFinancials,BBB-7993,212002,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Issues_CA DS 26 11_Need Payload,XXX-33382,212001,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Stab4_Rating_Commercial Output_Submission - Personal Property premium is higher during submission,XXX-33381,211999,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab4_Rating_Commercial Output_Policy change - Getting Application Error while click on Pre emption button during Policy change,XXX-33380,211998,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_Integ_CC_CR GL file & recovery reserve transaction issue in QA 5 environment,XXX-33379,211990,Done,XXX,ANIC P&C Migration,Medium,John,ClaimCenter,,Environment
+Issues_IM 7274 01 12 Transit Reporting Schedule,XXX-33378,211987,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+Issues_IM 7268 01 12 Theft Limitation - Transportation Coverage,XXX-33377,211986,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+ODS_DetailCoverage AU Nonowned - INTSEC : PremiumAmount is not getting populated as expected in the CertificationLayer..ODS_DetailCoverage,AAA-5937,211982,In Test,AAA,AAA,Medium,Williams,,,Coding
+Data Fix & Recreate GL/SL file for July 2nd - Policy 1026424 Effective Date 2023-02-16,BBB-7992,211979,Done,BBB,EDW Production Operations,Very High,David,,,Coding
+Update EDI triggers for firing 'SX' report ,CC-5250,211978,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+Offset/Onset Fix For GL/SL - Monthly Outstanding Reserves - Claim ANMF14300,BBB-7991,211977,Done,BBB,EDW Production Operations,Very High,David,,,Coding
+Correct the CorVel Pay Code for Defense Attorney,CC-5249,211976,Ready for Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+UAT1 - IM 7274 Owners Cargo> Manual Premium - remove Reporting Rate since it is duplicate (okay as Day 2 issue),XXX-33376,211975,To Do,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+"UAT1 - Additional Construction Expenses Limit not defaulting to ""Included""",XXX-33374,211973,To Do,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+3.1 P&C | ODS - Missing UMB Coverages,AAA-5935,211972,Ready For Test,AAA,AAA,Medium,Martin,,,Coding
+Missing Requirements - Energy Generating Income and Alternate Certification Company,XXX-33373,211956,To Do,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Update ANIC Agency Lookup Table (ANICAgencyMapping) - Agency U04,BBB-7990,211955,Done,BBB,EDW Production Operations,Critical,David,,,
+UAT1 - Electricity or Water Replacement Limit misspelled on UI,XXX-33372,211954,To Do,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+Open Items on CA ANI forms as part of Policy change transactions.,XXX-33371,211953,To Do,XXX,ANIC P&C Migration,Medium,Williams,Forms Mapping,,Coding
+3.1 P&C | ODS -  ODS_RiskGL not aligned with RiskPC Class Codes,AAA-5919,211952,New Item,AAA,AAA,Medium,Martin,,,Coding
+Stab4_PC_NewSubmission_Forms inferred twice - CP 00 10 CP 10 30,XXX-33370,211951,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+UAT1 - Form IM 7007 (ed 01 12 and 02 12) In quote screen premium calculation missing on quote screen for Leased and Rented FROM others Rating Deposit Premium,XXX-33369,211950,In UAT,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab4_Rating_Commercial Auto_Submission_Getting hardstop error message when we add Audio Visual And Data Electronic Equipment Coverage Added Limits for Special type vehicle,XXX-33368,211949,In Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Account 500xxxx28 not in BC,EEE-1786,211948,To Do,EEE,PolicyCenter,High,Williams,,,Coding
+Stab4_Rating_Commercial Auto_Submission_WA - Unable to issue the policy due to warning message,XXX-33367,211942,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_PC Config_COP_All Txns_Locations present on an Account level & deleted locations all are getting displayed on Location dropdown menu on (Add Building) Risks screen,XXX-33366,211937,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab4_Rating_Commercial Auto_Submission - Premium is NOT populated for Private Passenger Auto Loan Coverage Private Passenger Autos Collision ,XXX-33365,211936,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+QA : ODS-DetailCoverage : Extra records loaded in DetailCoverage Property Location Flow ,AAA-5918,211935,Invalid/Duplicate,AAA,AAA,Medium,Peter,,,Coding
+Jasper PE - 'Make Change' button in payroll report review screen navigates to improper payroll screen,YYY-16521,211934,Done,YYY,ANIC WC Migration,Medium,Williams,Digital,,Coding
+Stab4_Rating_Commercial Auto_Submission- VehicleUsageCredit is NOT applied for Garage Liability GaragekeepersCoverageCollisionCov Garage Other Than Collision for ,XXX-33364,211933,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+Stab4_PC_NewSubmission_Forms_High limit option is not available to select Line Additional Coverages Location Additional Coverages Building Additional Coverages Occupancy Class Additional Coverages and Personal Property Additional Coverages.,XXX-33363,211932,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4_Rating_Commercial Auto_Submission - VehicleUsageCredit Factor is NOT applied to Special Type Personal Injury Protection for KS State,XXX-33362,211920,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+Prod |  AccessLayer_UnderWritingRiskEvalution job failed on 7/29,BBB-7988,211916,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_Rating_Commercial Auto_Submission - VehicleUsageCredit Factor should NOT be applied to Private Passenger Collision and Other than Collision,XXX-33361,211915,Done,XXX,ANIC P&C Migration,High,John,Rating,,Coding
+Prod | GLPaidloss- 8 transactions got error out on 7/28,BBB-7987,211909,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+WCSTAT Errors - Re-map ClaimNumbers to what they are in the EDW,BBB-7986,211908,In UAT,BBB,EDW Production Operations,Medium,John,,,Coding
+Jasper PE - New User not able to set password from link in mail received,YYY-16520,211907,In Dev,YYY,ANIC WC Migration,Medium,Williams,Digital,,Coding
+Data Fix - UpdatedAccountingDate & UpdatedAccountingCycle,BBB-7985,211903,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_PC Config_COP_All Txns_Not a single Building/Risk is being added on Risks screen still user is able to quote the policy without any error message for at least one Building/Risk needs to be added,XXX-33359,211902,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+ODS_DetailCoverageInland - Missing values from the InlandCoverageCodeLookup table.,AAA-5896,211901,Development,AAA,AAA,Medium,David,Stage to AAA,,Coding
+Stab4_PC Config_COP_All Txns_Not a single Base State location is being added on Locations screen still user is able to quote the policy without any error message for Base location needs to be added ,XXX-33358,211900,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab4_PC_NewSubmission_Forms_Form name is incorrect for form no  CP 976 CP,XXX-33356,211895,In UAT,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4_PC_NewSubmission_PolicyPacket_View button is not showing & unable to view the documents,XXX-33355,211894,In Dev,XXX,ANIC P&C Migration,High,David,Forms Mapping,,Coding
+Stab4_PC_MEL_NewSubmission - Multiple Invoicing issues,XXX-33354,211893,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_GL7 Audit: Proration is not applied correctly to Audited Premium for Auditable Coverages Audit Impacted Coverages & Non-Auditable Coverages during Final Audit & Premium Report,XXX-33353,211872,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Requirements
+Stab4_PC_MEL_NewSubmission - coverages availability issues,XXX-33351,211817,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Stab4_Integ_CC_Duplicate check numbers are created in GW outbound file,XXX-33350,211816,Done,XXX,ANIC P&C Migration,Critical,John,ClaimCenter,,Coding
+[Require Clarification - Rating] - Stab3_GL7 Audit: There’s a difference of $0.08 between Premium Screen & Audited Exposure Amount entered in Audit Detail Screen for highlighted Composite Schedule.,XXX-33349,211815,In Dev,XXX,ANIC P&C Migration,High,John,Rating,,Coding
+REQUIREMENT_CHANGE-Stab4_PC Config_COP_All Txns_Locations is not getting removed on Locations screen (Policy Files) post issuance even though we removed the specific location on NB/submission txns already,XXX-33348,211812,In Dev,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_PC Config_COP_Policy Change_(Reason for Form = Policy Change) dropdown field is not coming on Building Risks Screen (Manuscript Premiums Tab) & related functionalities needs to be developed,XXX-33347,211810,Cancelled,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+Prod | GLPaidLoss- 20 transactions got error out today with GL effective date as 7/27,BBB-7981,211808,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+"Stab4_Rating_Commercial Package_Cancellation_Incorrect Term Amount taken in Quote Screen during Cancellation for all applicable coverages when ""Government crime Schedule Mod"" applied",XXX-33346,211807,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+"Stab4_Rating_Commercial Package_Cancellation_Incorrect Term Amount taken in Quote Screen during Cancellation for all applicable coverages when ""Government fidelity Schedule Mod"" applied",XXX-33345,211806,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Prod| GL Paid Loss - 160 records errored out on 07/27,BBB-7980,211803,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+CDA PROD | GWPC-Parallel-Processing_CONTROL-M_AUDIT_STATUS_COMPLETED Job Failed | 07/27,BBB-7979,211802,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+UAT1 -IM 7274 When Coverage Part Form = Transportation and 'Applicable' is selected as Reporting Condition - Policy review shows as 'waived',XXX-33344,211800,Ready for Dev,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Dim_LossContacts Duplicate Data caused the EODSequenceForAsofDate to be updated incorrectly,BBB-7978,211799,New Item,BBB,EDW Production Operations,Medium,David,,,Coding
+UAT1 - IM 037 CP 03 24 Manuscript End - UI Not Allowing Multiple Manuscript Items,XXX-33343,211798,To Do,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+UAT1 - IM 7021 Remove specified fields from Part Level Coverages Screen ,XXX-33342,211797,Ready for Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1 - Pay Plan Information Not Passing to Payload,XXX-33341,211796,In UAT,XXX,ANIC P&C Migration,High,John,SmartCOMM,,Coding
+UAT1 - COP - PatternCodeIdentifiers Missing in QuoteScreen[],XXX-33340,211795,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Application error occurred when user trying to close trouble ticket. ,ZZZ-1339,211790,To Do,ZZZ,BillingCenter,Critical,Williams,,,Coding
+UAT1 - IM 7275 Deductible cannot be less than $1000 however leaving blank is allowed.,XXX-33339,211789,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+WC xx 06 00 B Policy Info Page Endorsement does not display mid-term address change correctly,EEE-1781,211788,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+Update Inference Logic for IM 7404 Additional Premises Schedule - Fine Arts Comprehensive Form,XXX-33338,211786,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Prod| GL Paid Loss - 16 records errored out on 07/26,BBB-7976,211782,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Prod | SSAS cube Submission model failed due to discountFactorRecommendation column missing on 7/26,BBB-7975,211781,Done,BBB,EDW Production Operations,Very High,Williams,,,Coding
+UAT1 - DataDog - Payload Content Failing,XXX-33336,211779,To Do,XXX,ANIC P&C Migration,Very High,Peter,Integrations - Mule,,Coding
+Stab 4_PC_Common_ - Policy Change - Base state is editable on Policy Info screen,XXX-33335,211778,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+"Update Exception rule for Supervisor Review Activity NonCA to add ClaimTypeCode_Ext =""Medical Only""",CC-5248,211777,Done,CC,Claim Center,Medium,David,ClaimCenter,,Coding
+Stab4_Rating_General Liability_Cancellation - Line level manuscript premium is NOT displayed in the Cost change detail during mid term cancellation,XXX-33334,211775,To Do,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Data Fix - Manual Feeds NULL Attribution,BBB-7973,211774,Ready for UAT,BBB,EDW Production Operations,High,Williams,,,Coding
+correct title & form # for IM 7356 Schedule Of Coverages - Fine Art Dealers - Blanket Coverage Form,XXX-33333,211772,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab4_Rating_Commercial Auto_Cancellation - State Manuscript Premium is NOT displayed in the Cost Change detail tab when we perform Mid Term Cancellation,XXX-33332,211771,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+"Stab4_Rating_Commercial Package_Cancellation_Incorrect Term Amount taken in Quote Screen during Cancellation for all applicable coverages when ""Commercial Crime Schedule Mod"" applied",XXX-33331,211769,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab3_GL7 Audit: Composite Schedules which is not added/removed during PolChange but there’s change in Est Premium due to change in Exposure/Rate for those Estimated & Audited premium should display as per PolChange Slice but for Full Audit Period.,XXX-33330,211768,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab4_Rating_Commercial Auto_Policy Change- Getting Application Error while quoting mid term policy change transaction,XXX-33329,211767,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_GL7 Audit: Only Class is changed during Policy Change. There’s no change in Exposure or Rate during Mid-Term Policy Change. Still the same Composite Schedule is getting prorated during Audit.,XXX-33328,211766,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_Rating_General Liability_Policy Change_ApplySizeModifier routine is displayed twice for Prod/Comp coverage during Policy change,XXX-33327,211763,In Dev,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+[AAA-5601]: Accesslayer: DIM_POLICYLINE: Few records are missing in Target table.,AAA-5887,211761,New Item,AAA,AAA,Medium,Williams,,,Coding
+UAT1 - Comm Prop - Windstorm or Hail deds - should only have 1 2 and 5% options available,XXX-33326,211760,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+[Framework] CA - Guidewire Defect - Forms not Inferred during Policy Change,XXX-33324,211758,Cancelled,XXX,ANIC P&C Migration,Critical,Williams,PolicyCenter,,Coding
+[user training]+Stab3_CA7 Vehicle Import: Primary Class Code & Secondary Class Code aren’t getting updated for the vehicle added through import functionality.,XXX-33323,211757,Blocked,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+Stab3_CA7 Vehicle Import(NB & PolChange): If there are few Existing vehicles and user adds few more vehicles through import Vehicle Seq is getting changed for existing vehicles incorrectly and also the vehicles aren’t displayed as per Broker Order.,XXX-33322,211755,Cancelled,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab4_Rating_Commercial Auto_Submission- Getting Invalid Quote while quoting the submission,XXX-33320,211750,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab3_CA7 Vehicle Export: For Existing Vehicles Broker order is not coming during Vehicle Export.,XXX-33319,211749,Cancelled,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+ODS_DetailCoverageInland - Incorrect Values populated for the Coverage columns from the InlandCoverageCodeLookup table,AAA-5881,211746,Done,AAA,AAA,Medium,Martin,Stage to AAA,,Coding
+ODS_DetailCoverageInland - Missing records from the ODS_DetailCoverageInland table,AAA-5879,211744,Done,AAA,AAA,Medium,Martin,Stage to AAA,,Coding
+Prod| GWPC Stage to edw balance check failed on 07/26,BBB-7970,211743,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Prod| GWPC - Duplicate records in WCState table on 07/26,BBB-7968,211741,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Implementation of Kingswaysoft for ODS transfer - Day 2 items,BBB-7967,211740,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4-  XXX-31548_CPP_Crime +GL_-Policy change for mid -term policy getting invalid quote due to form issue in QA6,XXX-33318,211734,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STTrailer - The column Coverageclassificationcode is populated with ? values,AAA-5878,211733,Done,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - Vehicle - Additional records loaded with CoverageCode as N/A,AAA-5877,211731,Done,AAA,AAA,Medium,Williams,,,Coding
+UAT1 | IM 7105 - Miscellaneous Defects,XXX-33317,211728,Ready for Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+[DB Drop] UAT1 - PN-xxxx 03 24 - Premium Installment Notice - Policy Form Pattern/Inference Update,XXX-33315,211726,Blocked,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+UAT1 | IM 7105 - Property Covered Blanket or Scheduled Locations Coverage - Required Field & Blanket Option,XXX-33314,211723,Cancelled,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+UAT1 - Interruption of Web Site Schedule fields to be required,XXX-33302,211709,Requirements,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+UAT1 - Valuable Papers and Records coverage terms missing on payload,XXX-33301,211705,Cancelled,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+[workaround Provided] UAT1 - Wind/Hail Ded validation error even with Special Class limit over the acceptable amount,XXX-33300,211704,Cancelled,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+UAT1 - Valuable Papers and Records schedules fields update,XXX-33299,211703,Ready for Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+IM 1555 Schedule Of Coverages - Valuable Papers And Records title wrong on Forms Inference,XXX-33298,211702,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Requirements
+GWPC  - pcx_clearance_ext in Landing doesn't include 'datecreated' field,DDD-5816,211699,Invalid/Duplicate,DDD,EDW QA COE,High,Williams,,,Coding
+Renewal was Blocked due to missing SSN but not Blocked in Previous Renewal ,EEE-1778,211698,To Do,EEE,PolicyCenter,Very High,Williams,PolicyCenter,,Coding
+Stab 4_PC_GL_ - New Submission - ISO 'Deductibles' coverage and its cov term for Liquor subline is hidden when Liquor subline is taken along with any of the 3 sublines applicable for Large deductible and Rate Mode is 'Large Deductible' ,XXX-33297,211697,In QA,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab 4_PC_GL_ - New Submission - Products/Completed Operations PD Deductible Products/Completed Operations BI and PD Deductible are non-editable when subline is Products/Completed Operations,XXX-33296,211695,In QA,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab 4_PC_GL_ - New Submission - OOTB Form CG 22 34 Exclusion - Construction Management Errors And Omissions is not getting inferred,XXX-33295,211691,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Fix Message Queue Issue - Attempted to set PaymentInstrument that belongs to different payer as DefaultPaymentInstrument,ZZZ-1326,211686,To Do,ZZZ,BillingCenter,High,Williams,,,Coding
+Class codes are not availble for CA location with USL&H governing law,YYY-16518,211678,In Dev,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Stab4_Rating_Commercial Auto_Submission_CA7MotorCarrierEnhancEnd_PC_Ext premium is not calculated correctly,XXX-33292,211675,Requirements,XXX,ANIC P&C Migration,Very High,Peter,Rating,,Coding
+Stab 4_PC_GL_ - New Submission - OOTB Form CG 21 54 Exclusion - Designated Operations Covered By A Controlled (Wrap-Up) Insurance Program is not getting inferred,XXX-33291,211674,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_XXX-31547_PC_CPP_getting reporting plan in QA6,XXX-33290,211673,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab 4_PC_GL_ - New Submission - Defense Cost Within Deductibles? field is appearing when BI and PD Deductible is 'No Deductible' while it should only appear when BI and PD Deductible is not equal to 'No Deductible',XXX-33288,211672,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 4_PC_GL_ - Reinstatement- Reinstatement Letter is getting mapped to PC-001 form number along with PC-019 while only PC-019 should come as it is the correct form number,XXX-33287,211671,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+[Blocked due to defect] Stab 3_XXX-31547_PC_CPP+CP+Crime+GL_Form not triggereing for QA6,XXX-33286,211670,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Jasper PE - My Profile - Updated notification is not getting saved,YYY-16517,211663,Done,YYY,ANIC WC Migration,High,Williams,Digital,,Coding
+WY state is not applicable for WC product,YYY-16516,211660,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - Vehicle - Records loaded with Incorrect values for the column CoverageLevelApplicabilityCode and Subline ,AAA-5866,211658,Ready For Test,AAA,AAA,Medium,Williams,,,Coding
+Jasper PE - Billing screen - Invoice Stream gets to default instead of selected,YYY-16515,211656,Done,YYY,ANIC WC Migration,Medium,Williams,Digital,,Coding
+Stab3_PC_WC_NewSubmission_Policy Conversion_ dropdown options are not in sync,XXX-33283,211655,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+"Stab4_Rating_Commercial Package_Cancellation_Incorrect Term Amount taken in Quote Screen during Cancellation for all applicable coverages when ""Commercial fidelity Schedule Mod"" applied",XXX-33282,211652,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Missing Net rate and net premium under Rating group screen ,YYY-16514,211651,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Business unit value is set to NONE  even when user is using valid producer code ,YYY-16513,211649,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+UAT1 - COP CAT limit not calculating correctly & Actual Cash Value Applies missing in UI,XXX-33281,211648,In Dev,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Application error when user click on Quote button ,YYY-16512,211647,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Stab 3_XXX-31547_PC_CPP_GL_Exclusion Of Certified Acts Of Terrorism And Exclusion Of Other Acts Of Terrorism Committed Outside The United States_QA6 not displayed to select,XXX-33280,211646,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Not a Defect
+Jasper CE - Width of button option's needs to be adjusted Close(X) icon should be removed.,YYY-16511,211645,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Inland Marine: Installation Floater -Manual Premium tab- Delay In Completion Rate need to be Non Editable during Policy Change,XXX-33279,211644,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Requirements
+3.1 P&C | ODS Detail Coverage Table - Auto - State - The column UARNumber and UARType are populated Incorrectly,AAA-5864,211641,Invalid/Duplicate,AAA,AAA,High,Williams,,,Coding
+Jasper PE - Bill Payment-ACH payment confirmation is not displayed,YYY-16510,211640,Done,YYY,ANIC WC Migration,Medium,Williams,Digital,,Coding
+Stab 4_PC_GL_ - Policy Change- Getting application error while trying to quote,XXX-33278,211639,Done,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+"Stab4_Rating_General Liability_NB_""GL7SaveandZeroOutModifiers_Ext"" not applied to Schedule Mod applicable coverages leading to Schedule Mod applied twice to Term Amount",XXX-33277,211637,Ready for QA,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STGarageK - Additional records populated with Incorrect CoverageClassificationCode,AAA-5862,211633,Done,AAA,AAA,High,Williams,,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - Vehicle - The column Coverageclassificationcode is populated Incorrectly,AAA-5861,211632,Done,AAA,AAA,Very High,Williams,,,Coding
+WCClaimant.InjuryCodeInjuryType does not have correct data which causes WCSTAT rejects,BBB-7957,211626,Analysis,BBB,EDW Production Operations,High,Martin,,,Coding
+Stab3_CA7 Policy Change: CA 599 CP CA 1155 CP & CA 1156 CP should infer again during Policy Change for respective Base States if any data change is done for Driver Exclusion.,XXX-33276,211624,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+"CE: Claims FNOL Documents uploaded to ""Fast Track"" upload screen do not appear in Claims Details",GGG-1381,211623,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+Stab3_CA7 Config: CA 599 CP & CA 1155 CP should infer on the basis of Base State. But currently even if applicable state is added as jurisdiction with different Base State mentioned Forms are getting inferred.,XXX-33275,211622,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+IM Final Audit: Only Premium Report is applicable for Builders' Risk the same shouldn’t be displayed as Auditable Coverage during Final Audit even if Builders' Risk is added in a policy along with Final Audit Applicable Coverage Part.,XXX-33273,211620,Cancelled,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 - Existing Building Limit should be required,XXX-33272,211619,Ready for Dev,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+Prod | In GLDailyWrittenPremium 80 records got errored out on 7/24,BBB-7956,211617,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Prod | GLPaidloss- 20 transactions got error out on 7/23,BBB-7955,211616,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Prod| RBBBrtingDailyJob failed on 07/24,BBB-7954,211600,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Incorrect policy premium total at the account level view ,EEE-1775,211598,To Do,EEE,PolicyCenter,Medium,Williams,,,Coding
+Prod| GL WrittenPremium job failed on 07/24,BBB-7953,211586,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab4_Rating_Commercial Auto_Submission- CA7BusinessAutoEnhancEnd_PC_Ext premium is not calculated correctly,XXX-33257,211580,Blocked,XXX,ANIC P&C Migration,High,Peter,Rating,,Coding
+ODS Policy Table - Incorrect values populated in the Policy Cancellation Date column,AAA-5852,211557,Development,AAA,AAA,Medium,Williams,Stage to AAA,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - Nonowned - Records getting dropped,AAA-5850,211516,Done,AAA,AAA,Medium,Williams,,,Coding
+Prod| GWCC - Duplicate records in Claimsourcecontrolamounts table on 07/24,BBB-7952,211508,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab3_PC Config_CA7 Large Deductible: Vehicle Level Liability Deductible should be set to ‘No Deductible’ and hidden when ‘Large Deductible’ or ‘Large Deductible and Retro’ is added at Line Level,XXX-33195,211505,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Prod| GWPC Stage to edw balance check failed on 07/24,BBB-7951,211399,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+[DbDrop] - Stab3_PC_CU_Exclusion - Exclusion - Explosion Collapse And Underground Property Damage Hazard (Specified Operations) coverterm location is coming twice,XXX-33171,211394,Blocked,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - State - The column CoverageEffectiveDate is not populated as expected,AAA-5841,211388,Done,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS Detail Coverage Table - AUTO - State - The column PremiumAmount is Incorrectly populated,AAA-5840,211387,Done,AAA,AAA,Medium,Williams,,,Coding
+Data Fix - Activities - Update AssignedGroup For Converted Claims,BBB-7950,211386,New Item,BBB,EDW Production Operations,Low,David,,,Coding
+Stab3-PC-IM-Motor truck cargo- Additional coverages-Trailer Catastrophe Limit should be defaulted to Trailer Interchange Coverage  Agreement but currently blank,XXX-33170,211383,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+PA-015 Audit Summary does not include Cancellation short-rate penalty line item/charges,EEE-1773,211382,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Motor truck cargo- Additional coverages tab-  Refrigeration Breakdown Coverage- Property In Vehicle Coverage Limit  and catastrophe limit should default to  Property in Vehicles Limit which is present at the Part level  but currently blank,XXX-33169,211381,Ready for Dev,XXX,ANIC P&C Migration,Medium,Andrea,PolicyCenter,,Coding
+"Stab3-PC-IM-Motor truck cargo- Supplemental coverage- Coverage name is displayed as ""Your Personal Property"" instead of  ""Personal property coverage""",XXX-33168,211380,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Motor truck cargo-Terminal Limit should default based on Property in Vehicle limit but currently it is blank,XXX-33167,211379,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+"Stab3-PC-IM-Riggers Coverage-Manual Premium tab- ""Rating based on"" field dropdown values are not displayed as per requirement",XXX-33166,211377,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 - Property - Geographic Wind Territory for MT not Available,XXX-33165,211375,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+UAT1 - Property & Auto Manuscript Form # and Form Name Updates,XXX-33164,211374,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+LTI - Increased Limits of Liability Charge for WARP USL&H and MEL quotes should not be generating ,EEE-1772,211373,In Dev,EEE,PolicyCenter,Critical,Peter,PolicyCenter,,Coding
+UAT1 - 037 Manuscript Ends - Manuscript Fields Not Passing to Payload,XXX-33163,211372,Blocked,XXX,ANIC P&C Migration,High,Williams,Forms Mapping,,Coding
+UAT1 - 037 Manuscript Ends - Multiple Forms Need to Print for Multiple Manuscripts,XXX-33162,211371,To Do,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+NonEDW - BusinessGroup is missing on some submissions in the AL table Stage.NonEDW_CP_3YearSubmissions,BBB-7947,211349,Development,BBB,EDW Production Operations,Medium,John,,,Coding
+UAT1 - IM 7966 Interior Water Damage Limitation - Wrong form name/description on UI,XXX-33141,211346,Ready for Dev,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+UAT1 - IM 7035 Equipment Leased or Rented TO Others Reporting Conditions information does not exist in Manual Premium tab (Day 2 -Backlog),XXX-33140,211345,To Do,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Renewal_Auto Renew Indicator value should be Manually Renewed,XXX-33139,211344,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Renewal- Renewal activity is not triggering,XXX-33138,211343,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_PC_CU_Auto Renew_Extended Reporting Period Endorsement For Employee Benefits Liability Coverage should not be available on renewal,XXX-33137,211341,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Edition number is not as per requirement for GLBAIIPPA0121 & ACORD 50,XXX-33136,211340,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_XXX-33134-CPP_CP+Crime +GL-cancellation and reinstatement interline -form not triggering at doc screen,XXX-33135,211339,Cancelled,XXX,ANIC P&C Migration,High,Martin,Integrations,,Not a Defect
+3.1 P&C | ODS - Composite Groups Missing Vehicle Coverages,AAA-5836,211337,New Item,AAA,AAA,Medium,Martin,,,Coding
+3.1 P&C | Datatype Defect AAA.dbo.CrimeCoverage CoverageCode should be varchar(250),AAA-5534,210733,New Item,AAA,AAA,Medium,Williams,,,Coding
+Stab 3_XXX-31551-CPP_CP+Crime +GL-At policy change  & PC-001-view button not displayed and cancellation & reinsatement packet-clicking view getting error ,XXX-33132,209983,Done,XXX,ANIC P&C Migration,High,Martin,Forms Mapping,,Coding
+ stab 3_XXX-31551-CPP_CP+Crime +GL-At policy change  -quote screen-clicking Cost Change Detail-getting render exception ,XXX-33131,209478,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Prod | GL daily paid loss error - 28 records errored out on 7/22,BBB-7944,209477,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Stab3_PC_MEL_NB - base state is getting populated in state coverage screen even if the user is not adding it in location screen - OK state,XXX-33130,209476,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+3.1 P&C | ODS DetailCoverage Table - Policies missing ODS_DetailCoverage  table,AAA-5282,209475,Ready For Test,AAA,AAA,Medium,David,,,Coding
+stab 3_XXX-31551-CPP_CP+Crime +GL-At policy change  -CP04391090			Functional Personal Property Valuation (Other Than Stock) -not inferred ,XXX-33129,209474,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab3_BC MEL CA Lob_ Move Policy from one Invoice stream to other Issue,XXX-33128,209473,Ready for Dev,XXX,ANIC P&C Migration,Very High,David,BillingCenter,,Coding
+Stab3_Rating_General Liability_Renewal_Cyber Suite Extended Reporting Period and EPL Extended Reporting Period is removed during renewal,XXX-33098,209431,Cancelled,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+PC Config - CP - Manual Premium  is not default to 0 for Equipment Breakdown Coverage on CP line,XXX-33097,209422,In UAT,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_PC_IM-Interim Reporting- Details screen is blank,XXX-33096,209420,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+"Stab 3_CC_CACP_TotalLoss_""Vehicle Declared Total Loss"" activity is not triggered for Insured vehicle with Total Loss as 'Yes'",XXX-33086,209397,Ready for QA,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Data
+Stab3_PC_MEL_NB - Deposit override % field is missing from payment screen - MT state,XXX-33084,209394,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Stab3-PC-IM-Contractors Equipment- Getting invalid quote on Rewrite full term,XXX-33082,209392,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+ODS Risk PC - IM - UAR Number - Missing records from Risk PC table,AAA-5257,209386,Analysis,AAA,AAA,Medium,Martin,,,Coding
+Stab3_Integ_CC_Claim creation is failed for ECL policies from ODS Table,XXX-33078,209385,Requirements,XXX,ANIC P&C Migration,Critical,David,ClaimCenter,,Coding
+Stab3_PC Config_COP_NB_Manuscript (Reason for form) field is a non- mandatory field,XXX-33077,209384,Cancelled,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab3_PC Config_COP_NB_Expiration Date field is not coming as Read only field when Term Type is Annual on Policy Info Screen,XXX-33076,209382,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+PC Config - CP - Description for Building Glass is not mandatory when coverage is selected as Building Property Other than Glass or Building Glass and Building Property Other than Glass  on Scheduled Building Property Tenant's Policy,XXX-33075,209381,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_PC_CP_Policy Change_Unable to update the Inception date of coverage either on Blanket screen or on location for Flood Coverage& blocking quote,XXX-33067,209371,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_PC_MEL_FinalAudit/policyChange - while applying all changes in preemption render exception is coming - WA state,XXX-33064,209368,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Prod| GWCC - Duplicate records in ClaimSourceControlAmounts tables on 07/23,BBB-7943,209367,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STDoc - The column PremiumAmount is Incorrectly populated,AAA-5256,209365,Done,AAA,AAA,Medium,Williams,,,Coding
+Jasper CE - Global Issue for Prompt look and fill,YYY-16425,209362,Done,YYY,ANIC WC Migration,Medium,Williams,Jasper,,Coding
+Stab3_PC_WC_NewSubmission_Industry Code should not display on WC LOB,XXX-33063,209358,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Jasper CE - Width of footer in customer engage is incorrect.,YYY-16424,209353,Done,YYY,ANIC WC Migration,Low,Williams,Jasper,,Coding
+3.1 P&C | CertificationLayer:ODS RiskPC Table - Clarification for PolicyEffectiveDate column data in RiskPC table ,AAA-5255,209352,Done,AAA,AAA,Medium,David,,,Coding
+Stab3_Rating_General Liability_Policy Change_Apply Mod is displayed twice and ApplySize Mod is displayed 4 times in CyberSuite Coverage during Policy change,XXX-33062,209340,To Do,XXX,ANIC P&C Migration,Low,Peter,Rating,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STDoc - Records got dropped,AAA-5251,209337,Done,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STDoc - The column CoverageEffectiveDate is populated Incorrectly,AAA-5249,209335,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab3_CA7 Mid-Term policy Change: Getting Invalid Quote for Commercial Auto during Midterm Policy Change.,XXX-33061,209334,Cancelled,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab3_CA7 Policy Change_Commercial Auto Screen: Line Level Liability Coverage Type & Liability Limit should be non-editable during mid-Term Policy Change i.e. when Policy Change Effective Date != Policy Effective Date Date,XXX-33060,209333,Ready for Dev,XXX,ANIC P&C Migration,Low,David,PolicyCenter,,Coding
+Stab3_CA7 PC Config_Policy Info: FEIN field should be Required for Auto during Issuance (Optional for Other lines),XXX-33059,209332,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_PC_CP_NewSubmission_Protect Class down dropdown is not displayed as per requirement,XXX-33058,209331,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Not a Defect
+Stab3_PC_CP_NewSubmission_Reorder Experian button not returning value when PNI & address is changed on Policy Info,XXX-33057,209330,Requirements,XXX,ANIC P&C Migration,Medium,John,PolicyCenter,,Coding
+Stab3-PC-IM-Electronic Data Processing-Schedule of Coverage Blanket limit- Software limit cov terms defaulting is not as per requirement ,XXX-33056,209329,Requirements,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+QA : ODS-DetailCoverageCrime : Identified Extra Records in DetailCoverageCrime,AAA-5247,209327,Done,AAA,AAA,Medium,Peter,,,Coding
+3.1 P&C | Landing GLCoverageCodeLookup Table - CoverageCode-ClassCode missing  in Landing GLCoverageCodeLookup tables,AAA-5246,209326,New Item,AAA,AAA,Medium,David,,,Coding
+Stab3_XXX-31550_ stab 3-CPP_CP+Crime +GL-Commercial property-Property Coverage Enhancement Applies?'  : Default to No when NAICS starts with 721 or 722&Property Coverage Enhancement - Hospitality Applies? : Default to Yes-not working,XXX-33055,209324,In Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+QA : ODS-DetailCoverage Table- AU : STFreeform Flow : CoverageExpirationDate populated incorrect values,AAA-5244,209323,Done,AAA,AAA,Medium,Peter,,,Coding
+QA : ODS-DetailCoverage Table- AU : STFreeform Flow : PremiumAmount populated incorrect values,AAA-5243,209321,Done,AAA,AAA,Medium,Peter,,,Coding
+INTPRIM - Anic - Stage to EDW ANIC Premium Inc Job Fails,BBB-7928,209320,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+WCSTAT - Logic changes for WCSTAT Data Manager process,BBB-7927,209319,Done,BBB,EDW Production Operations,High,John,,,Coding
+Balance to minimum premium for WARP not charging correctly. Below is how it should charge.,EEE-1771,209313,Cancelled,EEE,PolicyCenter,Critical,Williams,PolicyCenter,,Coding
+UAT1 - Wrong table/headers for Equipment Breakdown and Testing Schedule List of Scheduled Items ,XXX-33053,209312,Done,XXX,ANIC P&C Migration,Very High,Martin,PolicyCenter,,Coding
+UAT1 - checkboxes for covered property not available for Earthquake Coverage (CO 1062),XXX-33052,209303,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+New Activity to track accounts with extended NOC Endorsements and to verify if payments have been received for them (not working),ZZZ-1305,209298,Cancelled,ZZZ,BillingCenter,Medium,Williams,,,Coding
+Remove activity id from the response of the metadata activity endpoint,XXX-33044,209273,Done,XXX,ANIC P&C Migration,Medium,David,Integrations,,Requirements
+Prod| GL Paid Loss - 2 records errored out on 07/22,BBB-7919,209272,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+UAT1- IM 7025 Duplicate coverages on Supplemental Coverages screen. ,XXX-33042,209269,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Requirements
+UAT1 - checkboxes for covered property not available for Flood Coverage (CO 1063),XXX-33041,209268,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+QA : ODS-DetailCoverage Table- AU : STFreeform Flow : UARType and UARNumber populated incorrect values,AAA-5226,209267,Done,AAA,AAA,Medium,Peter,,,Coding
+3.1 P&C | ODS Detail Coverage Table - RiskPC Id and PCLocationId holds Null values,AAA-5224,209264,New Item,AAA,AAA,Medium,Martin,,,Coding
+3.1 P&C | ODS Detail Coverage Table - Crime - NULL values populated in ExposureStateCode,AAA-5223,209263,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab3_PC Config_COP_NB_Default value for for (Equipment Breakdown Coverage Applies?) field is currently coming wrong on Commercial Output Program screen (Details & Coverages Tab),XXX-33039,209259,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STRegPlates - The column CoverageEffectiveDate is Incorrectly populated,AAA-5221,209250,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab 3_CC_AllLoBs_Activities_Automated activities due date and escalated dates are incorrect,XXX-33033,209249,Ready for QA,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Coding
+GWPC: LandingtoStage GWPC Job got failed as the table UAREnterpriseHazardGradeRestatement is not removed from TechnicalMetadata,BBB-7917,209248,Done,BBB,EDW Production Operations,Medium,Williams,Data Model,,Coding
+Stab3_BC MEL Lob_ Enterprise Billing Account issue,XXX-33018,209233,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+Stab3_Rating_General Liability_Policy Change_Incorrect Basis Amount is displayed in the Quote screen for Cyber Suite Extended Reporting Period,XXX-32968,209178,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,Rating,,Coding
+Stab 3_CC_All Lobs_Catastrophe_ 'Review for Catastrophe' activity is not generated.,XXX-32967,209177,Cancelled,XXX,ANIC P&C Migration,High,Williams,ClaimCenter,,Coding
+Stab3_BC QA06env MEL Lob_ Roll Deposits Pre-Renewal Scenario issue,XXX-32966,209173,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+Stab3_PC_MEL_FinalAudit - Show rating worksheet button is missing and covered type column is coming - IL state,XXX-32965,209165,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Stab3_PC_MEL_NB- Illinois Schedule Of Fees Endorsement form number is not correct in quote packet - IL state,XXX-32964,209163,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - STTrailer - Records got dropped,AAA-5210,209162,Done,AAA,AAA,Medium,Williams,,,Coding
+"Stab3_Rating_Commercial Package_New Business_""Government crime Schedule Mod"" got applied at routine level instead of ""CR7ApplyModifiers_PC_Ext""",XXX-32963,209160,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+3.1 P&C | ODS Detail Coverage Table - AUTO - STTrailer - Additional records loaded,AAA-5209,209159,Invalid/Duplicate,AAA,AAA,Medium,Williams,,,Coding
+Stab3_PC_CU_PUC Filing indicator field is not applicable for Umbrella LoB,XXX-32962,209158,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Stab3_PC_MEL _Existing Invoice stream should only present for a policy in Renewing status,XXX-32961,209157,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Stab3_PC Config_CA7 Policy Review: Even if Composite Rating = No Composite Auto Section is displayed under Policy Review.,XXX-32960,209156,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+"Stab3_Rating_Commercial Package_New Business_""CR7SaveandZeroOutModifiers_Ext"" not applied to ""Government fidelity Schedule Mod"" applicable coverages leading to Schedule Mod applied twice to Term Amount",XXX-32959,209155,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab3_CA7 PC Config_Covered Auto Designation Symbol Coverage: Description Of Covered Auto Designation Symbol CovTerms should be mandatory if corresponding Symbol Value is selected as Yes,XXX-32958,209154,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_PC Config_CA7 Large Deductible: There is no validation w.r.t. Minimum & Maximum value of ‘Deductible Credit Factor’ & ‘Loss Adjustment Fee Factor (%)’,XXX-32957,209153,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC Config_CA7 Manuscripts: Column Header for Manuscript Premiums aren’t displayed correctly under Policy Review. ‘Transaction Description’ should be displayed instead of ‘Form Title’.,XXX-32956,209152,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Prod| AAA-DL-PAS- AL Premium Balancing Hist_or_Incv2.0 balance check failed on 07/21,BBB-7916,209129,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+CDA PROD | 5PM CC Raw Zone job failed on 07/20 with OperationalError: ('HYT00' '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired,BBB-7915,209128,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab3_PC_CP_NewSubmission_ Few UWI requires user has to click approve multiple times to approve it,XXX-32955,209126,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Not a Defect
+"Stab3_PC_CP_NewSubmission_Both CP 1136 CP & CP 1139 CP triggered when ""Actual loss Sustained"" coverage selected at BI level with 'Standard' limit",XXX-32954,209125,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+PROD | GWPC UARNumber has ? for the policyNumber - WC1009607,BBB-7913,209124,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+UAT1 - Umbrella - Maritime EL on Underlying Work Comp Cannot be Removed from Schedule of Underlying,XXX-32953,209123,Blocked,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Risk Managed indicator not displayed in the Account Summary ,EEE-1769,209122,To Do,EEE,PolicyCenter,Medium,Williams,,,Coding
+UAT1 - Umbrella - Refreshing Underlying Policies Not Working,XXX-32952,209121,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+UAT1 - Crime Dec form numbers are incorrectly formatted,XXX-32951,209119,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+UAT1 - Umbrella - Final Audit Indicator is Hardcoded to No & Not Passing in Payload,XXX-32950,209118,In UAT,XXX,ANIC P&C Migration,Very High,Peter,Forms Mapping,,Coding
+UAT1 - IM 7062 08 20 not inferring on Reporting Form coverage part,XXX-32949,209103,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab 3_CC_All Lobs_System Checks_Memo Text area is not populated with the coverage selected in checks.,XXX-32948,209102,Ready for QA,XXX,ANIC P&C Migration,High,Williams,ClaimCenter,,Coding
+Stab3_PC_CP_NewSubmission_IL 02 84 ILLINOIS CHANGES - CANCELLATION AND NONRENEWAL should not be inferred,XXX-32945,209099,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+PROD| GL Paid Loss- 40 records and GL Written Premium- 36 records got errored out|19/07,BBB-7908,209093,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+[Blocked_CR change]Stab3_PC_CP_NewSubmission_PN1820405 form triggered when  inference condition is not satisfied for AK,XXX-32944,209089,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC_Config_CP_Deductible by location is not displayed under buliding condition screen,XXX-32941,209086,Done,XXX,ANIC P&C Migration,Medium,John,PolicyCenter,,Coding
+Stab3_PC_Config_CP_FungusWet Rot Dry Rot and Bacteria field is not displayed in line screen is not displayed ,XXX-32940,209085,Done,XXX,ANIC P&C Migration,Medium,John,PolicyCenter,,Coding
+LTI - Unable to process renewal due to Assigned Risk indicator on CA voluntary policy,EEE-1768,209081,Requirements,EEE,PolicyCenter,High,Williams,,,Coding
+UAT1 - IM 7237 Interruption of Web Site Schedule requirements not in IM forms inventory,XXX-32939,209080,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_Digital_CE_Hide P&C Policies from the COI dropdown.,XXX-33289,209077,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Requirements
+UAT1 - EDP - Foreign Transit and Location Coverage should be required,XXX-32938,209075,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Requirements
+3.1 P&C | ODS Detail Coverage Table - Auto - STGarageK - The column PremiumAmount is Incorrectly populated,AAA-5152,209050,Done,AAA,AAA,High,Williams,,,Coding
+PROD | GWPC Stage to EDW Failed due to balance Issue on 18/07,BBB-7904,209045,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+Stab3_PC_Monoline GL & CPP-GL Modifiers: Getting Invalid Quote with Policy Level Modifiers added in Pricing tool for Monoline GL & CPP-GL,XXX-32937,209044,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab3_PC_CA7 Manuscripts: Manuscript Form No is incorrect for Commercial Auto. It is coming as ANIC CA037. The New Form No is CA 037 CP with Edition as 03 24,XXX-32936,209043,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+QA : ODS-DetailCoverageAuto : CoverageEffectivedate column populated incorrect Dates in COMPSTGRP,AAA-5151,209042,Done,AAA,AAA,Very High,Peter,,,Coding
+Stab3_Digital_CE_Autopay amount should display based on the invoice stream.,XXX-32935,209040,Ready for QA,XXX,ANIC P&C Migration,High,Williams,Digital,,Coding
+3.1 P&C | ODS Detail Coverage Table - AU - STGarageK - The column CoverageExpirationDate is Incorrectly populated,AAA-5149,209039,Done,AAA,AAA,Very High,Williams,,,Coding
+production back up table cleanup,BBB-7903,209038,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
+QA : ODS-DetailCoverageCrime : CoverageEffectivedate column populated incorrect Dates,AAA-5148,209037,Done,AAA,AAA,Very High,Peter,,,Coding
+Stab3_PC_CP_NewSubmission_ANIC CP037 Endorsement triggered instead of CP 037 CP 	Property Manuscript Endorsement when manuscript added at line or building or special class level when Reason for Form = Manuscript.,XXX-32934,209030,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+DataFix - EDW - NON CPIC issuancecompany NCCIStandardEarnedPremiumatDSRLevel is incorrect,BBB-7902,209023,Blocked,BBB,EDW Production Operations,Medium,Martin,,,Coding
+PROD | Job 'ClaimSeverity PBA-EDW Daily Load' failed due to EDW Login Timoeout | 07/19,BBB-7901,209022,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+PE: Email Notifications sent to wrong Producer,GGG-1366,209021,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+UAT1 - Inland Marine- CE Equipment - IM 1219 CP duplicate inference,XXX-32933,209018,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+STP - Update to ClassCodeEligibility & NAICSSTPEligibility Tables In PBAPRD,BBB-7899,209011,Done,BBB,EDW Production Operations,Very High,Williams,,,Coding
+UW and AU Participants on Renewals not generated until after quote,EEE-1760,209009,Cancelled,EEE,PolicyCenter,High,Williams,,,Coding
+Claim 1000xxx44 - Overstated by 2054.80 - Need To Pull In Correct Financials,BBB-7898,209007,In UAT,BBB,EDW Production Operations,High,Williams,,,Coding
+LTI - Participants on Renewals are not being assigned correctly,EEE-1759,209006,To Do,EEE,PolicyCenter,High,Williams,PolicyCenter,,Coding
+GW Ticket # GW#00774331 - For CP 10 40 or CP 10 45 the building is sprinklered EQ cause of loss coverage = Yes & EQSL only = Yes then only Building deductible should be applicable. ,XXX-32930,209005,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+LTI - Renewals created with WOS selected but should not,EEE-1758,209004,In Dev,EEE,PolicyCenter,Very High,Peter,,,Coding
+GW Ticket # GW#00789934 - Commercial Property - For CP 10 29 or CP 10 45 When Earthquake sublimit blanket applies then for Business Income and Special class BI the error message shows up and cannot be quoted. ,XXX-32929,209002,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab3_PC_CU_Copy submission_Generated Policy Number is not getting copied,XXX-32928,209001,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_PC_CP_NewSubmission_CP 01 42 Texas Changes & CP 02 02 Texas Changes - Cancellation And Nonrenewal form triggered when TX is not a base state & added as a Risk/location,XXX-32927,209000,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+LTI - Participant Update Script,EEE-1757,208998,In UAT,EEE,PolicyCenter,Very High,Peter,PolicyCenter,,Coding
+UAT1 - Forms CU 24 09 Contractual Liab RR - the list of scheduled items are out of order when inferred from underlying policy for UMB,XXX-32926,208996,To Do,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+ODS | Inland | ODS_DetailCoverage | Few records are not loaded into Detail Coverage Table,AAA-5134,208994,Done,AAA,AAA,Very High,Martin,Stage to AAA,,Coding
+ODS Detail Coverage Inland Table - IA - Premium Amount Values are incorrect,AAA-5132,208990,Done,AAA,AAA,High,Martin,Stage to AAA,,Coding
+Stab3_PC_CU_Additional insured coverage- Coverage term placement is not correct_DBDrop,XXX-32925,208987,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Policy Change- Base state should be not editable,XXX-32924,208985,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Payment screen- Deferral Until Final Audit field should not be available ,XXX-32923,208982,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+AAA 3.1 | GL | ODS-DetailCoverage : PremiumAmount column populated incorrect amounts,AAA-5128,208976,In Test,AAA,AAA,High,David,,,Coding
+Stab3_Digital_PE-My Profile is not displaying any Notification Enrollment options,XXX-32922,208970,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Data
+PROD| GL Paid Loss- 08 records got errored out|07/18,BBB-7894,208969,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Stab 3_PC_GL_ -  Form GL 1162 CP Commercial General Liability Coverage Enhancement Endorsement is not getting inferred ,XXX-32921,208968,Done,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+SMARTCOMM - P-503 Arizona Independent Contractor Premium Advisory - updated content,EEE-1745,208967,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_Submission_CA7VehicleUsageCredit_PC_Ext is triggering twice in the routine,XXX-32920,208966,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+Stab 3_PC_GL_-CG 21 06 is getting inferred even when Exclusion- Access Or Disclosure Of Confidential Or Personal Information And Data-related Liability-With Limited BI Exception is added,XXX-32918,208952,Requirements,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - Vehicle - Additional records loaded with sum(AddlRetPremAmt) = 0,AAA-5126,208944,Done,AAA,AAA,High,Williams,,,Coding
+Claim Severity Code Improvement,BBB-7888,208943,Development,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Correct Earnings In EDW & AL - Policy 23LWF12375,BBB-7887,208942,Done,BBB,EDW Production Operations,High,David,,,Coding
+Stab 3_PC_GL_ - Exclusion - Access Or Disclosure Of Confidential Or Personal Information And Data-related Liability - With Limited BI Exception is appearing twice for selection when there is only 'Products/Completed Operations' subline on the Policy,XXX-32913,208937,Ready for Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Form IL 09 17 RESIDENT AGENT COUNTERSIGNATURE ENDORSEMENT is not getting inferred when the Condition 'Resident Agent Countersignature Endorsement' exists on the policy,XXX-32912,208936,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Form IL 00 03 09 08 Calculation of Premium is not getting inferred when the Condition 'Calculation of Premium' exists on the policy,XXX-32911,208934,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+QA : ODS-DetailCoverage : Incorrect PremiumAmounts populated in COMPSTGRP flow ,AAA-5125,208933,Done,AAA,AAA,High,Peter,,,Coding
+Requirement Update: MEL : Rate Mode drop down values,XXX-32910,208932,Ready for QA,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Requirements
+[OnHold - clarification pending]Stab3_PC_CA Reporting Pay Plan is not available in QA06env,XXX-32909,208931,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Stab3_PC_CP_NewSubmission_CP 1181 CP Montana Amendatory Endorsement form triggered when MT is not a base state & added as a Risk/location,XXX-32908,208930,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+July  Release: [EC1-659]: AccountServiceCommitments: Few records are missing in EDW table.,DDD-5811,208929,Done,DDD,EDW QA COE,Medium,Williams,,,Coding
+Stab 3_CC - CIM Claim Render Exception while opening risk unit coverage ,XXX-32907,208924,Done,XXX,ANIC P&C Migration,High,Williams,ClaimCenter,,Coding
+Stab3-PC-IM-Contractors Equipment- IM 7027 and IM 7032 are not generated though coverage Income Coverage provided  is selected as Yes,XXX-32906,208919,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Contractors Equipment-Manual Premium tab- Your Tools -Limit for Any One Tool  and Total Limits at Inception are displayed wrongly,XXX-32905,208918,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Contractors Equipment-Manual Premium tab- Schedule Equipment Limit is displayed as 0,XXX-32904,208916,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+3.1 P&C ODS - DetailCoverage table - Auto - Vehicle - The column PremiumAmount is incorrectly populated,AAA-5120,208915,Done,AAA,AAA,High,Williams,,,Coding
+Stab3_PC_CU_ Form screen- Form name not correct- PN -304,XXX-32903,208914,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Quote screen - Minimum premium not available  on quote screen ,XXX-32902,208913,Ready for Dev,XXX,ANIC P&C Migration,Low,Peter,PolicyCenter,,Coding
+Stab3_PC_CP_NewSubmission_CP0132 Arizona Changes & IL 02 58 ARIZONA CHANGES - CANCELLATION AND NONRENEWAL form triggered when AZ is not a base state & added as a Risk/location,XXX-32901,208912,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Detail Coverage Table - Auto - Vehicle - Records got dropped,AAA-5119,208911,Ready For Test,AAA,AAA,High,Williams,,,Coding
+Stab3_PC_CU_Manuscript - Reason for form field should not be mandatory,XXX-32900,208910,Cancelled,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+ODS Detail Coverage Inland table - IM - Incorrect values populated for premium amount column,AAA-5118,208909,Done,AAA,AAA,High,Martin,Stage to AAA,,Coding
+ODS_DetailCoverageInland - CoverageExpirationDate - Incorrect values populated in CoverageExpirationDate,AAA-5117,208908,Done,AAA,AAA,Very High,Martin,Stage to AAA,,Coding
+ODS_DetailCoverageInland - CoverageEffectiveDate - Incorrect values populated in Coverage Effective Date ,AAA-5116,208907,Done,AAA,AAA,Very High,Martin,Stage to AAA,,Coding
+Stab3_PC_CU_Exclusion - Exclusion should not be avaialble,XXX-32899,208906,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Additional Coverage - Designated Project(s) Aggregate Limit Of Insurance not available,XXX-32898,208905,Cancelled,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+LTI - CA Waivers not generating as expected,EEE-1742,208873,To Do,EEE,PolicyCenter,High,Martin,PolicyCenter,,Coding
+UAT1 - Form IM 7007 Contractors Equipment > Part Level Coverages Fields to be Removed,XXX-32895,208859,To Do,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Policy number CA1200769 not showing in pcx_ca7liabilitylimit table in DEVSEC,AAA-5112,208853,Done,AAA,AAA,High,Peter,,,Coding
+UAT1 - when Contractors Equipment - Blanket Equipment form is selected Manual Premium tab does not display values and miscellaneous is listed twice,XXX-32893,208849,In UAT,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+PE: Policies Tab WC Prefixed policies not showing on the In Force tile,GGG-1363,208846,Ready for Dev,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+UAT1 - Umbrella - Underlying MEL (standalone) Not pulling Through,XXX-32892,208845,Requirements,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+PE/CE: Policy Documents Not showing previous policy term documents after renewing to WC policy number,GGG-1362,208844,Ready for Dev,GGG,GW Cloud Digital,High,Williams,,,Coding
+UAT1 - In UI when dropdown selected for Coverage Part Form the respective checkbox is not automatically checked,XXX-32891,208842,In Dev,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Update ANIC Agency Lookup Table (ANICAgencyMapping) - Agency U03,BBB-7883,208840,Done,BBB,EDW Production Operations,Critical,Williams,,,
+UAT1 - Validation error displays when 3 digits after decimal point should error when 5 digits are entered,XXX-32890,208838,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 - Form IM 7007 (ed 01 12 and 02 12) Under Manual Premium Tab fields need to be added under 'Blanket Equipment Rating',XXX-32889,208837,Cancelled,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_BC MEL Lob_ Audit charges are getting misplaced to different Invoice streams,XXX-32888,208836,Ready for QA,XXX,ANIC P&C Migration,High,Peter,BillingCenter,,Coding
+Stab3_Integ_Prometrix-CPCPP- Exhaustive list should not be display in protection class dropdown when Protection class values are returned from prometrix.,XXX-32886,208834,Done,XXX,ANIC P&C Migration,Very High,Martin,Integrations,,Coding
+"Stab3_Rating_Commercial Auto New Business_""CA7SaveandZeroOutModifiers_Ext"" not applied to ""Commercial auto"" applicable coverages leading to Schedule Mod applied twice to Term Amount",XXX-32885,208832,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab3_Rating_Commercial Auto-Scheduled modifiers not getting applied for the applicable coverages ,XXX-32884,208831,Done,XXX,ANIC P&C Migration,Critical,Williams,Rating,,Coding
+PROD| GL Paid Loss- 26 records and GL Written Premium- 476 records got errored out|07/17,BBB-7882,208830,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+"Jasper upgrade_PC_WC_""Bind options"" button is disabled for AK State quote",YYY-16344,208829,In Dev,YYY,ANIC WC Migration,High,Martin,Jasper,,Coding
+DCNs are not populating in CC for CorVel received medical documents,CC-5236,208828,Done,CC,Claim Center,Medium,David,ClaimCenter,,Coding
+PROD| AccessLayer_NonEDW_Agency_Relator_Daily failure due to bad data|07/17,BBB-7881,208827,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+Corvel Policy Data Feed - few changes,BBB-7884,208826,Development,BBB,EDW Production Operations,Very High,David,,,Coding
+IM-Policy - (XXX-31394) Unable to see the premium on quote screen when we cancel the Builders risk comprehensive form,XXX-32883,208824,Done,XXX,ANIC P&C Migration,Very High,Peter,Rating,,Coding
+Stab 3_BC QA06env MEL_ Cancellation Status remains in Quoted status instead of cancelling status,XXX-32882,208823,Done,XXX,ANIC P&C Migration,Very High,Peter,BillingCenter,,Coding
+"Stab3_Rating_Commercial Output_Submission_Unable to issue due to hard stop error ""Missing field Installment Plan""",XXX-32881,208820,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab 3_XXX-31547_PC_CPP_crime_ location screen not able to remove any location,XXX-32879,208817,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+BBB-7319 ||  XYC CropAnalytics_V3 cube failure ,BBB-7879,208814,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+PROD| CorvelTPA had failure from EDW to AccessLayer |07/17,BBB-7878,208812,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+UAT1 - IL 09 03 Mine Subsidence Sch - coverage needs to be moved to bldg level,XXX-32877,208811,Cancelled,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+XXX-31551_ stab 3-CPP_CP+Crime +GL-At policy change  getting error for UT for Liquor  in QA5/QA6,XXX-32876,208808,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Not a Defect
+UAT1 - When quoting COP submission getting invalid quote was generated error,XXX-32875,208806,Cancelled,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+3.1 P&C ODS - DetailCoverage table - Auto - Vehicle - The column CoverageExpirationdate is Incorrectly populated,AAA-5106,208805,Done,AAA,AAA,High,Williams,,,Coding
+QA : ODS-DetailCoverageCrime : PremiumAmount column populated incorrect amounts,AAA-5105,208804,Done,AAA,AAA,Medium,Peter,,,Coding
+Stab3_PC Config_CPP LOB_Policy Change_Invalid quote error is coming for Commercial Package LOB while quoting (Policy Change Txn),XXX-32874,208803,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab3_Integ_IA fees is not displayed in charge pattern,XXX-32873,208802,Done,XXX,ANIC P&C Migration,Medium,John,Integrations,,Coding
+Stab 3-CPP_CP+Crime +GL-Risks Section is NOT displayed below:Full Bldg./Spl class Value& Full Property Value not displayed after satisfying the req in QA6/QA5,XXX-32872,208801,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3-CPP_CP+Crime +GL-Line Review for_Line coverage not as per req in qa5/qa6,XXX-32871,208800,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab3_Rating_General Liability_Reinstatement_Pro ration factor should NOT be applied in Cost change detail tab for Exposure Manuscript premium,XXX-32870,208798,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+ stab 3_XXX-31550_-CPP_CP+Crime +GL-XXX-31547_crime form not triggering in QA6/QA5,XXX-32869,208796,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_Rating_General Liability_Cancellation_Line level manuscript is NOT displayed in the Cost change detail tab,XXX-32868,208795,Ready for Dev,XXX,ANIC P&C Migration,Low,Peter,PolicyCenter,,Coding
+"Stab3_Rating_Commercial Package_New Business_""CR7SaveandZeroOutModifiers_Ext"" not applied to ""Commercial fidelity Schedule Mod"" applicable coverages leading to Schedule Mod applied twice to Term Amount",XXX-32867,208794,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+UAT1 | Amend UI for the Equipment Breakdown limit under IM 7120,XXX-32866,208785,Ready for Dev,XXX,ANIC P&C Migration,Low,Andrea,PolicyCenter,,Coding
+SMARTCOMM - P-503 has misspelling in document,EEE-1734,208780,To Do,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+UAT1 - Auto Dealers - Covered Vehicle Symbols Are Not Editable,XXX-32861,208779,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+UAT1 - EDP - Incompatible Hardware and Media to be required,XXX-32860,208778,Ready for Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1 | IM 7111 01 12 incorrectly attaching for IM 7106 (only when toggling between IM 7105 and IM 7106),XXX-32859,208777,In UAT,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+UAT1 - EDP Sheduled Limits - Attach Additional Locations Schedule field to populate at 11th premise,XXX-32857,208775,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Policy Documents with WC prefix not displaying correctly in Documents tab,EEE-1733,208766,To Do,EEE,PolicyCenter,High,Williams,PolicyCenter,,Coding
+UAT1 - EDP Schedule of Coverages Blanket Limits - Deductible fields should be required,XXX-32851,208765,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+UAT1 - EDP Schedule of Coverages Blanket Limits - Software Limits conflicting requirements,XXX-32850,208764,Requirements,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+UAT1 - Schedule out of order for IM coverages,XXX-32848,208762,In UAT,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Update CorvelTPALockdown table in Production,BBB-7877,208760,Done,BBB,EDW Production Operations,Critical,Williams,,,Coding
+UAT1 - Flood Cov - Annual Agg limit factor not being applied in rating,XXX-32847,208758,Cancelled,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Update ANIC Agency Lookup Table (ANICAgencyMapping) - Agency A79,BBB-7874,208749,Done,BBB,EDW Production Operations,Critical,Williams,,,
+"Stab3_Rating_Commercial Package_Cancellation_"" CR7ApplyModifiers_PC_Ext"" got triggered twice in RateWorkSheet hence ""Package Mod"" applied twice",XXX-32846,208748,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab3_PC Config_COP_Renewal_Render exception error is coming while clicking the Edit Policy Transaction button on Renewal,XXX-32845,208746,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+PROD| GL Paid Loss- 134 records and GL Written Premium- 1298 records got errored out|07/16,BBB-7873,208745,New Item,BBB,EDW Production Operations,Medium,Martin,,,Coding
+"Stab3_Rating_Commercial Package_New Business_""CR7SaveandZeroOutModifiers_Ext"" not applied to ""Commercial crime Schedule Mod"" applicable coverages leading to Schedule Mod applied twice to Term Amount",XXX-32842,208738,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+ stab 3-CPP_CP+Crime +GL-XXX-31547_CP-[Commercial Property Line (v7)] Multiple Location Premium and Dispersion Credit Factor on Commercial Property Line (v7) has invalid value '1.0000' which is out of range '[0.8500 0.9900]'-not throwing any validation,XXX-32840,208727,Cancelled,XXX,ANIC P&C Migration,Critical,Martin,PolicyCenter,,Coding
+Stab3_Integ_Doc Management-Unable to upload any document in the PC if the user chooses the 'Doc Type' as 'PRADV' and 'FILING'. As per the Mule logs Image Now is not accepting these Doc Types.,XXX-32839,208725,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,Integrations,,Not a Defect
+Stab3_Rating_Commercial Umbrella_Rewrite Remainder of Term not available in Actions Tab,XXX-32838,208723,Cancelled,XXX,ANIC P&C Migration,Critical,Williams,PolicyCenter,,Coding
+Stab3_PC Config_CPP (Crime monoline)_NB_Remove button functionality is not working for all the List of Scheduled Items & when trying to remove & click on Remove button application error is coming on (Crime Screen - Manuscript Premiums Tab),XXX-32837,208718,Ready for QA,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_Digital_CE_User shouldn't see P&C policy to file a claim. Single Account with one policy routing is diversed to Home Page.,XXX-32836,208717,Done,XXX,ANIC P&C Migration,Critical,Williams,Digital,,Coding
+Stab3_Rating_Commercial Umbrella_getting render exception while viewing rateworksheet-Policychange,XXX-32835,208715,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+Integ-Jasper-The credit score value is shown as an error in the policy information screen when valid test data added.,YYY-16343,208714,Done,YYY,ANIC WC Migration,Medium,Martin,Integrations,,Environment
+"Stab3_PC_MEL_NB- ""Rate mode"" dropdown values are not correct if policy conversion type is other than ""Not Converted""",XXX-32834,208713,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+CP - For HL location - Validation message for limit is not throwing when Windstorm is selected on Building/Special class & corresponding form also not triggered,XXX-32833,208712,Cancelled,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_PC_MEL_NB- PCIC and copy to all jurisdiction - TX state,XXX-32832,208711,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+"Stab3_Integ_Doc Management-Unable to upload any document in the PC via ""Upload Document"" option.",XXX-32831,208710,Cancelled,XXX,ANIC P&C Migration,High,Williams,Integrations,,Coding
+Stab3_PC_MEL_NB- policy review screen - coverages and condition are not coming in alphabetical order - MO state,XXX-32830,208709,Done,XXX,ANIC P&C Migration,Low,Peter,PolicyCenter,,Coding
+PROD CDA | Newly created tasks had failure in DB Zone for GWPC | 07/16 ,BBB-7872,208702,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+3.1 P&C | ODS Risk PC Table - IM - Incorrect records loaded with UARType = 'N/A' ,AAA-5096,208701,Done,AAA,AAA,Very High,Martin,Stage to AAA,,Coding
+ODS_RiskPCInland table RiskPCID - RiskPCInland gets Mutiple matches in RiskPC Table,AAA-5095,208700,New Item,AAA,AAA,Very High,Martin,Stage to AAA,,Coding
+QA: ODS-Location: Duplicates records loaded in ODS_PandCLocation table,AAA-5094,208699,New Item,AAA,AAA,High,Martin,,,Coding
+QA : ODS-RiskProperty : Duplicates/Extra Records identified in ODS-RiskProperty table,AAA-5093,208698,Done,AAA,AAA,Medium,Peter,,,Coding
+Staging - Duplicates in AccountServiceCommitments table ,BBB-7871,208697,Ready For Test,BBB,EDW Production Operations,Medium,David,,,Coding
+State Expansion - Add Approved Business Groups To BusinessGroup & BusinessGroupRegion,BBB-7870,208694,New Item,BBB,EDW Production Operations,High,Williams,,,Coding
+State Expansion - Add Approved Business Groups to CertificationLayer.dbo.GL_ValidationTable,BBB-7869,208693,New Item,BBB,EDW Production Operations,High,Williams,,,Coding
+Gen Update - RBBBrtedBusinessGroupCode & BusinessGroup - Policy 1032421 Policy Eff Dt 2024-07-04,BBB-7868,208691,Done,BBB,EDW Production Operations,Very High,David,,,Coding
+Offset/Onset - Policy 1032421 Policy Eff Dt 2024-07-04 In Order To Update Business Group,BBB-7867,208688,Done,BBB,EDW Production Operations,Very High,David,,,Coding
+ODS - 4000+ ANIC Claims Showing PolicyStatus as In Force On Expired Policy Terms,BBB-7866,208685,Done,BBB,EDW Production Operations,High,Williams,,,Coding
+Date format is DD/MM/YYYY instead of MM/DD/YYYY,XXX-32829,208684,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+3.1 | ODS - Update PAS LOI Logic for LINE_EXPOSURE 260,AAA-5085,208674,Invalid/Duplicate,AAA,AAA,High,Martin,,,Coding
+UAT1 - Form IM 7007 (ed. 01 12 and 02 12) - Contractors' Equipment Blanket Equipment Form: Coverages missing in Coverage Extensions and Supplemental Coverage in UI.,XXX-32827,208670,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+PROD | PRDPRIM Backup job failed - 07/13,BBB-7865,208655,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+[Day2] UAT1 - Form IM 7032: Income Coverage Applicable and Radio Buttons should not display under Equipment Schedule when Income Coverage Provided = No (Day2),XXX-32817,208654,Cancelled,XXX,ANIC P&C Migration,Low,Martin,PolicyCenter,,Coding
+CP-  Blocking Quote when Special class added with Windstorm with 1% or 2% or 5% & limit requirement is satisfied,XXX-32816,208653,To Do,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+PC Config- IL 12 15 CP not inferring for Umbrella,XXX-32815,208652,Ready for QA,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+UAT1 - Peak Season - need clarification on limits being used for rating,XXX-32814,208651,Blocked,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+"Stab3_Rating_Commercial Package_New Business_UW Company with CA state for submission is not changeable in dropdown and defaulting to ""none""",XXX-32811,208648,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+PROD || EDW PowerBI Subscriptions last step & Back Up job effected on 07/12,BBB-7864,208643,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Control M Prod | PRODREPL Job getting scheduled as Dummy on a daily basis,BBB-7863,208642,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+3.1 ODS | GoverningState misaligned with ExposureStateCode,AAA-5078,208627,Done,AAA,AAA,High,Martin,,,Coding
+Stab3_Rating_Commercial Output_Rewrite Full Term_Unable to issue Rewrite due to hard stop error,XXX-32795,208626,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+UAT1 - CA 25 68 MT Emp Ben form # not in payload,XXX-32792,208621,Done,XXX,ANIC P&C Migration,Very High,Peter,PolicyCenter,,Coding
+Stab3_Rating_Commercial Package_Rewrite Remainder of Term not available in Actions Tab,XXX-32791,208620,Done,XXX,ANIC P&C Migration,Critical,Williams,PolicyCenter,,Coding
+Stab3_Integ_Prometrix-CPPCP- The protection class value non editable  prometrix states at building level when select the order ppc value as No.,XXX-32790,208613,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,Integrations,,Not a Defect
+GWPC - Prestage to landing GWPC Job Failed,DDD-5809,208612,Done,DDD,EDW QA COE,High,Martin,,,Coding
+13th July EOD CDA all jobs got failed || Connection Error:com.microsoft.sqlserver.jdbc.SQLServerException,BBB-7862,208609,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab3_Rating_Commercial Output_Policychange_Rate and Premium is incorrectly displayed in the Quote screen,XXX-32789,208605,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+ Stab 3_XXX-31550_PC_CPP_ - New Submission- Payments screen - Check Audit is coming as 'No' by default while as per the requirements it should not have a default value,XXX-32788,208604,Ready for Dev,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+ stab3-XXX-31550_CPP_CP+Crime +GL+COP_AZ UT-- Policy Packet_View button not displayed & Validate User entered data in generated policy document-blocked,XXX-32787,208603,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Environment
+ stab3-  XXX-31567_CPP_Crime +GL_ID-- Legal Entity Dropdown options should match with Policy info screen 'Organization Type' dropdown option when Entity Type = Commercial (not matching) ,XXX-32786,208602,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Not a Defect
+Prod | GWPC Prestage to Landing Failure due to missing table,BBB-7861,208601,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+3.1 P&C ODS - Risk PC table - AU - Records got dropped,AAA-5073,208600,Done,AAA,AAA,Medium,Williams,,,Coding
+stab3-  XXX-31554_CPP_CP+Crime +GL_FL - Base state =  FL then for all locations added on the policy on location screen should have 'Flood Coverage Apply' as 'No' and make it non-editable,XXX-32785,208596,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3-PC-IM-Generate Policy number-System is not throwing any error when a copy submission is performed on a submission where Policy number is generated,XXX-32784,208595,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+Stab3 XXX-31550_CPP_CP+Crime +GL_NewSubmission- UWI - 'MUTHRE not on the policy' is getting triggered even when NAICS code is not starting with '23' QA5/QA6,XXX-32783,208594,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3-  XXX-31550_CPP_CP+Crime +GL_AZUT -UWI-Manuscript Form-is not getting triggered even when triggering condition is fulfilled ( if manuscript is added AND Reason for Form = Manuscript),XXX-32782,208593,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3-PC-IM-Electronic Data Processing-Supplemental coverages- Limit Any One Occurrence is defaulting to 25000 instead of 2500,XXX-32781,208592,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab3-PC-IM-Electronic Data Processing-Foreign Transit and Location Coverage and  Incompatible Hardware and Media  are not displayed,XXX-32780,208591,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Electronic Data Processing-Coverage names are displayed incorrectly Server is getting displayed instead of sewer,XXX-32779,208590,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Electronic Data Processing-Attach Additional Location Schedules is not displayed even though more than 10 locations are added,XXX-32778,208589,Cancelled,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Not a Defect
+Stab3-PC-IM-Electronic Data Processing-Schedule of Coverages Income Coverage- Error message not trigerred when user didn't enter any limits,XXX-32777,208588,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3-PC-IM-Electronic Data Processing-EDP Limit field is not displayed,XXX-32776,208587,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+PROD| GL Paid Loss- 04 records got errored out|07/14,BBB-7860,208581,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+PROD| SL Load Daily job failed due to connection issue|07/14,BBB-7858,208579,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+PROD| 	D365PremiumDataLoad had failed due to connection issue|07/14,BBB-7857,208578,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+stab 3-CPP_CP+Crime +GL-XXX-31547_crime forms not triggering,XXX-32770,208576,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+3.1 ODS - Detail Coverage Duplicates,AAA-5068,208575,Done,AAA,AAA,Very High,David,,,Coding
+3.1 ODS - Policy ID = 'null'  ,AAA-5067,208574,Done,AAA,AAA,High,David,,,Coding
+stab3- XXX-31550_CPP_CP+Crime +GL_AZUT -- Form should  display camel case letter should not display in capital letter & CR 01 59	08 07 Not triggered_crime,XXX-32769,208573,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+PROD | GWCM started before CDA completed | 07/14,BBB-7856,208572,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Stab3_Rating_Commercial Package_Rewrite_Payment plan is not displayed for Payment Schedule during Rewrite,XXX-32768,208571,Done,XXX,ANIC P&C Migration,Critical,Peter,PolicyCenter,,Coding
+UAT1 - All Lines of Business - Invalid Quote During Cancellation Transaction in PC,XXX-32767,208563,Ready for QA,XXX,ANIC P&C Migration,Very High,Peter,Rating,,Coding
+LTI - Business Group/Business Unit errors in Production - Root Cause Analysis/Fix,EEE-1706,208557,To Do,EEE,PolicyCenter,Critical,Williams,PolicyCenter,,Coding
+UAT1 - EDP Income Coverage Coinsurance should not be displayed on UI,XXX-32762,208538,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Requirements
+UAT1 - Remove Location Number column on EDP Schedule of Coverages Income Coverage Described Premises schedule,XXX-32761,208537,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Requirements
+UAT1 - don't require Programs and Application Limits on EDP Schedule of Coverages Scheduled Limit Described Premises schedule,XXX-32760,208536,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+UAT1 - Updates to EDP Schedule of Coverages Scheduled Limit Described Premises schedule,XXX-32759,208535,Ready for Dev,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+IM-Rating-XXX-31396-To validate owners cargo Non reporting premium and Builders risk-Earth movement and flood premium premium,XXX-32758,208525,Done,XXX,ANIC P&C Migration,Very High,Peter,Rating,,Coding
+Stab3_Integ_Prometrix-CPPCP- Protection class not defaulted  when updated the address1.,XXX-32737,208503,Cancelled,XXX,ANIC P&C Migration,High,Martin,Integrations,,Data
+Stab 3_CC_CA_Weather field is displaying as Non mandatory field in loss details screen,XXX-32736,208501,Ready for QA,XXX,ANIC P&C Migration,Medium,Peter,ClaimCenter,,Coding
+Stab3_Digital_PE-Bill Payment-ACH payment confirmation is not displayed,XXX-32735,208500,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Coding
+PC_CU- Commission override upper limit UW issue,XXX-32733,208491,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Risk PC Table - Policies missing ODS_RiskPC tables,AAA-5060,208490,Development,AAA,AAA,Very High,Martin,,,Coding
+Stab3_PC_CU_NewSubmission - Business Unit field default to Error,XXX-32732,208487,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+UAT1 - Bldg # not correct or duplicate in COP RIsks screen,XXX-32726,208478,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+Stab3_PC_CU_NewSubmission - Getting error on adding underlying WC policy ,XXX-32725,208477,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_Rating_Commercial Package_Reinstatement & Cancellation_Extra slice is created for Manuscript premium in Quote screen during Reinstatement. Also Prorated in Rate worksheet when Manuscript Flat Charge=Yes during Cancellation,XXX-32714,208464,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+Stab3_Rating_General Liability-Manuscript-Extra slice is created for Manuscript premium during Reinstatement,XXX-32713,208461,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+3.1 P&C | ODS Risk PC Table - GL - Incorrect records loaded with UARType = 'N/A',AAA-5058,208460,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab3_Rating_Commercial Umbrella-Manuscript-Extra slice is created for Manuscript premium during Reinstatement,XXX-32712,208459,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+BC QA06env_CIM Collateral Unapplied fund of Invoice stream1 is getting applied to diff invoice stream Invoice,XXX-32711,208458,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+Stab3_PC_Common_NB- Document is coming blank for all P&C lines,XXX-32710,208457,Done,XXX,ANIC P&C Migration,Critical,Martin,PolicyCenter,,Coding
+PROD|GWPC had RI failure from landing to stage|07/12,BBB-7851,208456,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+Stab3_PC_CP_PolicyChange & Rewrite_Forms_CP 1139 CP 03 24 form not triggered,XXX-32707,208453,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+"Stab3_Rating_Commercial Package(Crime)_New Business_UW Company for CompanyDeviationFactor in Rateworksheet is always ""XYC Crop Casualty Insurance Company"" irrespective of UW Company selected in Quote Screen",XXX-32706,208452,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+LTI - Distribution Manifest displays incorrect address for Producer cc: recipient - mail sent to incorrect address,EEE-1702,208444,To Do,EEE,PolicyCenter,High,Williams,PolicyCenter,,Coding
+UAT1 | Inland Marine Coverage Terms have not been mapped to the payload,XXX-32705,208442,In UAT,XXX,ANIC P&C Migration,Critical,David,Forms Mapping,,Coding
+Update Mapping of 530 for ID PPI Payments to report as 030 on PY report,CC-5227,208439,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+UAT1 | GL 1043 CP is inferring to the Umbrella but the form's schedule is not,XXX-32702,208438,In UAT,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Add new States KS and MO to EDI Reporting,CC-5226,208437,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+System opened Non-Payment Delinquency in error,ZZZ-1270,208432,To Do,ZZZ,BillingCenter,Medium,Williams,BillingCenter,,Coding
+Default FROI 02 Change Data Element/Segment Number (DN0412) to 0270 Employee ID Type Qualifier,CC-5225,208431,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+Update EDI Logic to Compare Initial Last Day Worked date with Initial Date Disability Began dates,CC-5224,208428,In Dev,CC,Claim Center,Medium,Williams,ClaimCenter,,Coding
+UAT1 | GL 1082 CP should not be attaching for Oregon,XXX-32701,208426,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+UAT1 - CU 1184 CP 03 24 - Form # Update,XXX-32695,208414,Done,XXX,ANIC P&C Migration,Medium,John,PolicyCenter,,Coding
+Stab3_PC_CU_NewSubmission - Expiration Date field should be a read only field when the Term type is Annual,XXX-32610,208327,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Environment
+Stab3_PC_CU_Exclusion - validation error should come for mandatory cov terms,XXX-32609,208326,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+CLONE - Stab3_PC_CU_Exclusion - Additional coverages should be in alphabetical order,XXX-32608,208324,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_PC_CU_Exclusion - Cover term - Schedule Number is missing for below coverages,XXX-32607,208323,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+POL0047 - Subscription Update Request,BBB-7850,208322,Done,BBB,EDW Production Operations,High,David,,,Coding
+BC Req defect_QA06env_ Collateral Expiration date should be the Payment date under Collateral screen,XXX-32606,208321,Requirements,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+BC QA06env_IM-Builders Risk integ issues,XXX-32605,208320,Done,XXX,ANIC P&C Migration,High,Peter,BillingCenter,,Coding
+LTI - Application Error received when trying to rerate a 9/7 renewal in Pricing Tools ,EEE-1700,208318,Requirements,EEE,PolicyCenter,Critical,Peter,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_New Submission_IL_UW Company is reset to None in the pricing tool screen.,XXX-32604,208317,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+Stab3_PC_CP_Rewrite to New Acocunt_Unable to move cancelled policy from one account to another account,XXX-32591,208288,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_PC_GL - Subline codes are not available for TX state,XXX-32590,208286,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+UAT1 - Form IM 7088 07 20 Windstorm Deductible is not applicable to MN,XXX-32585,208279,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Prod| GL Paid Loss - 24 records errored out on 07/11,BBB-7848,208277,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+DataFix - AL -  NON CPIC issuancecompany NCCIStandardEarnedPremiumatDSRLevel is incorrect,BBB-7846,208274,Development,BBB,EDW Production Operations,Very High,Andrea,,,Coding
+Stab3_Rating_Commercial Auto_New Submission_ State Manuscript routine is not triggered,XXX-32583,208273,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+Stab3_Integ_Prometrix-CPPCP- The order PPC value  for nonprometrix states displays as Yes when bulk  locations imported. ,XXX-32582,208272,Done,XXX,ANIC P&C Migration,Medium,Martin,Integrations,,Coding
+"Auto & GL : Liability deductible is not getting defaulted to ""No Deductible"" & hidden from UI  when We are selecting rate mod as ""Large deductible"" or ""Large Deductible or Retro"" for Auto & GL.",XXX-32581,208271,Done,XXX,ANIC P&C Migration,Critical,Williams,PolicyCenter,,Coding
+Stab3_Integ_Prometrix-CPPCP- Navigating from a location screen to another screen and returning to the location screen prometrix integration was called  when bulk  locations imported. ,XXX-32580,208269,Done,XXX,ANIC P&C Migration,Medium,Martin,Integrations,,Coding
+Stab3-XXX-31550_CPP_CP+Crime +GL_AZ (All location)-- NAICS values will be prefilled from Experian (Button is on Policy Info)-not workingQA5/QA6,XXX-32579,208268,Done,XXX,ANIC P&C Migration,High,Martin,Integrations,,Environment
+GW Ticket # - GW#0078xx36 Commercial Property : Additional covered property on the blanket and its missing validation ,XXX-32578,208263,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+GWCC STTM output ClaimantcontactsreleatedContacts is taking more than 20 min on Prod,BBB-7845,208262,Ready For Test,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab3_Rating_Commercial Package_New Business_Mismatch between Term Amount and Premium in Quote Screen for General Liability Exposures,XXX-32577,208261,In Dev,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+GW Ticket : GW#00789932  Comm Prop: location has CP 10 28 or CP 10 40 EQ form with General blanket and EQ cause of loss coverage = yes then on Quote screen wrong display of Earthquake blanket,XXX-32574,208251,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+" Stab3_Rating_Commercial Auto_New Business_UW Company ""XYC Crop Premier Insurance Company"" the Company Deviation Factor in Rate worksheet pointing to 0 instead of -0.20",XXX-32573,208250,In Dev,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Manually generated Policy Number which is generated through Generate Policy Number button is not getting copied to copied submission,XXX-32572,208248,Cancelled,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab3_Digital_CE - Claim Filter is not dynamic and contain duplicate LOB list dropdown.,XXX-32571,208247,Done,XXX,ANIC P&C Migration,High,Williams,Digital,,Coding
+Stab 3_PC_GL_ - Form IL 11 46 CP Identity Recovery Coverage is not getting inferred during New Submission but is getting inferred during Renewal even when Identity Recovery coverage is not added in both of the transactions,XXX-32570,208246,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_XXX-31547_PC_CPP_Property Coverage Enhancement Applies?&Hospitality Applies? at Policy Change not retained from NBAND nb ALso not retained once quote and edit the policy,XXX-32569,208244,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+AL Premium Load GWPC Daily | Balance Failure | 7/11/20204 |EDWSVWSQ031\STGPRIM |ANIC 2.2 ,DDD-5808,208243,Development,DDD,EDW QA COE,High,John,,,Coding
+Stab3_PC_MEL_NB- Maritime Employers Liability Insurance Policy default value is not correct - MT state,XXX-32568,208241,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Renewal- Underwriting Company is not getting carry forwarded from previous txn and is getting defaulted to Alaska National Insurance Company ,XXX-32567,208240,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_PC_MEL_Renewal- renewal status is not changing to not taken at R-30 days - MT state,XXX-32566,208239,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Not a Defect
+"Stab 3_PC_GL_ - Renewal- Auto Renew indicator is set to Auto Renew while as per the requirements it should be ""Manually Renewed"" for P&C lines",XXX-32565,208238,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab 3_PC_GL_ - New Submission-Form IL 543 CP  Named Insured Endorsement is not getting inferred. Form is also not present in form inference sheet in any of the tabs. It is getting inferred during Renewal,XXX-32564,208237,Cancelled,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_ - New SUbmission-Form IL 1215 CP Cancellation Or Non-Renew Broad Notice To Certificate Holders is not getting inferred. Form is also not present in form inference sheet in any of the tabs. It is getting inferred during Renewal,XXX-32563,208236,Cancelled,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Prod| GWCC - Duplicate records in wcclaimant and claimsourcecontrolamounts on 07/11,BBB-7844,208235,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab 3_PC_GL_ - Credit score is not getting  generated upon clicking Order Experian Data button,XXX-32562,208230,Done,XXX,ANIC P&C Migration,High,David,Integrations,,Environment
+Stab3_PC_CPP_NewSubmission_Print Quote_getting error & click on OK,XXX-32561,208229,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Risk PC Table - GARAGE - Records got dropped,AAA-5050,208228,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab 3_PC_GL_ - Rewrite New Account- Check Audit and Service Audit are not getting displayed,XXX-32560,208227,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Rewrite New Account- Invoice streams are not coming during Rewrite New Account,XXX-32559,208226,Cancelled,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Form IL 1143 CP Extended Notice Of Cancellation is not getting inferred. Form is also not present in form inference sheet in any of the tabs ,XXX-32558,208225,Cancelled,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_ - UWI - Occurrence or Aggregate limit exceeds authority limit for Premises and Operations is not getting triggered even when triggering condition is fulfilled ,XXX-32557,208224,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Page validation when no location matches the base state on locations screen is not getting triggered ,XXX-32556,208223,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Reinstatement: Reinstatement related document PC-019 : Reinstatement Letter is not getting triggered under the Documents,XXX-32555,208222,Cancelled,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Cancellation: Cancellation related documents PC-001 Notice of Cancellation PC-013 Confirmation are not getting triggered under the Documents,XXX-32554,208221,Cancelled,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+"Stab 3_PC_GL_ - There are no cov terms in ""Logging and Lumbering Operations Broad Form Liability Coverage"" under Additional Coverages on General Liability screen",XXX-32553,208218,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab 3_PC_GL_ - UWI - Occurrence or Aggregate limit exceeds authority limit for Liquor is not getting triggered even when triggering condition is fulfilled (Aggregate Limit>5000000 ),XXX-32552,208217,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab3_CC_CA_Type of loss_Getting Type of Loss error message while updating the vehicle incident with PC data.,XXX-32551,208216,In Dev,XXX,ANIC P&C Migration,High,John,ClaimCenter,,Coding
+[GW ticket 00793980] Stab 3_PC_GL_ - Policy Change- When a location is removed during Policy Change then  'null' is appearing at multiple places in Differences tab corresponding to the removed location,XXX-32550,208215,Blocked,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+ODS_Account INTSEC - Observation around AccountName column | Older AccountNames are getting populated along with the latest Accountname for a single account. ,BBB-7972,208214,Analysis,BBB,EDW Production Operations,Medium,Williams,,,Coding
+ODS_AccountOrganizationCoding INTSEC - Columns OrganizationCodingLevel1OrganizationCodingLevel2OrganizationCodingLevel3 are getting populated with NULL values.,BBB-7971,208213,Analysis,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Invalid quote error when attempting to amend the Broker of Service Mid Term,EEE-1691,208212,To Do,EEE,PolicyCenter,High,Williams,PolicyCenter,,Coding
+DIM_DerivedClaimType - 2 Records For Same Claim With RecordEndDate = 2999-12-31,BBB-7843,208211,Invalid/Duplicate,BBB,EDW Production Operations,High,Williams,,,Coding
+UAT1 - IM 7055 09 20 - Fire Department Service Charge does not apply to Arizona,XXX-32549,208210,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+PE: Submissions STP failing for Edited WCIRB RED when system changed RED,GGG-1349,208197,In Dev,GGG,GW Cloud Digital,High,Williams,,,Coding
+UAT1 - IL 01 21 AK Changes - Attorney's Fees,XXX-32538,208196,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+CP DWH - Exclude Deleted Records to Improve Quality of Data that Uses GWPC as a Source,BBB-7841,208195,Selected for Development,BBB,EDW Production Operations,Medium,John,,,Coding
+WCPOLS - Logic Updates and Exclude Deleted Records,BBB-7840,208194,Done,BBB,EDW Production Operations,Medium,John,,,Coding
+UAT1 - Spelling correction for form IM 7088 - Windstorm Deductible Spelling correction: Form IM 7073 Contract Penalty Endt,XXX-32537,208193,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+[DbDrop] QA5/UAT1 - Scheduled Items are getting re-sequenced during policy change when we remove any one of the existing schedule item.. ,XXX-32536,208191,Blocked,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+PE: Submissions Submissions that Originated in PC are showing in PE,GGG-1348,208189,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
+Stab3_PC_CP_NewSubmisison_Blank Quote packet generated,XXX-32535,208188,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+[Request ID :##RE-203140##] : Re: [Request ID :##RE-139926##] : Nexus Feed - Argonaut Audit Claims Location,BBB-7838,208187,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+ENOCEndt activity code is not generating activity as expected ,ZZZ-1258,208182,To Do,ZZZ,BillingCenter,High,Williams,,,Coding
+UAT1 - cannot generate payload due to an application error occurred,XXX-32534,208181,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_Cancellation_During Cancellation Pro ration is happened in the routine when Flat charge is  Yes and Proration is happened in Quote screen when Flat charge is No,XXX-32533,208179,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab 2_CC_ALL_Subrogation_Subrogation statute deadline activity due date is not correct,XXX-32532,208178,Ready for QA,XXX,ANIC P&C Migration,High,Peter,ClaimCenter,,Coding
+QA : ODS-RiskProperty : Data mismatches in Column ConstructionCode in ODS-RiskProperty table,AAA-5043,208177,Done,AAA,AAA,Medium,Peter,,,Coding
+COP - CO 1246 Cannabis Property Exclusion,XXX-32531,208170,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Prod| GWCC- Duplicate records in Claimsourcecontrolamounts table 07/10,BBB-7837,208169,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+3.1 P&C | ODS Risk Auto Table - Records got dropped,AAA-5038,208165,Done,AAA,AAA,Medium,Williams,,,Coding
+ODS_RiskInland_Extra records and missing records from target,AAA-5037,208162,Done,AAA,AAA,Medium,Martin,Stage to AAA,,Coding
+ODS_Risk_PC_IM_More records are being loaded to target which should not be included.,AAA-5036,208161,Done,AAA,AAA,Medium,Martin,Stage to AAA,,Coding
+Change Logic on LossErrorValidation SP to handle Missing Loss Coverage record,BBB-7836,208157,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+ODS_Risk PC_IM_Records missing from target for lineofinsurance = 'IM',AAA-5035,208156,Done,AAA,AAA,Medium,Martin,Stage to AAA,,Coding
+Stab3_Digital_PE-Dashboard Tab- Table columns are displayed incorrectly,XXX-32530,208152,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Coding
+QA : ODS-RiskProperty : Records missing in ODS-RiskProperty table,AAA-5032,208151,Done,AAA,AAA,Medium,Peter,,,Coding
+Stab3_Rating_Commercial Output_Reinstatement_Extra slice is created for Manuscript premium while performing reinstatement transaction,XXX-32529,208150,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab3_Digital_PE-New Submission search is throwing error message even when data is displayed,XXX-32528,208149,Done,XXX,ANIC P&C Migration,High,Williams,Digital,,Coding
+Stab3_Rating_Commercial Auto_Policy change_In the Manuscript routine CurrentTransaction is displayed as Submission when we perform Mid Term Policy change,XXX-32527,208144,Ready for QA,XXX,ANIC P&C Migration,Low,Williams,Rating,,Coding
+Stab3_Digital_PE-New Submission Verbiage is missing ,XXX-32526,208141,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Coding
+Stab3_Rating_Commercial Auto_Reinstatement_Getting Application Error while click on Quote button,XXX-32525,208140,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab 3_BC MEL_Require Final Audit field value under Policy Details Screen is getting changed for Final Audit transaction,XXX-32524,208139,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+Stab3_Rating_Commercial Auto_Policy change_Vehicle Manuscript premium is displayed twice in the Quote screen,XXX-32523,208137,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_PC_MEL_NewSubmission Minimum Premium cov term - description is not correct and it should be mandatory- AK state,XXX-32521,208135,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+[DB Drop] COP - Vehicle Coverage - CO 1064_DB DROP,XXX-32520,208129,Blocked,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS Risk Auto Table - Same VIN Number tagged for Multiple VehicleNo for a PolicyNumber PolicyEffectiveDate and PolicySourceSystemCode,AAA-5031,208098,Deferred,AAA,AAA,Low,Martin,,,Coding
+COP - Windstorm or Hail - Exterior Paint And Waterproofing Exclusion,XXX-32519,208097,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+"Stab3_PC Config: For CA7 Business Auto Hired Auto Truckers Liability Limit should be defaulted to Policy Level Liability Limit if coverage type changed from ""No Coverage"" but its defaulting to ‘500000’ instead.",XXX-32518,208096,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab 3__XXX-31547 & XXX-31548_Building ID Number at policy change (mid-term)increment to 2 has in NB building id is 1,XXX-32517,208095,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+3.1 P&C | ODS RiskAuto - Wrong RiskPCId Populated for Auto Veh Policies,AAA-5030,208094,Done,AAA,AAA,Medium,Williams,,,Coding
+"Stab3_PC Config_Manuscripts for All LOBs: Changing the defect to ""Reason for Form"" field should not be mandatory for all LoB",XXX-32516,208093,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Requirements
+CDA PROD | No jobs started at Databricks from Ansible due to Invalid access token | 07/09,BBB-7833,208092,Done,BBB,EDW Production Operations,Critical,Williams,,,Coding
+Stab 3__XXX-31548_CPP_Policychange _ using Import/Export WA location Delete _is not getting removed from location screen in GLand CP we removed from location screen.,XXX-32515,208091,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_PC Config_CA7 Manuscripts: Added Line Level Manuscript Schedules aren’t getting retained on Click of Next. Its getting removed automatically,XXX-32514,208090,Done,XXX,ANIC P&C Migration,Low,Williams,PolicyCenter,,Coding
+"Stab 3__XXX-31547_CPP_Logging and Lumbering Operations Broad Form Liability Coverage_cover term not disaplyed
+",XXX-32513,208089,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+UAT1 - Form IM 7055 08 20 Schedule of Coverages Building Risk Comprehensive Form should be in CA,XXX-32510,208081,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+LTI - Print Quote & Bind Options buttons missing/disabled for submissions eff 8/1/2024 and later,EEE-1684,208079,Ready for Dev,EEE,PolicyCenter,High,Peter,PolicyCenter,,Coding
+3.1 P&C | ODS - Fix ODS_Policy Attribution Mapping,AAA-5028,208074,New Item,AAA,AAA,High,Martin,,,Coding
+System Slowness when Audit adds notes to Paygo Policies,EEE-1683,208071,Cancelled,EEE,PolicyCenter,Medium,Williams,PolicyCenter,,Coding
+Onset/Offset Issue - Claim PC000xx31 & PC000xx28 Have Financials In 2 Accident Years In SL,BBB-7832,208069,Invalid/Duplicate,BBB,EDW Production Operations,High,Williams,,,Coding
+UAT1 - Umbrella - Several Validation Errors Regarding Underlying Forms,XXX-32503,208063,To Do,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Refresh Global Type List from GW,BBB-7831,208057,Done,BBB,EDW Production Operations,High,Martin,,,Coding
+UAT1 - Duplicate VIN Validation for Auto,XXX-32497,208055,Cancelled,XXX,ANIC P&C Migration,Very High,John,PolicyCenter,,Coding
+UAT1 - CU-506 03 24 - Turn Form Inference Off,XXX-32496,208054,To Do,XXX,ANIC P&C Migration,Medium,John,PolicyCenter,,Coding
+CP DWH - stg_d_claimant_N failed because GENDER is not long enough in STG_D_CLAIMANT_N or D_CLAIMANT tables.,BBB-7830,208046,Done,BBB,EDW Production Operations,Medium,Martin,Data Model,,Coding
+Data Fix - Earned Financials - Policy 1001565 Eff Dt 2023-07-01 Needs Transaction 1250,BBB-7829,208045,Done,BBB,EDW Production Operations,High,David,,,Coding
+Stab 3_XXX-31547_PC_CPP_CP00xxx12 Business Income (Without Extra Expense) & CP0xxx1012 Extra Expense Coverage Form & CB 1286 CP Alaska Rule of Civil Procedure 82 Notice B CB 1225 CP Supplemental Extended Reporting Period Endorsement-form not  triggered,XXX-32495,208043,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab 3_BC MEL_ Charges under policy level charges screen & Invoice screen are not in sync for reporting Pay Plan,XXX-32490,207958,To Do,XXX,ANIC P&C Migration,Medium,David,BillingCenter,,Coding
+ODS_RiskPC_PD INTSEC- UARNumber and UARType are not populated as expected for CR LineOfBusiness. ,AAA-5022,207945,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab 3_XXX-31547_PC_CPP_Earthquake And Volcanic Eruption Coverage With Percentage Deductible_coverage term not dispalyed,XXX-32478,207937,Cancelled,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Not a Defect
+Stab 3_CC_AllLoBs_Error message not displayed when user enter TaxID(SSN) with all same digits,XXX-32477,207935,Ready for QA,XXX,ANIC P&C Migration,Medium,Williams,ClaimCenter,,Coding
+3.1 P&C | ODS Risk PC Table - GL - Records loaded with UARType = 0000 and UARNumber = 00000,AAA-5021,207934,Done,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS Risk PC Table - PR - Incorrect records loaded with UARType = 'N/A' ,AAA-5020,207932,Done,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS Risk PC Table - PR - The values for the column UARNumber are Incorrectly populated,AAA-5019,207931,Done,AAA,AAA,Medium,Williams,,,Coding
+CP_FL INSURANCE PREMIUM SURCHARGE change from 4 to 0.04,XXX-32476,207923,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+3.1 P&C | ODS Risk PC Table - Additional Records are loaded,AAA-5018,207922,Done,AAA,AAA,Medium,Williams,,,Coding
+Stab 3_PC _ GLMELCAIM_ Interim Audit Premium is not displaying under Policy transactions screen,XXX-32475,207921,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+IM-Policy - Getting invalid quote when trying to change the override yes to No during policy change,XXX-32471,207915,Done,XXX,ANIC P&C Migration,Very High,Peter,IM-Rating,,Not a Defect
+Change the following coverage from offered to Not Offered for CP,XXX-32464,207902,Done,XXX,ANIC P&C Migration,Medium,Williams,Rating,,Coding
+CDA PROD | 6 PM GWBC_Bronze Job got failed with Can't open lib 'ODBC Driver 17 for SQL Server' : file not found (0) (SQLDriverConnect),BBB-7823,207900,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+Stab3_Integ_Prometrix-CPCPP-Prometrix integration was not called for all existing location when perform the renewal transaction.,XXX-32428,207888,Done,XXX,ANIC P&C Migration,High,Martin,Integrations,,Coding
+Stab3_Integ_Prometrix-CPPCP- Prometrix integration was not called when udated the county value.,XXX-32427,207887,Done,XXX,ANIC P&C Migration,Medium,Martin,Integrations,,Coding
+3.1 P&C | ODS Risk PC _PAS Table - The Column BureauClassCodePhraseology is not populated as expected,AAA-5016,207880,Done,AAA,AAA,Medium,Williams,,,Coding
+LTI - Employers Limits of Liability should be pulling the current limits into the renewal policy,EEE-1675,207854,Cancelled,EEE,PolicyCenter,Very High,Peter,PolicyCenter,,Coding
+UAT1- IM 7005 Sched of Cov - Contractors' Equipment: <None> should not be valid selection for Deductible,XXX-32401,207852,Ready for QA,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 - IM 7005 Sched of Cov-Contractors' Equipment; Reporting Conditions - Deposit Premium field missing,XXX-32400,207851,Cancelled,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+UAT1 | GL 1081 CP should not be attaching for Oregon,XXX-32399,207849,In UAT,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+stab3-CPP_CP+Crime +GL_Error details: The rate book 'ISO Crime AK v. AK_06012018_V01' does not contain the calc routine 'CR7LineManuscriptEndorsement_PC_Ext',XXX-32394,207844,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Stab 3_PC_CPP_Rating_getting invalid quote,XXX-32390,207839,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+UAT1 - Auto - Fleet & Non-Fleet Validation Error,XXX-32383,207830,Done,XXX,ANIC P&C Migration,High,Peter,PolicyCenter,,Coding
+UAT1 - Coverage Type should not be shown on Risks screen for COP,XXX-32382,207828,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab 3_CC_PSR_State value from vehicle details and class code details should be retrieved from PC to CC,XXX-32381,207827,Ready for QA,XXX,ANIC P&C Migration,Critical,Williams,ClaimCenter,,Coding
+"Commercial Umbrella : only ""Premises/Operations and Products/Completed Operations"" subline GL policies are getting eligible for Commercial Umbrella Policy.",XXX-32379,207823,Done,XXX,ANIC P&C Migration,Very High,David,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_Cancellation_OK_Manuscript Premium is NOT displayed during Flat cancellation in Cost change detail tab.,XXX-32378,207821,Ready for Dev,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+stab3-XXX-31547_CPP_CP+Crime +GL_while clicking save draft getting application error ,XXX-32377,207807,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab 3_XXX-31547_PC_CPP_GL_Identity Recovery Coverage not displayed _CP& GL_All transaction,XXX-32376,207805,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_CA7ExperienceModPhyDam_PC_Ext & CA7ExperienceModlia_PC_Ext routines are not getting Triggered ,XXX-32375,207804,Done,XXX,ANIC P&C Migration,High,Williams,Rating,,Coding
+"Stab3_Rating_Commercial Property_New Business_UW Company with HI state for submission is not changeable in dropdown and defaulting to ""none"" ",XXX-32374,207803,Done,XXX,ANIC P&C Migration,Very High,Williams,PolicyCenter,,Coding
+Prod| GL Paid Loss - 28 records errored out on 07/06,BBB-7817,207796,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Prod| GWPC Stage to edw balance check failed on 07/07,BBB-7816,207795,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+LTI - AQR test automatically applies emod and split rated incorrectly,EEE-1669,207787,To Do,EEE,PolicyCenter,Very High,Williams,PolicyCenter,,Coding
+Pricing Model Scheduled Rating applied incorrectly for submission not meeting premium eligibility threshold - TX,EEE-1668,207786,Cancelled,EEE,PolicyCenter,Very High,Williams,PolicyCenter,,Coding
+Corvel Med - issue with EDWBatchId EDWBatchDate,DDD-5794,207785,Done,DDD,EDW QA COE,High,Peter,,,Coding
+Data Fix - Access Layer - Settlement.PrimarySettlementIndicator,BBB-7814,207784,Done,BBB,EDW Production Operations,High,Andrea,,,Coding
+Stab 3_PC_GL_ - Form ANIC IL 11 41 06 11 Cancellation Notice to Certificate Holders is not getting inferred Form is also not present in form inference sheet in any of the tabs ,XXX-32372,207783,Cancelled,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_ - New Submission- Payments screen - Check Audit is coming as 'No' by default while as per the requirements it should not have a default value,XXX-32371,207782,Done,XXX,ANIC P&C Migration,Low,David,PolicyCenter,,Coding
+Stab 3_PC_GL_ - Forms pertaining to Interim and Final Audits are coming on Forms UI as well while these should only come under Documents,XXX-32370,207781,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_NewSubmission- UWI - 'MUTHRE not on the policy' is getting triggered even when NAICS code is not starting with '23',XXX-32369,207779,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+"Stab 3_PC_GL_Policy Change- Warning ""The Base State of <state> does not exist on one or more Sublines."" is blocking quote",XXX-32368,207778,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Not a Defect
+"[Defect] Stab 3_PC_GL_Policy Change- Warning ""Employment Practices Liability: Warranty Statement required for mid-term Limit increase."" is coming and is blocking quote",XXX-32367,207776,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_Policy Change - Prior Losses Tab is not hidden,XXX-32366,207775,Cancelled,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab 3_PC_GL_NewSubmission - Import/Export - Location deleted using import is appearing on the UI Locations screen after Deletion is performed,XXX-32365,207774,In Dev,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab 3_PC_GL_NewSubmission - UWI - MUTHRE not on the policy is getting triggered even when Multi Unit Tract Housing is present on the policy,XXX-32364,207773,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab3_PC_CU - Enterprise Hazard Grade UW issue is not triggering ,XXX-32363,207772,To Do,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
+Stab3_Digital_PE-Policies tab -Pending Quotes - Non WC quote is displayed,XXX-32362,207770,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Requirements
+Stab 3_PC_GL_NewSubmission - Import functionality is not working correctly when there is multi state and multi subline policy,XXX-32361,207769,Ready for Dev,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab 3_PC_GL_NewSubmission-General Liability screen - Upon trying to change the value for Premises/Operations BI and PD Deductible from 'No Deductible' to any other value changed value is not getting updated on the UI,XXX-32360,207768,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab 3_PC_GL_NewSubmission - General Liability screen - Unable to change the value of Premises/Operations PD Deductible,XXX-32359,207767,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_Policy Change_KS - MinimumPremium Routine is triggered even though the Total premium is > 100,XXX-32358,207766,Cancelled,XXX,ANIC P&C Migration,Medium,Martin,Rating,,Coding
+PC Config - CA - Even though state is removed on location but still showing in State specific ,XXX-32357,207765,Done,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Not a Defect
+PC Config - CU -Form ILU0540908 not triggered when CA policy added to CU Renewal,XXX-32356,207759,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+Rating-MEL- Missing routine name  and book code for terrorism routine,XXX-32350,207751,Done,XXX,ANIC P&C Migration,Low,Williams,Rating,,Coding
+Stab3_Digital_PE-Policies tab - Table columns are displayed incorrectly,XXX-32348,207734,Done,XXX,ANIC P&C Migration,Medium,Williams,Digital,,Coding
+Stab 3_PC_GL_Policy Change - Getting invalid quote,XXX-32347,207730,Done,XXX,ANIC P&C Migration,Critical,David,Rating,,Coding
+"Stab3_Rating_Commercial Auto_New Business_UW Company for Company Deviation Factor in Rate worksheet is always ""XYC Crop Casualty Insurance Company"" irrespective of UW Company selected in Quote Screen",XXX-32346,207725,Done,XXX,ANIC P&C Migration,Very High,Williams,Rating,,Coding
+Stab3-PC-IM-Contractors Equipment - Deductible dropdown and Percentage deductible% fields not working as per requirement,XXX-32344,207722,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_PC_MEL_NewSubmission - Roll deposit - quote screen issue and clearance Uwissue- MN state,XXX-32343,207721,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+Stab3_PC_MEL_PNC - Roll deposit - “Renewal Issued” should not have a default.  - ID state,XXX-32342,207718,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
+[Complex-SME]:CA7 Auto Dealers Audit: Rate is not getting applied correctly to the slices during Final Audit post Mid-Term Policy Change for Audit Impacted Coverages under Auto Dealers.,XXX-32341,207716,In Dev,XXX,ANIC P&C Migration,High,Martin,Rating,,Coding
+Stab3_PC Config_COP_NB_(Period From & Period To - these 2 fields alignment formatting is not correct for Peak Season Increase additional coverage) on Locations screen (Additional Coverages Tab),XXX-32340,207715,Done,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+Stab3_PC Config_COP_NB_(Render exception error is coming after adding Protective Safeguard condition on Building (Risks screen) (Exclusions & Conditions Tab) & then on navigating back to Exclusions & Conditions Tab on Risks screen,XXX-32339,207714,Ready for QA,XXX,ANIC P&C Migration,Medium,David,PolicyCenter,,Coding
+IM Audit: Effective Expiry & Proration Columns should be added and respective dates should be displayed for all slices of the coverages and Subtotal should be displayed for Estimated Audited & Change in Premium,XXX-32338,207713,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Requirements
+PROD| GL Paid Loss- 238 records and GL WrittenPremium- 34 records got errored out|07/04,BBB-7813,207712,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+CA- Policy Change - Getting invalid quote,XXX-32337,207711,Done,XXX,ANIC P&C Migration,High,David,PolicyCenter,,Coding
+Prod | ANICRetroPolicyLoad Job Failure due to File Open At User's End,BBB-7812,207710,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
+PROD| Output Feeds Quarterly ANICCalendarYearPremiumandExposureDump failed |07/04,BBB-7811,207709,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
+Stab3_Rating_Commercial Auto_Getting Application error during Reinstatement transaction,XXX-32336,207707,Done,XXX,ANIC P&C Migration,High,Williams,PolicyCenter,,Coding
+Stab3_Rating_Commercial Auto_Renewal_FL - Getting Application Error while click on Edit Policy transaction.,XXX-32335,207706,Done,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
+Stab3_Digital_CE_Invoice Year dropdown on billing page is not syncing upon changing the account filter.,XXX-32334,207705,Done,XXX,ANIC P&C Migration,High,Williams,Digital,,Data
+3.1 P&C | ODS RiskPC - Location Number UAR Number and UAR Type in RiskPC is not in Sync with ODS_RiskAuto.,AAA-4997,207704,Done,AAA,AAA,Medium,Williams,,,Coding
+3.1 P&C | ODS Risk Auto Table - Outdated records are loaded ,AAA-4996,207703,Done,AAA,AAA,Medium,Williams,,,Coding

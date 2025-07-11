@@ -1,0 +1,16 @@
+{
+  "Accident": [
+    "PolicyDriver",
+    "PALiability",
+    "PALineCoverages",
+    "PA_Underwriter",
+    "MotorVehicle"
+  ],
+  "Plumbing": [
+    "CPBuildingPopup",
+    "Construction"
+  ],
+  "Condo": [
+    "HOPCoverage"
+  ]
+}

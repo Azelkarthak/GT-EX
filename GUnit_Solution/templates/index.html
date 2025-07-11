@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunit Generator</title>
+    <link rel="icon" type="image/png" href="/static/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="/static/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .sidebar {
+            width: 250px;
+            min-height: calc(100vh - 64px);
+        }
+
+        .main-content {
+            min-height: calc(100vh - 64px);
+        }
+
+        .form-select,
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.375rem;
+            background-color: white;
+        }
+
+        .form-select:focus,
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            ring: 2px;
+            ring-color: #ef4445;
+            border-color: #ef4444;
+        }
+
+        .btn-copy {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+        }
+
+        .features-dropdown {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .alert {
+            animation: fadeOut 5s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 2;
+            }
+
+            90% {
+                opacity: 2;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #loader {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        #loader-content {
+            position: relative;
+            top: 40%;
+            color: white;
+            font-size: 24px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5); z-index: 1000; text-align: center;">
+        <div style="position: relative; top: 40%;">
+            <div class="spinner" style="border: 16px solid #f3f3f3; border-top: 16px solid #3498db;
+            border-radius: 50%; width: 80px; height: 80px; animation: spin 2s linear infinite; margin: auto;"></div>
+            <p id="loaderMessage" style="color:white; font-size:24px;">Generating Gunit... Please wait.</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <img src="/static/logo/exavalu.png" alt="Exavalu Logo" class="h-8">
+                <h1 class="text-2xl font-bold text-gray-900">Gunit Generator</h1>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar remains the same -->
+        <aside class="sidebar bg-white shadow-sm">
+            <div class="p-4">
+            <h3 class="text-red-600 font-semibold mb-4">Menu Items</h3>
+            <ul class="space-y-2">
+                <li><a href="{{ url_for('home') }}" class="text-gray-600 hover:text-gray-900">Generate Gunit</a></li>
+            </ul>
+
+            <div class="mt-8">
+                <h3 class="font-semibold text-gray-800 mb-2">LOBs</h3>
+                <ul class="space-y-2">
+                    <!-- Personal Auto with Black Car Icon -->
+                    <li class="text-gray-600 flex items-center">
+                        <i class="fas fa-car text-black mr-3 text-xl"></i>
+                        <span class="text-lg font-medium">Personal Auto</span>
+                    </li>
+                    
+                    <!-- Commercial Auto with Black Truck Icon -->
+                    <li class="text-gray-600 flex items-center">
+                        <i class="fas fa-truck text-black mr-3 text-xl"></i>
+                        <span class="text-lg font-medium">Commercial Auto</span>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8 bg-gray-50">
+            {% if status %}
+            <div id="alert1" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4 alert"
+                role="alert">
+                <span class="block sm:inline">{{ status }} for {{selected_lob}}</span>
+            </div>
+            {% endif %}
+            <div class="bg-white rounded-lg shadow-sm p-6">
+
+                <div id="center-input" {% if response or response1 %}class="hidden"{% endif %}>
+                    <form id="center_select" method="post" enctype="multipart/form-data" class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2" for="center">Select Center</label>
+                        <select class="form-select" name="center" id="center">
+                            <option value="" disabled selected>Select Center</option>
+                            <option value="PolicyCenter">Policy Center</option>
+                            <option value="ClaimCenter">Claim Center</option>
+                            <option value="BillingCenter">Billing Center</option>
+                        </select>
+                    </form>
+                </div>
+                <!-- LOB Selection Form -->
+                <div id="lob-input">
+                    <form id="lob_select" method="post" enctype="multipart/form-data" class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2" for="lob">Line Of Business</label>
+                        <select class="form-select" name="lob" id="lob" >
+                            <option value="" disabled selected>Select LOB</option>
+                            <option value="PersonalAuto">Personal Auto</option>
+                            <option value="CommercialAuto">Commercial Auto</option>
+                        </select>
+                    </form>
+                </div>
+
+                <!-- Gunit Form -->
+                <div id="gunit-input">
+                    <form id="uploadGunit" method="post" action="/generate_gunit" enctype="multipart/form-data"
+                        class="space-y-6">
+                        <input type="text" id="selected_lob" name="selected_lob" hidden>
+                        <input type="text" id="selected_center" name="selected_center" hidden/>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2"
+                                    for="builder">Builders*</label>
+                                <select class="form-select" name="builder" id="builder" >
+                                    <option value="" disabled selected>Builder</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Features</label>
+                                <div class="relative">
+                                    <button type="button" class="form-select text-left bg-white w-full" id="features"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select Features
+                                    </button>
+                                    <div
+                                        class="features-dropdown hidden absolute z-10 mt-1 w-full bg-white rounded-md shadow-lg">
+                                        <div class="p-2 space-y-2">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="features" value="Exposure" class="mr-2">
+                                                Exposure
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="features" value="Matter" class="mr-2">
+                                                Matter
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="features" value="Note" class="mr-2">
+                                                Note
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="features" value="Activity" class="mr-2">
+                                                Activity
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Selected Features</label>
+                            <input type="text" id="selected-features" class="form-input bg-gray-50" readonly>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-gray-700">GUnit for*</label>
+                            <p class="text-sm text-gray-500">(Git Branch Referred: Main)</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" id="base_method" name="gunit_type" value="base_method" 
+                                        class="mr-2">
+                                    Method-Manual Entry
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" id="class" name="gunit_type" value="class" 
+                                        class="mr-2">
+                                    Class-GitHub File Name
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="base_method_input" class="hidden">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Base Method*</label>
+                            <textarea class="form-textarea" id="base_method_textarea" name="base_method"
+                                placeholder="Enter the Base Method" oninput="autoSize(this)" ></textarea>
+                        </div>
+
+                        <div id="class_name_input" class="hidden">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Class Name*</label>
+                            <p class="text-sm text-gray-500 mb-2">(Please add extensions with the class name)</p>
+                            <input type="text" class="form-input" id="class_name" name="class_name"
+                                placeholder="Enter the Class Name">
+                        </div>
+
+                        <button type="submit"
+                            class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                            id="upload-gunit">
+                            Generate Gunit
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- Response Section -->
+            {% if response and response1 %}
+            <div id="output" class="space-y-6 mt-8">
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Builder Class for {{ builder }}</label>
+                    <div class="relative">
+                        <textarea class="form-textarea font-mono" id="response" style="min-height: 300px;"
+                            readonly>{{ response }}</textarea>
+                        <button type="button" onclick="copyToClipboard('response')"
+                            class="btn-copy px-2 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Gunit for {{ builder }}</label>
+                    <div class="relative">
+                        <textarea class="form-textarea font-mono bg-gray-50" id="response1" style="min-height: 300px;"
+                            readonly>{{ response1 }}</textarea>
+                        <button type="button" onclick="copyToClipboard('response1')"
+                            class="btn-copy px-2 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="{{ download_url }}"
+                        class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        Download Gunit Report
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        window.hasResponse = {{ 'true' if response or response1 else 'false' }};
+    </script>
+
+    <script>
+        // Features dropdown toggle
+        document.getElementById('features').addEventListener('click', function () {
+            const dropdown = this.nextElementSibling;
+            dropdown.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('.features-dropdown') && !event.target.matches('#features')) {
+                document.querySelector('.features-dropdown').classList.add('hidden');
+            }
+        });
+
+        // Update selected features
+        const checkboxes = document.querySelectorAll('input[name="features"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateSelectedFeatures);
+        });
+
+        function updateSelectedFeatures() {
+            const selected = Array.from(checkboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+            document.getElementById('selected-features').value = selected.join(', ');
+        }
+
+        // Radio button toggle for input fields
+        document.querySelectorAll('input[name="gunit_type"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                document.getElementById('base_method_input').style.display =
+                    this.value === 'base_method' ? 'block' : 'none';
+                document.getElementById('class_name_input').style.display =
+                    this.value === 'class' ? 'block' : 'none';
+            });
+        });
+
+        // Copy to clipboard function
+        function copyToClipboard(elementId) {
+            const textarea = document.getElementById(elementId);
+            textarea.select();
+            document.execCommand('copy');
+        }
+
+        // // AJAX for builders
+        // $(document).ready(function() {
+        //     $("#lob").change(function() {
+        //         var lob_select = $("#lob").val();
+        //         if (lob_select) {
+        //             $.ajax({
+        //                 type: "POST",
+        //                 url: "/get_builders",
+        //                 data: { lob: lob_select },
+        //                 success: function(response) {
+        //                     $("#builder").empty();
+        //                     $("#builder").append('<option value="" disabled selected>Select Builder</option>');
+        //                     $.each(response.builder, function(index, builder) {
+        //                         $("#builder").append('<option value="' + builder + '">' + builder + '</option>');
+        //                     });
+        //                 },
+        //                 error: function(xhr, status, error) {
+        //                     console.error(error);
+        //                 }
+        //             });
+        //         }
+        //     });
+        // });
+
+        // AJAX for builders based on LOB and Center
+        $(document).ready(function () {
+            function updateBuilders() {
+                var lob_select = $("#lob").val();
+                var center_select = $("#center").val();
+
+                if (lob_select && center_select) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/get_builders",
+                        data: { lob: lob_select, center: center_select },
+                        success: function (response) {
+                            $("#builder").empty();
+                            $("#builder").append('<option value="" disabled selected>Select Builder</option>');
+                            $.each(response.builder, function (index, builder) {
+                                $("#builder").append('<option value="' + builder + '">' + builder + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error(error);
+                        }
+                    });
+                }
+            }
+
+            // Update hidden fields and fetch builders when LOB or Center changes
+            $("#lob").change(function () {
+                $("#selected_lob").val($(this).val());
+                updateBuilders();
+            });
+
+            $("#center").change(function () {
+                $("#selected_center").val($(this).val());
+                updateBuilders();
+            });
+        });
+
+
+        // Textarea auto-size
+        function autoSize(element) {
+            element.style.height = "auto";
+            element.style.height = (element.scrollHeight) + "px";
+        }
+    </script>
+    <script src="./static/js/main.js"></script>
+    <script>
+        document.getElementById("upload-gunit").addEventListener("click", function () {
+
+        const selected_lob = document.getElementById("selected_lob").value;
+        const selected_center = document.getElementById("selected_center").value;
+        const builder = document.getElementById("builder").value;
+        const base_method_textarea = document.getElementById("base_method_textarea").value;
+        const class_name = document.getElementById("class_name").value;
+
+        // Check if base_method_textarea is null, empty, or just whitespace
+        if (!selected_center || selected_center.trim() === "") {
+            alert("Please enter a valid Center before proceeding.");
+            return; // Stop further execution
+        }
+        else if(!selected_lob || selected_lob.trim() === "") {
+            alert("Please enter a valid LOB before proceeding.");
+            return; // Stop further execution
+        }
+        else if (!builder || builder.trim() === "") {
+            alert("Please enter a valid Builder before proceeding.");
+            return; // Stop further execution
+        }
+        else if ((!base_method_textarea || base_method_textarea.trim() === "") && (!class_name || class_name.trim() === "")) {
+            alert("Please enter either a valid Base Method or Class Name before proceeding.");
+            return; // Stop further execution
+        }
+
+            // Show the loader and the initial message
+            document.getElementById("loader").style.display = "block";
+            document.getElementById("loaderMessage").innerHTML = "Preparing Document... Please wait.";
+
+            // Display more messages with delays
+            setTimeout(() => {
+                document.getElementById("loaderMessage").innerHTML = "Preparing necessary parameters...";
+            }, 6000); // 1 second delay
+
+            setTimeout(() => {
+                document.getElementById("loaderMessage").innerHTML = "Generating Data Builder...";
+            }, 12000); // 3 seconds delay
+
+            setTimeout(() => {
+                document.getElementById("loaderMessage").innerHTML = "Generating Data Generator...";
+            }, 18000); // 3 seconds delay
+
+            setTimeout(() => {
+                document.getElementById("loaderMessage").innerHTML = "Generating Gunit...";
+            }, 24000); // 3 seconds delay
+
+            setTimeout(() => {
+                document.getElementById("loaderMessage").innerHTML = "Almost Done......";
+            }, 30000); // 3 seconds delay
+
+
+
+
+            // Send the POST request with the radius to start the calculation
+            fetch("/generate_gunit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ radius: radius }), // Send the radius as JSON
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                })
+                .catch((error) => console.error("Error:", error))
+
+            setTimeout(() => {
+                document.getElementById("loaderMessage").innerHTML = "Almost done...";
+            }, 5000); // 5 seconds delay
+
+            //   // Listen for messages from the server using EventSource for updates
+            //   const source = new EventSource(`/calculate_area_progress?radius=${radius}`);
+
+            source.onmessage = function (event) {
+                document.getElementById("loaderMessage").innerHTML = event.data;
+
+                // Once the process finishes, hide the loader
+                if (event.data.includes("Finished")) {
+                    document.getElementById("loader").style.display = "none";
+                    source.close(); // Close the event stream
+                }
+            };
+        });
+    </script>
+</body>
+
+</html>
