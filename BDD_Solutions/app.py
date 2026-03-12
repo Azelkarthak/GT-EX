@@ -45,6 +45,8 @@ app.secret_key = os.urandom(24)
 UPLOAD_FOLDER = './static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+# ensure upload folder exists
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route("/upload-bdd", methods=['POST'])
 def upload_bdd():
@@ -340,6 +342,9 @@ def show_performance():
 def show_defect():
     return render_template("defect.html")
 
+@app.route('/bddFile')
+def show_bdd_file():
+    return render_template("bddFile.html")
 
 def run():
     app.run(host="0.0.0.0", port=5002, debug=False, use_reloader=False)

@@ -1,0 +1,37 @@
+        <!-- templates/bddFile.html -->
+{% extends "index.html" %}
+
+{% block header %}
+
+  <!-- Header -->
+  <nav class="navbar navbar-light bg-light p-3 d-flex justify-content-between">
+    <img src="/static/logo/Gt-Exlogo.png" alt="Exavalu Logo" class="company-name" style="height: 50px;" />
+    <h1 class="h4 text-center flex-grow-1">Testing Accelerator using BDD (File Upload)</h1>
+    <div style="width: 50px;"></div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+        <div class="col-md-10" id="defect-jira-input">
+          <b>What Is This About:</b>
+<i>Transform Your user stories into BDD feature file scenarios seamlessly.</i>
+<br>
+<b>How To Use:</b>
+<ol>
+    <li>Prepare your user stories in an Excel sheet, with each user story in a separate row.</li>
+    <li>Upload the excel sheet and click on the <button class="btn btn-danger">Generate BDD</button> button.</li>
+    <li>Our Gen AI engine will then generate BDD scenarios based on your user stories.</li>
+    <li>After the scenarios are generated, click on the <button class="btn btn-dark">Download</button> button to save the BDD scenario Excel file to your device.</li>
+</ol>
+            <!-- <div id="defect-jira-info-message" class="alert alert-info mt-3"></div> -->
+             {% if status %}
+  <div id="bdd-info-message" class="alert alert-info mt-3"></div>
+    {{ status }}
+  </div>
+{% endif %}
+            <form class="upload-group" method="post" action="/upload-bdd" enctype="multipart/form-data">
+                <input class="form-control" name="file" type="file" id="file-input" accept=".xls,.xlsx" required>
+                <button class="btn btn-danger mt-5" id="upload-bdd" onclick="initiateLoader()">Generate BDD</button>
+            </form>
+        </div>
+        {% endblock %}
