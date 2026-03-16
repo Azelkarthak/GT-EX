@@ -34,7 +34,7 @@ from BDD_Solutions.jira import (
 )
 from BDD_Solutions.performancecomapre import compare_json
 from BDD_Solutions.summarize_new import summarize_and_store_locally
-from BDD_Solutions.embedGenerate import (
+from BDD_Solutions.embedGenerateNew import (
     handle_start_embedding_button_click,
     handle_defect_detection_button_click
 )
@@ -90,8 +90,7 @@ def get_bdd_jira_boardid():
         board_ids = get_boardid(jira_url, email, password)
 
         if not board_ids:
-            print("⚠️ No board IDs returned.")
-            return jsonify(board_ids=[])
+            board_ids = [[1, "Demo Board"]]
 
         print("✅ Board IDs Fetched:", board_ids)
         return jsonify(board_ids=board_ids)
@@ -114,7 +113,12 @@ def get_bdd_jira_sprintid():
         # print(email)
         # print(password)
         # print(board_id)
+
         sprint_ids = get_sprintid(jira_url, email, password, board_id)
+        # Temporary dummy sprint
+        if not sprint_ids:
+            sprint_ids = [[1, "Demo Sprint"]]
+
         return jsonify(sprint_ids=sprint_ids)
 
     except Exception as e:
@@ -134,6 +138,13 @@ def get_bdd_jira_issue_bug():
         print("Defect","board_id="+board_id)
         print("Defect","sprint_id="+sprint_id)
         issue_bugs = get_issues_bug(jira_url, email, password, board_id, sprint_id)
+        # If Jira returns nothing, use dummy bugs
+        if not issue_bugs:
+            issue_bugs = ["Stab4_CP_Renewal - Inflation guard not applied, causing incorrect limits and premium mismatch",
+                          "Stab4_CP_Renewal - Inflation guard not applied, causing incorrect limits and premium mismatch",
+                          "Jasper CE - Valid claims flagged as duplicate with FNOL screen error",
+                          "UAT1 - Forms not triggered and missing in payload during policy issuance",
+                          "PROD - EventBridge messages processed with blank or incomplete data"]  # Dummy bug for testing
         # Print out all the issues fetched for verification
         print("Fetched issues: ", issue_bugs)
         return jsonify(issue_bugs=issue_bugs)
@@ -152,8 +163,16 @@ def generate_bdd_jira():
         sprint_id = request.form.get('sprint_id')
         user_story = get_issues(jira_url=jira_url, email=email, password=password,
                                 board_id=board_id, sprint_id=sprint_id)
-        if len(user_story) == 0:
-            return render_template('index.html', status="No active user stories found")
+        # if len(user_story) == 0:
+        #     return render_template('index.html', status="No active user stories found")
+        # If no stories from Jira, use dummy ones
+        if not user_story:
+            user_story = [
+                "As a user, I want to login to the system so that I can access my dashboard.",
+                "As an admin, I want to create a policy so that insurance records can be managed.",
+                "As a customer, I want to upload documents so that my claims can be processed.",
+                "As a user, I want to reset my password so that I can regain access to my account."
+            ]
         url = generate_bdd_from_jira(user_story)
         if url is None:
             return render_template('index.html', status="Failed to generate BDD scenario")
@@ -184,7 +203,7 @@ def generate_defect_detection():
             print(issues)
         
         # Pass the cleaned issues to the function
-        url = handle_defect_detection_button_click(issue=issues)
+        url = handle_defect_detection_button_click(issues)
         if url is None:
             return render_template('index.html', status="Failed to generate test data")
         return render_template('index.html', status="Test data generated successfully", response=url)
@@ -285,25 +304,21 @@ def trigger_summarization():
 
 @app.route("/trigger_embedding", methods=["POST"])
 def triggerEmbedding():
-    upload_folder = "./upload"
-    
-    print("Triggering embedding...", upload_folder)
-    try:
-        # Get all files in the upload directory
-        files = [os.path.join(upload_folder, f) for f in os.listdir(upload_folder)]
-        
-        if len(files) == 0:
-            return render_template('index.html', status="No files found for embedding")
+    file_path = "./cleaned_PC_JIRA.csv"  # ✅ Hardcoded file in same directory
 
-        # Get the file with the latest creation time
-        latest_file = max(files, key=os.path.getctime)
-        
-        # Call the embedding function with the latest file
-        print((f"Embedding process started for file: {latest_file}"))
-        url = handle_start_embedding_button_click(latest_file)
-        
-        return render_template('defect.html',status="Embedding completed successfully")
-    
+    print("Triggering embedding...", file_path)
+
+    try:
+        # Check if file exists
+        if not os.path.exists(file_path):
+            return render_template('index.html', status="file.csv not found")
+
+        # Call embedding
+        print(f"Embedding process started for file: {file_path}")
+        handle_start_embedding_button_click(file_path)
+
+        return render_template('defect.html', status="Embedding completed successfully")
+
     except Exception as e:
         print(f"Error: {e}")
         return render_template('index.html', status="Error while processing the file")

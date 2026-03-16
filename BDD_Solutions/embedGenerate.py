@@ -68,7 +68,7 @@ async def generating_defect(issues):
         if vectorstore is None:
             raise ValueError("Vectorstore not initialized. Please run embeddings first.")
 
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY, temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=GOOGLE_API_KEY, temperature=0)
     model_name = "ms-marco-TinyBERT-L-2-v2"
     flashrank_client = Ranker(model_name=model_name)
     compressor = FlashrankRerank(client=flashrank_client, top_n=5, model=model_name)

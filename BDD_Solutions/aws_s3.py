@@ -159,13 +159,21 @@ Return only valid Gherkin format.
         status = response.get("ResponseMetadata", {}).get("HTTPStatusCode")
 
         # Archive original input
-        s3 = boto3.resource("s3")
+        copy_source = {
+        'Bucket': AWS_BDD_INPUT_BUCKET,
+        'Key': f"{username}_input.xlsx"
+        }
 
-        s3.Object(AWS_ARCHIVE_BUCKET, f"{username}_input_{ts}.xlsx").copy_from(
-            CopySource=f"{AWS_BDD_INPUT_BUCKET}/{username}_input.xlsx"
+        s3_client.copy_object(
+            CopySource=copy_source,
+            Bucket=AWS_ARCHIVE_BUCKET,
+            Key=f"{username}_input_{ts}.xlsx"
         )
 
-        s3.Object(AWS_BDD_INPUT_BUCKET, f"{username}_input.xlsx").delete()
+        s3_client.delete_object(
+            Bucket=AWS_BDD_INPUT_BUCKET,
+            Key=f"{username}_input.xlsx"
+        )
 
         key = f"output_{ts}.csv"
 

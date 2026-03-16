@@ -64,13 +64,16 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
+      console.log("Jira script loaded");
     $("#jira_url, #email, #password").change(function() {
+        console.log("Credentials changed");
         var jiraUrl = $("#jira_url").val();
         var email = $("#email").val();
         var password = $("#password").val();
 
         // Check if all three fields are not empty
         if (jiraUrl && email && password) {
+            console.log("Calling board endpoint");
             // Make AJAX call to get board IDs
             $.ajax({
                 type: "POST",
@@ -81,10 +84,13 @@
                     password: password
                 },
                 success: function(response) {
+                    console.log("Boards received", response);
                     $("#board_id").empty();
                     $.each(response.board_ids, function(index, board_id) {
                         $("#board_id").append('<option value="' + board_id[0] + '">' + board_id[1] + '</option>');
                     });
+                    // Trigger sprint load automatically
+                    $("#board_id").trigger("change")
                 },
                 error: function(xhr, status, error) {
                     console.error(error);
@@ -96,6 +102,7 @@
 
     // Trigger AJAX call to get sprint IDs when board ID is selected
     $("#board_id").change(function() {
+        console.log("Board changed");
         var jiraUrl = $("#jira_url").val();
         var email = $("#email").val();
         var password = $("#password").val();
@@ -103,6 +110,7 @@
 
         // Check if all four fields are not empty
         if (jiraUrl && email && password && board_id) {
+            console.log("Calling sprint endpoint for board:", board_id);
             // Make AJAX call to get sprint IDs
             $.ajax({
                 type: "POST",
@@ -114,6 +122,7 @@
                     board_id: board_id
                 },
                 success: function(response) {
+                    console.log("Sprint response", response);
                     $("#sprint_id").empty();
                     $.each(response.sprint_ids, function(index, sprint_id) {
                         $("#sprint_id").append('<option value="' + sprint_id[0] + '">' + sprint_id[1] + '</option>');
@@ -159,6 +168,8 @@
                     "</option>"
                 );
               });
+              // Trigger sprint load automatically
+              $("#board_id_defect").trigger("change")
             },
             error: function (xhr, status, error) {
               console.error(error);
@@ -198,6 +209,8 @@
                     "</option>"
                 );
               });
+              // Trigger issue load automatically
+              $("#sprint_id_defect").trigger("click")
             },
             error: function (xhr, status, error) {
               console.error(error);

@@ -75,7 +75,7 @@ def get_ai_content(prompt, max_retries=3, base_delay=2,temperature=0.0):
     while retry_count <= max_retries:
         try:
 
-            model = genai.GenerativeModel("gemini-2.0-flash")
+            model = genai.GenerativeModel("gemini-2.5-flash")
             print("Calling model")
             response = model.generate_content(
                 contents=prompt,
