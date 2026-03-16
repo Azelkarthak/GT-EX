@@ -304,24 +304,27 @@ def trigger_summarization():
 
 @app.route("/trigger_embedding", methods=["POST"])
 def triggerEmbedding():
-    file_path = "./cleaned_PC_JIRA.csv"  # ✅ Hardcoded file in same directory
+    file_path = "./BDD_Solutions/cleaned_PC_JIRA.csv"  # ✅ Hardcoded file in same directory
 
     print("Triggering embedding...", file_path)
 
     try:
+        print(f"Checking if file exists at: {file_path}")
         # Check if file exists
         if not os.path.exists(file_path):
             return render_template('index.html', status="file.csv not found")
+        
+        print(f"Embedding process started for file: {file_path}")
 
         # Call embedding
         print(f"Embedding process started for file: {file_path}")
         handle_start_embedding_button_click(file_path)
 
-        return render_template('defect.html', status="Embedding completed successfully")
+        return render_template('defect.html', status="Embedding completed successfully"), 200
 
     except Exception as e:
         print(f"Error: {e}")
-        return render_template('index.html', status="Error while processing the file")
+        return render_template('defect.html', status="Error while processing the file")
 
 @app.route("/compare_performance", methods=['POST'])
 def compare_performance():
