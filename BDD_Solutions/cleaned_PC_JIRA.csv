@@ -1,4 +1,4 @@
-﻿Summary,Issue key,Issue id,Status,Project key,Project name,Priority,Assignee,Components,,Custom field (Root Cause)
+﻿Summary ,Issue key,Issue id,Status,Project key,Project name,Priority,Assignee,Components,,Custom field (Root Cause)
 Stab 4_IMCPPCOP LoBs_Line category typelist values for ClaimCost/Indemnity reserve values are displayed incorrectly,XXX-34126,213310,To Do,XXX,ANIC P&C Migration,Medium,Martin,ClaimCenter,,Coding
 Auto > For few cases description Fields are not updating properly from Policy Level to the Covered Symbol Screen.,XXX-34125,213309,To Do,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
 Stab4_Rating_GL_Cancellation_Manuscript Premium is NOT displayed during Flat cancellation in Cost change detail tab.,XXX-34124,213308,To Do,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
@@ -508,7 +508,7 @@ Stab 3_XXX-31551-CPP_CP+Crime +GL-At policy change  & PC-001-view button not dis
 Prod | GL daily paid loss error - 28 records errored out on 7/22,BBB-7944,209477,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
 Stab3_PC_MEL_NB - base state is getting populated in state coverage screen even if the user is not adding it in location screen - OK state,XXX-33130,209476,Done,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
 3.1 P&C | ODS DetailCoverage Table - Policies missing ODS_DetailCoverage  table,AAA-5282,209475,Ready For Test,AAA,AAA,Medium,David,,,Coding
-stab 3_XXX-31551-CPP_CP+Crime +GL-At policy change  -CP04391090			Functional Personal Property Valuation (Other Than Stock) -not inferred ,XXX-33129,209474,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+"stab 3_XXX-31551-CPP_CP+Crime +GL-At policy change  -CP04391090			Functional Personal Property Valuation (Other Than Stock) -not inferred ",XXX-33129,209474,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
 Stab3_BC MEL CA Lob_ Move Policy from one Invoice stream to other Issue,XXX-33128,209473,Ready for Dev,XXX,ANIC P&C Migration,Very High,David,BillingCenter,,Coding
 Stab3_Rating_General Liability_Renewal_Cyber Suite Extended Reporting Period and EPL Extended Reporting Period is removed during renewal,XXX-33098,209431,Cancelled,XXX,ANIC P&C Migration,Medium,Peter,PolicyCenter,,Coding
 PC Config - CP - Manual Premium  is not default to 0 for Equipment Breakdown Coverage on CP line,XXX-33097,209422,In UAT,XXX,ANIC P&C Migration,Medium,Martin,PolicyCenter,,Coding
@@ -606,7 +606,7 @@ Stab3_Digital_CE_Autopay amount should display based on the invoice stream.,XXX-
 3.1 P&C | ODS Detail Coverage Table - AU - STGarageK - The column CoverageExpirationDate is Incorrectly populated,AAA-5149,209039,Done,AAA,AAA,Very High,Williams,,,Coding
 production back up table cleanup,BBB-7903,209038,New Item,BBB,EDW Production Operations,Medium,Williams,,,Coding
 QA : ODS-DetailCoverageCrime : CoverageEffectivedate column populated incorrect Dates,AAA-5148,209037,Done,AAA,AAA,Very High,Peter,,,Coding
-Stab3_PC_CP_NewSubmission_ANIC CP037 Endorsement triggered instead of CP 037 CP 	Property Manuscript Endorsement when manuscript added at line or building or special class level when Reason for Form = Manuscript.,XXX-32934,209030,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+"Stab3_PC_CP_NewSubmission_ANIC CP037 Endorsement triggered instead of CP 037 CP 	Property Manuscript Endorsement when manuscript added at line or building or special class level when Reason for Form = Manuscript.",XXX-32934,209030,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
 DataFix - EDW - NON CPIC issuancecompany NCCIStandardEarnedPremiumatDSRLevel is incorrect,BBB-7902,209023,Blocked,BBB,EDW Production Operations,Medium,Martin,,,Coding
 PROD | Job 'ClaimSeverity PBA-EDW Daily Load' failed due to EDW Login Timoeout | 07/19,BBB-7901,209022,Done,BBB,EDW Production Operations,Medium,Williams,,,Coding
 PE: Email Notifications sent to wrong Producer,GGG-1366,209021,To Do,GGG,GW Cloud Digital,Medium,Williams,,,Coding
@@ -775,11 +775,11 @@ Stab3-PC-IM-Electronic Data Processing-Schedule of Coverages Income Coverage- Er
 Stab3-PC-IM-Electronic Data Processing-EDP Limit field is not displayed,XXX-32776,208587,Cancelled,XXX,ANIC P&C Migration,Medium,Williams,PolicyCenter,,Coding
 PROD| GL Paid Loss- 04 records got errored out|07/14,BBB-7860,208581,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
 PROD| SL Load Daily job failed due to connection issue|07/14,BBB-7858,208579,Done,BBB,EDW Production Operations,Medium,David,,,Coding
-PROD| 	D365PremiumDataLoad had failed due to connection issue|07/14,BBB-7857,208578,Done,BBB,EDW Production Operations,Medium,David,,,Coding
+"PROD| 	D365PremiumDataLoad had failed due to connection issue|07/14",BBB-7857,208578,Done,BBB,EDW Production Operations,Medium,David,,,Coding
 stab 3-CPP_CP+Crime +GL-XXX-31547_crime forms not triggering,XXX-32770,208576,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
 3.1 ODS - Detail Coverage Duplicates,AAA-5068,208575,Done,AAA,AAA,Very High,David,,,Coding
 3.1 ODS - Policy ID = 'null'  ,AAA-5067,208574,Done,AAA,AAA,High,David,,,Coding
-stab3- XXX-31550_CPP_CP+Crime +GL_AZUT -- Form should  display camel case letter should not display in capital letter & CR 01 59	08 07 Not triggered_crime,XXX-32769,208573,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
+"stab3- XXX-31550_CPP_CP+Crime +GL_AZUT -- Form should  display camel case letter should not display in capital letter & CR 01 59	08 07 Not triggered_crime",XXX-32769,208573,Done,XXX,ANIC P&C Migration,High,Martin,PolicyCenter,,Coding
 PROD | GWCM started before CDA completed | 07/14,BBB-7856,208572,Done,BBB,EDW Production Operations,Medium,Martin,,,Coding
 Stab3_Rating_Commercial Package_Rewrite_Payment plan is not displayed for Payment Schedule during Rewrite,XXX-32768,208571,Done,XXX,ANIC P&C Migration,Critical,Peter,PolicyCenter,,Coding
 UAT1 - All Lines of Business - Invalid Quote During Cancellation Transaction in PC,XXX-32767,208563,Ready for QA,XXX,ANIC P&C Migration,Very High,Peter,Rating,,Coding

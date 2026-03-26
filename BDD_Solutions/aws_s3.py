@@ -78,7 +78,34 @@ def generate_bdd_from_jira(user_story):
 
     for story in user_story:
 
-        prompt = f"Generate BDD scenario in feature file format for the user story:\n{story}"
+        prompt = f"""
+        You are a QA expert. Generate a BDD feature file for the following user story.
+
+        User Story: {story}
+
+        Rules:
+        - Use strict Gherkin syntax: Feature, Scenario, Given, When, Then, And
+        - Generate 2-3 Scenarios covering happy path, edge case, and failure case
+        - Add relevant tags like @regression, @smoke, @negative
+        - Do NOT include markdown formatting, code blocks, or backticks
+        - Do NOT add any explanation or comments outside the feature file
+        - Output only raw Gherkin text
+
+        Example format:
+        Feature: <feature title>
+
+        @smoke
+        Scenario: <scenario title>
+            Given <precondition>
+            When <action>
+            Then <expected result>
+
+        @negative
+        Scenario: <negative scenario title>
+            Given <precondition>
+            When <invalid action>
+            Then <expected failure result>
+        """
 
         response = generate_llm_response(prompt)
 
@@ -195,7 +222,7 @@ def generate_test_data(lob, state, no_of_test_cases):
 
     round_of_test_data = int(no_of_test_cases) // 10
 
-    for i in range(round_of_test_data + 1):
+    for i in range(round_of_test_data):
 
         prompt = f"""
 Generate 10 test data rows for a {lob} policy.

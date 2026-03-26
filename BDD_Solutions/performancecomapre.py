@@ -195,7 +195,11 @@ def compare_json(json1, json2, metrics):
     # Check the response and return the download URL
     status = response.get("ResponseMetadata", {}).get("HTTPStatusCode")
     if status == 200:
-        url = f"https://{performance_comparator_bucket}.s3.amazonaws.com/{s3_key}"
+        url = s3_client.generate_presigned_url(
+            "get_object",
+            Params={"Bucket": performance_comparator_bucket, "Key": s3_key},
+            ExpiresIn=3600
+        )
         return url
     else:
         raise Exception("Failed to upload file to S3")

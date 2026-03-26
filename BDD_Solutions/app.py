@@ -141,7 +141,6 @@ def get_bdd_jira_issue_bug():
         # If Jira returns nothing, use dummy bugs
         if not issue_bugs:
             issue_bugs = ["Stab4_CP_Renewal - Inflation guard not applied, causing incorrect limits and premium mismatch",
-                          "Stab4_CP_Renewal - Inflation guard not applied, causing incorrect limits and premium mismatch",
                           "Jasper CE - Valid claims flagged as duplicate with FNOL screen error",
                           "UAT1 - Forms not triggered and missing in payload during policy issuance",
                           "PROD - EventBridge messages processed with blank or incomplete data"]  # Dummy bug for testing
@@ -168,10 +167,10 @@ def generate_bdd_jira():
         # If no stories from Jira, use dummy ones
         if not user_story:
             user_story = [
-                "As a user, I want to login to the system so that I can access my dashboard.",
-                "As an admin, I want to create a policy so that insurance records can be managed.",
-                "As a customer, I want to upload documents so that my claims can be processed.",
-                "As a user, I want to reset my password so that I can regain access to my account."
+                "Stab4_CP_Renewal - Inflation guard not applied, causing incorrect limits and premium mismatch",
+                "Jasper CE - Valid claims flagged as duplicate with FNOL screen error",
+                "UAT1 - Forms not triggered and missing in payload during policy issuance",
+                "PROD - EventBridge messages processed with blank or incomplete data"
             ]
         url = generate_bdd_from_jira(user_story)
         if url is None:
@@ -213,55 +212,6 @@ def generate_defect_detection():
         traceback.print_exc()
         print(f"An error occurred: {e}")
         return render_template('index.html', status="Error processing issues")
-
-
-# LATEST
-# @app.route("/generate_defect", methods=['POST'])
-# def generate_defect_detection():
-#     try:
-#         # Check if "Select All" is chosen
-#         selected_issue = request.form.get('issue_id1')
-#         all_issues_json = request.form.get('all_issues')  # This will be present if "Select All" is chosen
-
-#         # If "Select All" is selected, process all issues
-#         if selected_issue == 'select_all' and all_issues_json:
-#             issues = json.loads(all_issues_json)
-#             print("Processing all issues...", issues)
-#         else:
-#             issues = [selected_issue]  # Process individual issue
-#             for issue in issues:
-#                 print(issue)
-        
-#         url = handle_defect_detection_button_click(issue=issues)
-#         if url is None:
-#             return render_template('index.html', status="Failed to generate test data")
-#         return render_template('index.html', status="Test data generated successfully", response=url)
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
-#         return render_template('index.html', status="Error processing issues")
-        
-
-# @app.route("/generate_defect", methods=['POST'])
-# def generate_defect_detection():
-#     try:
-#         # Get the whole array of issues from the form
-#         all_issues_json = request.form.get('all_issues')  # This should contain the full array
-
-#         if all_issues_json:
-#             issues = json.loads(all_issues_json)  # Convert the JSON string back into a list
-#             print("Processing all issues:", issues)
-#         else:
-#             return render_template('index.html', status="No issues to process")
-
-#         # Now pass the entire array of issues to the LLM function to generate the defect report
-#         url = handle_defect_detection_button_click(issue=issues)
-
-#         if url is None:
-#             return render_template('index.html', status="Failed to generate test data")
-#         return render_template('index.html', status="Test data generated successfully", response=url)
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
-#         return render_template('index.html', status="Error processing issues")
 
 @app.route("/generate_test", methods=['POST'])
 def generate_test():

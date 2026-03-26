@@ -41,7 +41,7 @@ class CSVResponseValidator:
                     # Skip header rows in individual sections
                     section_lines = section.strip().split('\n')
                     for line in section_lines:
-                        if line.strip() and not line.startswith("Input,Defect ID"):
+                        if line.strip() and not line.startswith("Input,Issue ID"):
                             all_rows.append(line.strip())
                 
                 return '\n'.join(all_rows)
@@ -98,13 +98,15 @@ class CSVResponseValidator:
             valid_defects = df[df['Issue ID'] != 'Not Found']
             not_found_entries = df[df['Issue ID'] == 'Not Found']
             
-            # If there are valid defects and "Not Found" entries, remove "Not Found"
-            if not valid_defects.empty and not not_found_entries.empty:
-                logger.info(f"Removing {len(not_found_entries)} 'Not Found' entries as valid defects exist")
-                cleaned_df = valid_defects
-            else:
-                # Keep all entries if either all are valid or all are "Not Found"
-                cleaned_df = df
+            # # If there are valid defects and "Not Found" entries, remove "Not Found"
+            # if not valid_defects.empty and not not_found_entries.empty:
+            #     logger.info(f"Removing {len(not_found_entries)} 'Not Found' entries as valid defects exist")
+            #     cleaned_df = valid_defects
+            # else:
+            #     # Keep all entries if either all are valid or all are "Not Found"
+            #     cleaned_df = df
+
+            cleaned_df = df
             
             # Convert back to CSV format
             csv_output = io.StringIO()

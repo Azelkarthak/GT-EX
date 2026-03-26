@@ -3,23 +3,23 @@ import time
 import asyncio
 import boto3
 import logging
+import shutil
+import csv
+
 from dotenv import load_dotenv
+from langchain.schema import Document
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders.csv_loader import CSVLoader
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains import create_retrieval_chain
 
 from langchain.retrievers import ContextualCompressionRetriever
 from flashrank import Ranker
 from langchain.retrievers.document_compressors import FlashrankRerank
 
-from BDD_Solutions.formatePrint import print_formatted_documents
 from BDD_Solutions.csv_validator import clean_and_validate_response
 
 # =========================
@@ -48,8 +48,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # =========================
-# GLOBAL SINGLETONS (🔥 FIX)
+# GLOBALS
 # =========================
+CHROMA_PATH = "BDD_Solutions/chroma_db"
+
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
@@ -58,59 +60,69 @@ vectorstore = None
 
 
 # =========================
-# EMBEDDING FUNCTION
+# EMBEDDING (STRUCTURED)
 # =========================
 def vector_embedding(file_path):
     global vectorstore
 
     try:
-        loader = CSVLoader(file_path=file_path, encoding='utf-8')
-        docs = loader.load()
+        # 🔥 Clean old DB (prevents corruption)
+        if os.path.exists(CHROMA_PATH):
+            shutil.rmtree(CHROMA_PATH)
+            logger.info("🧹 Old vector DB cleared")
 
-        splitter = RecursiveCharacterTextSplitter(chunk_size=1200, chunk_overlap=100)
-        final_docs = splitter.split_documents(docs)
+        docs = []
 
-        for i, doc in enumerate(final_docs):
-            doc.metadata["id"] = i
+        with open(file_path, encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            # Strip spaces, BOM, and skip empty columns from all headers
+            reader.fieldnames = [h.strip() for h in reader.fieldnames if h and h.strip()]
+            for i, row in enumerate(reader):
+                # Also strip keys in each row
+                row = {k.strip(): v for k, v in row.items() if k and k.strip()}
+                docs.append(
+                    Document(
+                        page_content=" | ".join([f"{k}: {v}" for k, v in row.items()]),
+                        metadata=row  # ✅ STRUCTURED DATA
+                    )
+                )
 
         vectorstore = Chroma.from_documents(
-            final_docs,
+            docs,
             embeddings,
-            persist_directory="BDD_Solutions/chroma_db"
+            persist_directory=CHROMA_PATH
         )
 
-        logger.info("✅ Embedding completed")
+        logger.info(f"✅ Embedding completed | Total docs: {len(docs)}")
 
     except Exception as e:
-        logger.error(f"Embedding error: {e}", exc_info=True)
+        logger.error(f"❌ Embedding error: {e}", exc_info=True)
 
 
 # =========================
-# DEFECT GENERATION (WITH FALLBACK)
+# DEFECT GENERATION
 # =========================
 async def generating_defect(issues):
     global vectorstore
 
     try:
+        # Load DB if not loaded
         if vectorstore is None:
             vectorstore = Chroma(
-                persist_directory="BDD_Solutions/chroma_db",
+                persist_directory=CHROMA_PATH,
                 embedding_function=embeddings
             )
 
-        combined_issues = "\n".join(
-            [f"{i+1}. {issue}" for i, issue in enumerate(issues)]
-        )
+        issues = list(dict.fromkeys(issues))
 
         # =========================
-        # RETRIEVER SETUP
+        # RETRIEVER
         # =========================
         flashrank_client = Ranker(model_name="ms-marco-TinyBERT-L-2-v2")
 
         compressor = FlashrankRerank(
             client=flashrank_client,
-            top_n=5,
-            model="ms-marco-TinyBERT-L-2-v2"
+            top_n=5
         )
 
         retriever = ContextualCompressionRetriever(
@@ -118,9 +130,18 @@ async def generating_defect(issues):
             base_retriever=vectorstore.as_retriever(search_kwargs={"k": 20})
         )
 
-        # Fetch context once
-        compressed_docs = retriever.invoke(combined_issues)
-        print_formatted_documents(compressed_docs)
+        # =========================
+        # BUILD CONTEXT (STRUCTURED)
+        # =========================
+        context_data = []
+
+        for issue in issues:
+            docs = retriever.invoke(issue)
+
+            logger.info(f"Issue: {issue} | Retrieved: {len(docs)} docs")
+
+            for doc in docs:
+                context_data.append(doc.metadata)  # ✅ PURE STRUCTURED
 
         # =========================
         # TRY GEMINI
@@ -134,61 +155,68 @@ async def generating_defect(issues):
 
             prompt = ChatPromptTemplate.from_template(
                 """
-                Answer strictly based on the provided context.
+You are given structured defect data.
 
-                <context>
-                {context}
-                </context>
+Context:
+{context}
 
-                Input Issues:
-                {input}
+Input Issues:
+{input}
 
-                Task:
-                - For EACH issue, find similar defects
-                - Max 3 results per issue
+Task:
+- For EACH issue, find top 3 similar defects
+- Match based on meaning (not exact text)
 
-                Output CSV:
-                Input, Issue ID, Summary, Issue key, Status, Project name, Assignee, Components, Priority
+Output CSV:
+Input,Issue ID,Summary,Issue key,Status,Project name,Assignee,Components,Priority
 
-                Rules:
-                - If no match → "Not Found"
-                - No markdown
-                """
+Rules:
+- One row per result
+- No extra text
+- If nothing found → Not Found
+"""
             )
 
             document_chain = create_stuff_documents_chain(llm, prompt)
-            retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
-            response = retrieval_chain.invoke({"input": combined_issues})
+            response = document_chain.invoke({
+                "input": "\n".join(issues),
+                "context": str(context_data[:200])  # limit size
+            })
 
-            cleaned_response = response["answer"].replace("```csv", "").replace("```", "").strip()
+            cleaned_response = response.strip()
 
         except Exception as llm_error:
-            logger.warning(f"⚠️ Gemini failed → fallback triggered: {llm_error}")
-
-            if "quota" in str(llm_error).lower():
-                logger.warning("🔥 Gemini quota exceeded")
+            logger.warning(f"⚠️ Gemini failed → fallback: {llm_error}")
 
             # =========================
-            # 🔥 FALLBACK: PURE SIMILARITY
+            # FALLBACK (NO REGEX)
             # =========================
             simple_retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
             results = []
+            results.append("Input,Issue ID,Summary,Issue key,Status,Project name,Assignee,Components,Priority")
 
             for issue in issues:
                 docs = simple_retriever.invoke(issue)
 
                 if not docs:
-                    results.append(f'"{issue}","Not Found"')
+                    results.append(f'"{issue}","Not Found","","","","","","",""')
                     continue
 
                 for doc in docs:
                     meta = doc.metadata
-                    content = doc.page_content.replace(",", " ")
 
                     results.append(
-                        f'"{issue}","{meta.get("Issue ID","")}","{content}"'
+                        f'"{issue}",'
+                        f'"{meta.get("Issue id","")}",'
+                        f'"{meta.get("Summary","")}",'
+                        f'"{meta.get("Issue key","")}",'
+                        f'"{meta.get("Status","")}",'
+                        f'"{meta.get("Project name","")}",'
+                        f'"{meta.get("Assignee","")}",'
+                        f'"{meta.get("Components","")}",'
+                        f'"{meta.get("Priority","")}"'
                     )
 
             cleaned_response = "\n".join(results)
@@ -199,30 +227,25 @@ async def generating_defect(issues):
         consolidated_csv = clean_and_validate_response(cleaned_response)
 
         # =========================
-        # UPLOAD TO S3
+        # UPLOAD S3
         # =========================
         key = f"DefectPattern_{int(time.time())}.csv"
 
-        s3_response = s3_client.put_object(
+        s3_client.put_object(
             Bucket=AWS_TEST_OUTPUT_BUCKET,
             Key=key,
-            Body=consolidated_csv
+            Body=consolidated_csv.encode("utf-8-sig")
         )
-
-        status = s3_response.get("ResponseMetadata", {}).get("HTTPStatusCode")
 
         url = s3_client.generate_presigned_url(
             "get_object",
-            Params={
-                "Bucket": AWS_TEST_OUTPUT_BUCKET,
-                "Key": key
-            },
+            Params={"Bucket": AWS_TEST_OUTPUT_BUCKET, "Key": key},
             ExpiresIn=3600
         )
 
         logger.info(f"✅ File uploaded: {url}")
 
-        return url if status == 200 else None
+        return url
 
     except Exception as e:
         logger.error(f"❌ Defect generation error: {e}", exc_info=True)
