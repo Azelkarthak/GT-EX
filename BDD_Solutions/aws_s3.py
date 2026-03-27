@@ -1,6 +1,7 @@
 import io
 import os
 import boto3
+from botocore.client import Config
 import pandas as pd
 from openpyxl import load_workbook
 from google import genai
@@ -18,6 +19,7 @@ AWS_ACCESS_KEY_ID = os.getenv("aws_access_key_id")
 AWS_SECRET_ACCESS_KEY = os.getenv("aws_secret_access_key")
 AWS_LOB_FILES = os.getenv("aws_lob_files")
 AWS_TEST_OUTPUT_BUCKET = os.getenv("aws_test_output_bucket")
+AWS_REGION = os.getenv("AWS_REGION")
 
 # Gemini client
 client = genai.Client(api_key=API_KEY)
@@ -28,8 +30,10 @@ MODEL_NAME = "models/gemini-2.5-flash"
 # S3 Client
 s3_client = boto3.client(
     "s3",
+    region_name=AWS_REGION,
     aws_access_key_id=AWS_ACCESS_KEY_ID,
-    aws_secret_access_key=AWS_SECRET_ACCESS_KEY
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+    config=Config(signature_version="s3v4")
 )
 
 

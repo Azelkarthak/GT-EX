@@ -2,6 +2,7 @@ import os
 import time
 import asyncio
 import boto3
+from botocore.client import Config
 import logging
 import shutil
 import csv
@@ -31,14 +32,17 @@ AWS_ACCESS_KEY_ID = os.getenv("aws_access_key_id")
 AWS_SECRET_ACCESS_KEY = os.getenv("aws_secret_access_key")
 AWS_TEST_OUTPUT_BUCKET = os.getenv("aws_test_output_bucket")
 GOOGLE_API_KEY = os.getenv("API_KEY")
+AWS_REGION = os.getenv("AWS_REGION")
 
 # =========================
 # AWS CLIENT
 # =========================
 s3_client = boto3.client(
     "s3",
+    region_name=AWS_REGION,
     aws_access_key_id=AWS_ACCESS_KEY_ID,
-    aws_secret_access_key=AWS_SECRET_ACCESS_KEY
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+    config=Config(signature_version="s3v4")
 )
 
 # =========================

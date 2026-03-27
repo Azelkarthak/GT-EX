@@ -1,6 +1,7 @@
 import json
 import time
 import boto3
+from botocore.client import Config
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 from io import BytesIO
@@ -10,10 +11,13 @@ from openpyxl.styles import PatternFill, Font, Border, Side
 # Initialize S3 client
 AWS_ACCESS_KEY_ID = os.getenv("aws_access_key_id")
 AWS_SECRET_ACCESS_KEY = os.getenv("aws_secret_access_key")
+AWS_REGION = os.getenv("AWS_REGION")
 s3_client = boto3.client(
     "s3",
+    region_name=AWS_REGION,
     aws_access_key_id=AWS_ACCESS_KEY_ID,
-    aws_secret_access_key=AWS_SECRET_ACCESS_KEY
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+    config=Config(signature_version="s3v4")
     # aws_session_token=AWS_SESSION_TOKEN,
 )  # Replace with your actual S3 bucket name
 
